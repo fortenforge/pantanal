@@ -1,0 +1,512 @@
+:root {
+  --bg-obsidian: hsl(150, 16%, 5%);
+  --bg-surface: hsl(150, 14%, 8%);
+  --bg-elevated: hsl(150, 12%, 12%);
+  --bg-glass: hsla(150, 16%, 5%, 0.86);
+
+  --text-ivory: hsl(42, 33%, 94%);
+  --text-sand: hsl(40, 18%, 76%);
+  --text-muted: hsl(40, 10%, 54%);
+
+  --accent-ochre: hsl(38, 76%, 62%);
+  --border-subtle: hsla(42, 25%, 85%, 0.09);
+  --border-hover: hsla(38, 76%, 62%, 0.65);
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --cloud-gap: 3px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-obsidian);
+  color: var(--text-ivory);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-obsidian);
+  background-image:
+    radial-gradient(ellipse 80% 45% at 50% 0%, hsla(146, 35%, 14%, 0.3), transparent);
+  overflow-x: hidden;
+  line-height: 1.55;
+}
+
+/* HEADER & STICKY NAV */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.9rem 1.5rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.site-header h1 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+  letter-spacing: 0.01em;
+  color: var(--text-ivory);
+  line-height: 1.05;
+}
+
+.site-header h1 em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent-ochre);
+}
+
+.chapter-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  max-width: 1320px;
+}
+
+.chapter-link {
+  padding: 0.28rem 0.68rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-sand);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.chapter-link:hover {
+  color: var(--text-ivory);
+  background: hsla(42, 25%, 85%, 0.07);
+}
+
+.chapter-link.active {
+  color: #0b0f0c;
+  background: var(--accent-ochre);
+  font-weight: 600;
+}
+
+/* MAIN CONTAINER & COLLAGE SECTIONS */
+.main-content {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 6rem;
+}
+
+.collage-section {
+  padding: 3.25rem 0 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 5.5rem;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3vw, 2.65rem);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  color: var(--text-ivory);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* PHOTO-CLOUD COLLAGE CLUSTER */
+.photo-cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--cloud-gap);
+  margin: 0 auto;
+}
+
+.cloud-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cloud-gap);
+  flex-shrink: 0;
+}
+
+.cloud-col.align-end {
+  align-items: flex-end;
+}
+
+.cloud-col.align-start {
+  align-items: flex-start;
+}
+
+.cloud-pair {
+  display: flex;
+  gap: var(--cloud-gap);
+}
+
+.cloud-pair.pair-top {
+  align-items: flex-end;
+}
+
+.cloud-pair.pair-bottom {
+  align-items: flex-start;
+}
+
+/* INDIVIDUAL CROPPED COLLAGE TILE */
+.cloud-tile {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-surface);
+  cursor: pointer;
+  border-radius: 3px;
+  flex-shrink: 0;
+  isolation: isolate;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease, z-index 0s;
+}
+
+.cloud-tile:hover,
+.cloud-tile:focus-visible {
+  z-index: 20;
+  transform: scale(1.03);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.85), 0 0 0 1px var(--border-hover);
+  border-radius: 5px;
+}
+
+.tile-img,
+.tile-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cloud-tile:hover .tile-img,
+.cloud-tile:hover .tile-video {
+  transform: scale(1.05);
+}
+
+/* Minimal corner play indicator for videos */
+.video-indicator {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(10, 14, 12, 0.68);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: var(--accent-ochre);
+  font-size: 0.58rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  pointer-events: none;
+  z-index: 4;
+  transition: opacity 0.25s ease;
+}
+
+.cloud-tile:hover .video-indicator {
+  opacity: 0;
+}
+
+/* HOVER CAPTION REVEAL OVERLAY */
+.tile-caption-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 12, 10, 0.72) 0%,
+    rgba(8, 12, 10, 0.92) 45%,
+    rgba(8, 12, 10, 0.97) 100%
+  );
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 0.85rem 0.95rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.24s ease;
+  z-index: 5;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.cloud-tile:hover .tile-caption-overlay,
+.cloud-tile:focus-visible .tile-caption-overlay {
+  opacity: 1;
+}
+
+.overlay-species {
+  font-family: var(--font-serif);
+  font-size: 1.16rem;
+  font-weight: 600;
+  line-height: 1.12;
+  color: var(--text-ivory);
+}
+
+.overlay-sci {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--accent-ochre);
+  margin-bottom: 0.38rem;
+}
+
+.overlay-caption {
+  font-size: 0.76rem;
+  line-height: 1.46;
+  color: var(--text-ivory);
+  opacity: 0.95;
+}
+
+/* LIGHTBOX MODAL */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(5, 8, 6, 0.94);
+  backdrop-filter: blur(18px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-dialog {
+  width: 100%;
+  max-width: 1280px;
+  max-height: 90vh;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.88);
+}
+
+.lightbox-stage {
+  position: relative;
+  background: #040605;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 460px;
+  max-height: 90vh;
+}
+
+.lightbox-stage img,
+.lightbox-stage video {
+  max-width: 100%;
+  max-height: 86vh;
+  object-fit: contain;
+  display: block;
+}
+
+.lb-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(12, 18, 14, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--text-ivory);
+  cursor: pointer;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.lb-nav-btn:hover {
+  background: var(--accent-ochre);
+  color: #0b0f0c;
+}
+
+.lb-prev {
+  left: 0.85rem;
+}
+
+.lb-next {
+  right: 0.85rem;
+}
+
+.lightbox-info {
+  padding: 2rem 1.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  border-left: 1px solid var(--border-subtle);
+}
+
+.lb-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+
+.lb-group-tag {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-ochre);
+}
+
+.lb-close {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-sand);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.lb-species {
+  font-family: var(--font-serif);
+  font-size: 2.05rem;
+  font-weight: 600;
+  line-height: 1.12;
+  color: var(--text-ivory);
+  margin-bottom: 0.2rem;
+}
+
+.lb-sci {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--accent-ochre);
+  margin-bottom: 1.15rem;
+}
+
+.lb-caption {
+  font-size: 0.96rem;
+  line-height: 1.68;
+  color: var(--text-ivory);
+  margin-bottom: 1.25rem;
+}
+
+.lb-edit-box {
+  margin-top: 0.65rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lb-edit-box.open {
+  display: flex;
+}
+
+.lb-edit-box textarea {
+  width: 100%;
+  min-height: 100px;
+  background: var(--bg-obsidian);
+  border: 1px solid var(--accent-ochre);
+  border-radius: 6px;
+  padding: 0.6rem;
+  color: var(--text-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.lb-edit-actions {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.btn-small {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-sand);
+  padding: 0.35rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.74rem;
+  cursor: pointer;
+}
+
+.btn-small.primary {
+  background: var(--accent-ochre);
+  color: #0b0f0c;
+  border-color: var(--accent-ochre);
+  font-weight: 600;
+}
+
+.lb-footer-meta {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.lb-footer-meta a {
+  color: var(--accent-ochre);
+  text-decoration: none;
+}
+
+/* Responsive scaling for smaller viewports so the cloud shape stays intact */
+@media (max-width: 1120px) {
+  .photo-cloud {
+    transform: scale(0.82);
+    transform-origin: top center;
+    margin-bottom: -85px;
+  }
+  .lightbox-dialog {
+    grid-template-columns: 1fr;
+    max-height: 94vh;
+    overflow-y: auto;
+  }
+  .lightbox-stage {
+    min-height: 300px;
+    max-height: 52vh;
+  }
+}
+
+@media (max-width: 860px) {
+  .photo-cloud {
+    transform: scale(0.62);
+    transform-origin: top center;
+    margin-bottom: -190px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-cloud {
+    flex-wrap: wrap;
+    transform: none;
+    margin-bottom: 0;
+  }
+}
