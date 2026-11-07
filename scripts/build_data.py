@@ -688,18 +688,36 @@ ANNOTATIONS = {
         "Blazing tangerine-orange and jet-black with a pale blue facial patch, the Orange-backed Troupial is as bold in personality as it is in color—and a master mimic of other birds' calls."
     ),
 
-    # --- 12. INSECTS, REPTILES & FROGS (10 items) ---
+    # --- 12. INSECTS, REPTILES & FROGS ---
+    336: (
+        "Eighty-eight Butterfly",
+        "Diaethria clymena",
+        (0.41, 0.46, 1.85),
+        "Nature's typography at Iguazú Falls: the underside of this butterfly's hindwing spells out a crisp, graphic '88' in black and white bordered by a band of carmine red!"
+    ),
     342: (
-        "Hydaspes Eighty-eight Butterfly",
+        "Hydaspes Butterfly",
         "Callicore hydaspes",
-        (0.45, 0.52, 1.30),
-        "Nature's typography at Iguazú Falls: the underside of this butterfly's hindwing spells out a crisp, graphic '88' in black and white bordered by electric blue and carmine red!"
+        (0.41, 0.52, 1.45),
+        "Often mistaken for an Eighty-eight butterfly at first glance, the Hydaspes Butterfly (Red-and-blue Callicore) is a close relative whose concentric black-and-cream hindwing rings enclose four shimmering blue-white dots rather than the digits '88', topped by a bold crimson forewing bar."
     ),
     415: (
-        "Eighty-eight Butterfly on Hand",
-        "Diaethria clymena",
+        "Hydaspes Butterfly on Hand",
+        "Callicore hydaspes",
         (0.68, 0.46, 1.75),
-        "An Eighty-eight Butterfly landing right on the back of a hand along the Iguazú Falls walkway to sip trace minerals from the skin."
+        "A Hydaspes Butterfly landing on the back of a hand along the Iguazú Falls walkway to sip trace minerals from the skin."
+    ),
+    406: (
+        "Scarlet Peacock Butterfly",
+        "Anartia amathea",
+        (0.43, 0.48, 2.15),
+        "Resting with wings spread against a lacework of perforated rainforest leaves, flashing brilliant scarlet inner wings bordered in jet-black and white spots."
+    ),
+    386: (
+        "Black Zale Moth",
+        "Zale / Erebidae",
+        (0.50, 0.49, 1.35),
+        "Spread flat against the forest leaf litter with scalloped, bark-textured charcoal and ebony wings that mimic charred wood or dark lichens."
     ),
     410: (
         "Iridescent Leaf Beetle",
@@ -736,6 +754,36 @@ ANNOTATIONS = {
         "Tetragonisca angustula",
         (0.50, 0.50, 1.10),
         "Tiny golden stingless bees hovering around their wax entrance tube! In late 2025 and 2026, select Amazonian municipalities in Peru (such as Satipo and Nauta) made history by granting native stingless bees legal rights as subjects with the right to exist and thrive."
+    ),
+    74: (
+        "Green Ameiva",
+        "Ameiva ameiva",
+        (0.48, 0.61, 1.55),
+        "An active, sun-loving whiptail lizard of the Pantanal riverbanks, patterned with a reticulated grey head, vivid emerald-green back, and rows of electric turquoise-blue spots running down its flanks and long tail."
+    ),
+    71: (
+        "Pantanal Treefrog",
+        "Trachycephalus / Boana",
+        (0.49, 0.61, 1.85),
+        "Peering contentedly out from the safety of a hollowed tree knot high above the forest floor, where daytime humidity stays locked inside the cavity."
+    ),
+    111: (
+        "Miranda's White-lipped Frog",
+        "Leptodactylus macrosternum",
+        (0.52, 0.44, 1.85),
+        "A robust nocturnal terrestrial frog of the Pantanal floodplains sporting raised longitudinal skin folds along its back and a crisp pale stripe along its upper lip."
+    ),
+    37: (
+        "Pantanal Lava Lizard",
+        "Tropidurus",
+        (0.56, 0.54, 1.35),
+        "Alert and upright on sturdy forelegs with a dark shoulder collar and speckled scales, scanning for passing ants and beetles."
+    ),
+    147: (
+        "Yacare Caiman — Emerging",
+        "Caiman yacare",
+        (0.55, 0.50, 1.40),
+        "Rising above the water line to display the prominent, interlocking lower teeth that poke through the upper jaw—the feature that gives the Yacare ('piranha caiman') its nickname."
     ),
     234: (
         "Yacare Caimans",
@@ -1036,9 +1084,9 @@ GROUPS_SPEC = [
         "title": "Woodpeckers",
         "indices": [288, 218, 58, 231, 298, 309, 313, 377, 379, 56],
         "cloud": [
-            {"align": "end", "offsetY": -10, "slots": [(58, 205, 205), (231, 245, 195)]},
-            {"align": "end", "offsetY": 16, "slots": [(298, 315, 190), (288, 315, 245), (313, 315, 195)]},
-            {"align": "start", "offsetY": -14, "slots": [(218, 290, 215), (379, 290, 205), [(309, 142, 200), (377, 145, 170)]]},
+            {"align": "end", "offsetY": -10, "slots": [(218, 225, 210), (231, 245, 195)]},
+            {"align": "end", "offsetY": 16, "slots": [(58, 315, 210), (288, 315, 245), (313, 315, 195)]},
+            {"align": "start", "offsetY": -14, "slots": [(379, 290, 210), (298, 290, 200), [(309, 142, 200), (377, 145, 170)]]},
             {"align": "start", "offsetY": 12, "slots": [(56, 225, 225)]}
         ]
     },
@@ -1065,24 +1113,24 @@ GROUPS_SPEC = [
         ]
     },
     {
-        "id": "songbirds",
-        "title": "Songbirds & Flycatchers",
-        "indices": [85, 84, 312, 232, 75, 54],
+        "id": "insects",
+        "title": "Insects",
+        "indices": [336, 342, 410, 389, 413, 416, 414, 374, 406, 386],
         "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(312, 225, 225)]},
-            {"align": "end", "offsetY": -12, "slots": [(85, 320, 200), (84, 320, 240)]},
-            {"align": "start", "offsetY": 10, "slots": [[(54, 148, 220), (232, 144, 190)], (75, 295, 210)]}
+            {"align": "end", "offsetY": -12, "slots": [(410, 205, 225), (416, 245, 190)]},
+            {"align": "end", "offsetY": 14, "slots": [(389, 315, 195), (336, 315, 240), (414, 315, 195)]},
+            {"align": "start", "offsetY": -16, "slots": [[(406, 145, 215), (386, 147, 185)], (342, 295, 210), (374, 295, 190)]},
+            {"align": "start", "offsetY": 10, "slots": [(413, 200, 250)]}
         ]
     },
     {
-        "id": "insects-reptiles",
-        "title": "Insects & Reptiles",
-        "indices": [342, 415, 410, 389, 413, 416, 414, 374, 234, 68],
+        "id": "reptiles-amphibians",
+        "title": "Reptiles & Amphibians",
+        "indices": [74, 71, 111, 68, 37, 234, 147],
         "cloud": [
-            {"align": "end", "offsetY": -12, "slots": [(410, 200, 230), (416, 245, 190)]},
-            {"align": "end", "offsetY": 14, "slots": [(389, 315, 195), (342, 315, 240), (414, 315, 195)]},
-            {"align": "start", "offsetY": -16, "slots": [[(415, 142, 215), (68, 150, 180)], (234, 295, 205), (374, 295, 190)]},
-            {"align": "start", "offsetY": 10, "slots": [(413, 195, 255)]}
+            {"align": "end", "offsetY": 14, "slots": [(71, 215, 235), (111, 250, 195)]},
+            {"align": "end", "offsetY": -14, "slots": [(234, 320, 195), (74, 320, 245), (68, 320, 200)]},
+            {"align": "start", "offsetY": 10, "slots": [(147, 285, 215), (37, 250, 215)]}
         ]
     },
     {
