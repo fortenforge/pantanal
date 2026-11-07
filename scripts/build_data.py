@@ -889,6 +889,12 @@ ANNOTATIONS = {
         (0.58, 0.52, 1.45),
         "Don't let the modest name fool you—perched upright in the shaded understory with its pale iris and warm cinnamon-rufous belly, the Dull-capped Attila belts out a rich, far-carrying series of whistled phrases that echoes across the flooded forest."
     ),
+    48: (
+        "Smooth-billed Ani",
+        "Crotophaga ani",
+        (0.58, 0.50, 1.40),
+        "A social, coal-black member of the cuckoo family sporting a bizarre, high-arched laterally compressed bill crest and an oversized floppy tail—communal groups even lay their eggs together in a single shared stick nest!"
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -905,9 +911,9 @@ ALTERNATE_SHOTS = {
         (39, "Male"),
         (40, "Female"),
     ],
-    31: [
-        (31, "Back (False Eyes)"),
+    30: [
         (30, "Front"),
+        (31, "Back (False Eyes)"),
     ],
     367: [
         (367, "Male"),
@@ -933,21 +939,21 @@ GROUPS_SPEC = [
     {
         "id": "beautiful",
         "title": "Beautiful",
-        "indices": [128, 281, 264, 153, 146, 398, 367],
+        "indices": [128, 281, 264, 153, 418, 398, 367],
         "cloud": [
             {"align": "end", "offsetY": 14, "slots": [(264, 215, 245), (398, 250, 195)]},
             {"align": "end", "offsetY": -14, "slots": [(153, 320, 190), (128, 320, 255), (367, 320, 205)]},
-            {"align": "start", "offsetY": 10, "slots": [(281, 285, 215), (146, 250, 225)]}
+            {"align": "start", "offsetY": 10, "slots": [(281, 285, 215), (418, 250, 225)]}
         ]
     },
     {
         "id": "bizarre",
-        "title": "Bizarre",
-        "indices": [243, 277, 104, 175, 5, 132, 113, 206, 39],
+        "title": "...and Bizarre",
+        "indices": [243, 277, 104, 175, 5, 132, 113, 206, 39, 48],
         "cloud": [
             {"align": "end", "offsetY": 16, "slots": [(206, 205, 220), (39, 250, 195)]},
             {"align": "end", "offsetY": -18, "slots": [(277, 310, 200), (104, 310, 240), (113, 310, 195)]},
-            {"align": "start", "offsetY": 10, "slots": [(243, 290, 265), [(5, 155, 200), (132, 132, 170)]]},
+            {"align": "start", "offsetY": 10, "slots": [(243, 290, 225), (48, 290, 190), [(5, 155, 200), (132, 132, 170)]]},
             {"align": "start", "offsetY": -14, "slots": [(175, 235, 210)]}
         ]
     },
@@ -1039,11 +1045,11 @@ GROUPS_SPEC = [
     {
         "id": "raptors",
         "title": "Raptors & Owls",
-        "indices": [121, 14, 12, 136, 135, 224, 140, 213, 31, 292],
+        "indices": [121, 14, 12, 136, 135, 224, 140, 213, 30, 292],
         "cloud": [
             {"align": "end", "offsetY": 15, "slots": [(12, 205, 210), (136, 245, 195)]},
             {"align": "end", "offsetY": -12, "slots": [(14, 310, 195), (121, 310, 240), (224, 310, 190)]},
-            {"align": "start", "offsetY": 14, "slots": [[(135, 148, 205), (213, 144, 175)], (31, 295, 225), (292, 295, 190)]},
+            {"align": "start", "offsetY": 14, "slots": [[(135, 148, 205), (213, 144, 175)], (30, 295, 225), (292, 295, 190)]},
             {"align": "start", "offsetY": -16, "slots": [(140, 235, 200)]}
         ]
     },
@@ -1061,11 +1067,11 @@ GROUPS_SPEC = [
     {
         "id": "songbirds",
         "title": "Songbirds & Flycatchers",
-        "indices": [85, 84, 312, 232, 418, 75, 54],
+        "indices": [85, 84, 312, 232, 75, 54],
         "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(312, 215, 235), (232, 250, 195)]},
-            {"align": "end", "offsetY": -14, "slots": [(85, 320, 200), (84, 320, 245), (75, 320, 195)]},
-            {"align": "start", "offsetY": 10, "slots": [(54, 285, 225), (418, 250, 215)]}
+            {"align": "end", "offsetY": 14, "slots": [(312, 225, 225)]},
+            {"align": "end", "offsetY": -12, "slots": [(85, 320, 200), (84, 320, 240)]},
+            {"align": "start", "offsetY": 10, "slots": [[(54, 148, 220), (232, 144, 190)], (75, 295, 210)]}
         ]
     },
     {
