@@ -871,6 +871,24 @@ ANNOTATIONS = {
         (0.48, 0.52, 1.40),
         "In striking contrast to the electric turquoise-and-black male, the female Blue Dacnis is dressed in bright leaf-green plumage with a soft powder-blue crown and cheeks, perched beside a hummingbird feeder at Iguazú."
     ),
+    297: (
+        "Ferruginous Pygmy-Owl",
+        "Glaucidium brasilianum",
+        (0.44, 0.45, 1.35),
+        "Listen to the rapid, hypnotic series of hollow toots! Despite its tiny size, the Ferruginous Pygmy-Owl's persistent daytime calling carries far through the gallery forest—often drawing in dozens of agitated small songbirds trying to mob it."
+    ),
+    322: (
+        "Tropical Parula",
+        "Setophaga pitiayumi",
+        (0.43, 0.52, 1.45),
+        "Dressed in slate-blue above with a blazing lemon-yellow throat and breast washed in warm orange, this tiny canopy warbler throws back his head to deliver his signature rising, buzzy trill that spills over at the end."
+    ),
+    268: (
+        "Dull-capped Attila",
+        "Attila bolivianus",
+        (0.58, 0.52, 1.45),
+        "Don't let the modest name fool you—perched upright in the shaded understory with its pale iris and warm cinnamon-rufous belly, the Dull-capped Attila belts out a rich, far-carrying series of whistled phrases that echoes across the flooded forest."
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -954,6 +972,16 @@ GROUPS_SPEC = [
         ]
     },
     {
+        "id": "bird-calls",
+        "title": "Bird Calls",
+        "indices": [297, 198, 268, 322],
+        "cloud": [
+            {"align": "end", "offsetY": 12, "slots": [(297, 255, 220)]},
+            {"align": "end", "offsetY": -12, "slots": [(198, 325, 210), (268, 325, 225)]},
+            {"align": "start", "offsetY": 10, "slots": [(322, 260, 225)]}
+        ]
+    },
+    {
         "id": "herons",
         "title": "Herons",
         "indices": [13, 20, 212, 187, 283, 97, 92, 95, 134],
@@ -1033,11 +1061,11 @@ GROUPS_SPEC = [
     {
         "id": "songbirds",
         "title": "Songbirds & Flycatchers",
-        "indices": [85, 198, 84, 312, 232, 418, 75, 54],
+        "indices": [85, 84, 312, 232, 418, 75, 54],
         "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(312, 205, 215), (232, 245, 190)]},
-            {"align": "end", "offsetY": -14, "slots": [(85, 315, 200), (84, 315, 235), (75, 315, 190)]},
-            {"align": "start", "offsetY": 10, "slots": [[(54, 148, 220), (418, 144, 195)], (198, 295, 205)]}
+            {"align": "end", "offsetY": 14, "slots": [(312, 215, 235), (232, 250, 195)]},
+            {"align": "end", "offsetY": -14, "slots": [(85, 320, 200), (84, 320, 245), (75, 320, 195)]},
+            {"align": "start", "offsetY": 10, "slots": [(54, 285, 225), (418, 250, 215)]}
         ]
     },
     {
