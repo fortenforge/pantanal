@@ -34,8 +34,8 @@ ANNOTATIONS = {
     400: (
         "Surucua Trogon",
         "Trogon surrucura",
-        (0.49, 0.48, 1.45),
-        "Spotted in the lush Atlantic Forest around Iguazú, the Surucua Trogon trades the barred tail of its northern relatives for a deep slate-blue hood, a bright orange eye ring, and a soft rose-red breast."
+        (0.50, 0.48, 1.45),
+        "Spotted in the Atlantic Forest around Iguazú clinging directly at the entrance of its excavated nest cavity in a decaying tree trunk—showing off its iridescent blue-green back and white-tipped tail."
     ),
     153: (
         "Rufous-tailed Jacamar",
@@ -799,6 +799,42 @@ ANNOTATIONS = {
         (0.50, 0.48, 1.15),
         "The iconic wooden welcome sign marking Kilometer Zero of the Transpantaneira dirt highway—the gateway to the world's largest tropical wetland."
     ),
+    56: (
+        "Little Woodpecker",
+        "Dryobates passerinus",
+        (0.47, 0.50, 1.45),
+        "True to its name, the Little Woodpecker is a petite, olive-golden woodpecker with a crimson nape and barred underparts that taps quietly along thin upper branches in the Pantanal."
+    ),
+    131: (
+        "Jabiru Nest with Young",
+        "Jabiru mycteria",
+        (0.45, 0.58, 1.30),
+        "A massive treetop stick platform occupied by an adult Jabiru and two downy-gray juveniles. Paired for life, Jabirus return to the same tree crown year after year, adding fresh sticks until the nest can reach nearly ten feet across!"
+    ),
+    319: (
+        "Ultramarine Grosbeak",
+        "Cyanoloxia brissonii",
+        (0.52, 0.54, 1.85),
+        "Framed in a window of cecropia branches, the male Ultramarine Grosbeak gleams in deep midnight-cobalt with shimmering royal-blue shoulder and cheek patches and a massive conical seed-cracking bill."
+    ),
+    122: (
+        "Helmeted Manakin",
+        "Antilophia galeata",
+        (0.48, 0.48, 1.70),
+        "Very out of focus, but we all got great looks at his blazing scarlet crest and forward-curled 'helmet' tuft over the bill—this was the first time our guide had seen a Helmeted Manakin on this trip in many years!"
+    ),
+    387: (
+        "Southern Antpipit",
+        "Corythopis delalandi",
+        (0.48, 0.48, 1.50),
+        "A secretive terrestrial flycatcher of the forest floor that walks like a pipit along fallen branches and leaf litter, flashing a bold black necklace of streaks across its white breast and a bright orange lower mandible."
+    ),
+    214: (
+        "Scarlet-headed Blackbird",
+        "Amblyramphus holosericeus",
+        (0.55, 0.56, 1.40),
+        "Captured right through the eyepiece of our spotting scope! Even across the distant marsh grass, the Scarlet-headed Blackbird's incandescent red-orange hood glows like a beacon against its velvet-black body."
+    ),
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -820,23 +856,43 @@ GROUPS_SPEC = [
     {
         "id": "beautiful",
         "title": "Beautiful",
-        "indices": [128, 281, 264, 400, 153, 110, 146, 398, 367, 19],
+        "indices": [128, 281, 264, 153, 110, 146, 398, 367, 19],
         "cloud": [
-            {"align": "end", "offsetY": -12, "slots": [(264, 195, 240), (398, 240, 185)]},
+            {"align": "end", "offsetY": -12, "slots": [(264, 205, 235), (398, 245, 190)]},
             {"align": "end", "offsetY": 14, "slots": [(153, 315, 185), (128, 315, 250), (367, 235, 175)]},
-            {"align": "start", "offsetY": -16, "slots": [[(400, 138, 205), (281, 154, 175)], (110, 295, 225), (146, 295, 185)]},
+            {"align": "start", "offsetY": -16, "slots": [(281, 265, 195), (110, 295, 225), (146, 245, 185)]},
             {"align": "start", "offsetY": 20, "slots": [(19, 225, 235)]}
         ]
     },
     {
         "id": "bizarre",
         "title": "Bizarre",
-        "indices": [409, 277, 242, 104, 175, 5, 132, 113, 206, 39],
+        "indices": [409, 277, 104, 175, 5, 132, 113, 206, 39],
         "cloud": [
             {"align": "end", "offsetY": 16, "slots": [(206, 205, 220), (39, 250, 195)]},
-            {"align": "end", "offsetY": -18, "slots": [(242, 310, 185), (104, 310, 240), (113, 240, 180)]},
-            {"align": "start", "offsetY": 10, "slots": [(277, 290, 195), (409, 290, 265), [(5, 155, 170), (132, 132, 200)]]},
+            {"align": "end", "offsetY": -18, "slots": [(277, 310, 200), (104, 310, 240), (113, 240, 180)]},
+            {"align": "start", "offsetY": 10, "slots": [(409, 290, 265), [(5, 155, 170), (132, 132, 200)]]},
             {"align": "start", "offsetY": -14, "slots": [(175, 235, 210)]}
+        ]
+    },
+    {
+        "id": "rare-finds",
+        "title": "Rare Finds",
+        "indices": [405, 319, 122, 242, 387, 214],
+        "cloud": [
+            {"align": "end", "offsetY": 14, "slots": [(319, 225, 215)]},
+            {"align": "end", "offsetY": -12, "slots": [(242, 320, 195), (405, 320, 240)]},
+            {"align": "start", "offsetY": 10, "slots": [[(122, 148, 190), (214, 144, 225)], (387, 295, 215)]}
+        ]
+    },
+    {
+        "id": "nests",
+        "title": "Nests",
+        "indices": [190, 45, 9, 400, 131],
+        "cloud": [
+            {"align": "end", "offsetY": -10, "slots": [(9, 240, 220)]},
+            {"align": "end", "offsetY": 14, "slots": [(45, 325, 200), (131, 325, 235)]},
+            {"align": "start", "offsetY": -12, "slots": [(400, 255, 225), (190, 215, 245)]}
         ]
     },
     {
@@ -886,12 +942,12 @@ GROUPS_SPEC = [
     {
         "id": "woodpeckers",
         "title": "Woodpeckers",
-        "indices": [288, 218, 58, 231, 298, 309, 313, 377, 379, 54],
+        "indices": [288, 218, 58, 231, 298, 309, 313, 377, 379, 56],
         "cloud": [
             {"align": "end", "offsetY": -10, "slots": [(58, 205, 205), (231, 245, 195)]},
             {"align": "end", "offsetY": 16, "slots": [(298, 315, 190), (288, 315, 245), (313, 235, 180)]},
             {"align": "start", "offsetY": -14, "slots": [(218, 290, 215), (379, 290, 205), [(309, 142, 200), (377, 145, 170)]]},
-            {"align": "start", "offsetY": 12, "slots": [(54, 225, 225)]}
+            {"align": "start", "offsetY": 12, "slots": [(56, 225, 225)]}
         ]
     },
     {
@@ -908,23 +964,22 @@ GROUPS_SPEC = [
     {
         "id": "waterbirds",
         "title": "Waterbirds & Waders",
-        "indices": [150, 137, 27, 139, 106, 93, 143, 262, 276, 405],
+        "indices": [150, 137, 27, 139, 106, 93, 143, 262, 276],
         "cloud": [
             {"align": "end", "offsetY": -12, "slots": [(137, 210, 205), (93, 250, 195)]},
             {"align": "end", "offsetY": 14, "slots": [(262, 320, 185), (150, 320, 240), (143, 240, 180)]},
-            {"align": "start", "offsetY": -14, "slots": [(276, 295, 195), (106, 295, 215), [(27, 145, 190), (139, 147, 165)]]},
-            {"align": "start", "offsetY": 18, "slots": [(405, 215, 230)]}
+            {"align": "start", "offsetY": -14, "slots": [(276, 295, 195), (106, 295, 215), (27, 235, 195)]},
+            {"align": "start", "offsetY": 18, "slots": [(139, 215, 230)]}
         ]
     },
     {
         "id": "songbirds",
         "title": "Songbirds & Flycatchers",
-        "indices": [9, 89, 45, 198, 190, 84, 312, 232, 418, 75],
+        "indices": [89, 198, 84, 312, 232, 418, 75, 54],
         "cloud": [
             {"align": "end", "offsetY": 14, "slots": [(312, 205, 215), (232, 245, 190)]},
             {"align": "end", "offsetY": -14, "slots": [(89, 310, 185), (84, 310, 235), (75, 240, 185)]},
-            {"align": "start", "offsetY": 12, "slots": [[(9, 148, 195), (418, 144, 220)], (198, 295, 195), (45, 295, 185)]},
-            {"align": "start", "offsetY": -10, "slots": [(190, 195, 265)]}
+            {"align": "start", "offsetY": 12, "slots": [[(54, 148, 195), (418, 144, 220)], (198, 295, 205)]}
         ]
     },
     {
@@ -1013,7 +1068,6 @@ for g in GROUPS_SPEC:
             "index": idx,
             "id": raw["id"],
             "species": species,
-            "scientificName": sci,
             "caption": human_caption,
             "originalNote": raw["caption"],
             "isVideo": raw["is_video"],

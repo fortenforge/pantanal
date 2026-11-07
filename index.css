@@ -262,14 +262,7 @@ body {
   font-weight: 600;
   line-height: 1.12;
   color: var(--text-ivory);
-}
-
-.overlay-sci {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 0.82rem;
-  color: var(--accent-ochre);
-  margin-bottom: 0.38rem;
+  margin-bottom: 0.35rem;
 }
 
 .overlay-caption {
@@ -398,15 +391,7 @@ body {
   font-weight: 600;
   line-height: 1.12;
   color: var(--text-ivory);
-  margin-bottom: 0.2rem;
-}
-
-.lb-sci {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 1.08rem;
-  color: var(--accent-ochre);
-  margin-bottom: 1.15rem;
+  margin-bottom: 0.9rem;
 }
 
 .lb-caption {

@@ -18,7 +18,6 @@
   const lbMediaHolder = document.getElementById('lb-media-holder');
   const lbGroupLabel = document.getElementById('lb-group-label');
   const lbSpeciesTitle = document.getElementById('lb-species-title');
-  const lbSciName = document.getElementById('lb-sci-name');
   const lbCaptionText = document.getElementById('lb-caption-text');
   const lbMetaRegion = document.getElementById('lb-meta-region');
   const lbGoogleLink = document.getElementById('lb-google-link');
@@ -110,7 +109,6 @@
     overlay.className = 'tile-caption-overlay';
     overlay.innerHTML = `
       <div class="overlay-species">${item.species}</div>
-      <div class="overlay-sci">${item.scientificName}</div>
       <p class="overlay-caption" data-caption-index="${item.index}">${getCaption(item)}</p>
     `;
     tile.appendChild(overlay);
@@ -197,7 +195,6 @@
 
     lbGroupLabel.textContent = group.title;
     lbSpeciesTitle.textContent = item.species;
-    lbSciName.textContent = item.scientificName;
     lbCaptionText.textContent = getCaption(item);
     lbMetaRegion.textContent = `${item.region} · ${item.date}`;
     lbGoogleLink.href = `https://photos.google.com/share/AF1QipPqr8g8Zyc2JpTkgOB8ZXkqDgVu_L8GaxUfrZ9yESs6NeJppagzIptASC8BF7L-Cw/photo/${item.id}?key=MDdtYTlzbjhnWkJLcW94QXJmelpCaWtSV05DbkxB`;
