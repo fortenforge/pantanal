@@ -162,13 +162,13 @@ ANNOTATIONS = {
         "With its enormous dark eyes built for night hunting and a wide, shoe-shaped scoop of a bill sensitive to the slightest vibration in murky water, the Boat-billed Heron roosts quietly in dense overhanging tangles by day."
     ),
     283: (
-        "Rufescent Tiger-Heron (Adult)",
+        "Rufescent Tiger-Heron",
         "Tigrisoma lineatum",
         (0.46, 0.45, 1.25),
         "The adult Rufescent Tiger-Heron wears a rich, unbarred mahogany-chestnut head and neck with a vertical white-and-brown stripe running down its throat."
     ),
     210: (
-        "Rufescent Tiger-Heron (Juvenile)",
+        "Rufescent Tiger-Heron",
         "Tigrisoma lineatum",
         (0.45, 0.52, 1.30),
         "Look how different the juvenile plumage is from the adult! Young Rufescent Tiger-Herons are covered head-to-tail in bold tawny-and-black 'tiger stripes' that blend seamlessly into dried reeds and grass."
@@ -847,6 +847,54 @@ ANNOTATIONS = {
         (0.52, 0.21, 1.30),
         "Hitching up the wooden rafters and probing beneath the terracotta roof tiles of the lodge with its extraordinary, sickle-curved red bill—specialized for reaching spiders and insects tucked deep inside crevices and bamboo stems."
     ),
+    243: (
+        "Great Potoo",
+        "Nyctibius grandis",
+        (0.49, 0.45, 1.35),
+        "Frozen upright at the end of a rough-barked limb with its eyes shut, the nocturnal Great Potoo looks indistinguishable from a broken gray tree stump—peering through tiny 'magic slits' in its closed eyelids to watch passing intruders without breaking its camouflage."
+    ),
+    40: (
+        "Bare-faced Curassow",
+        "Crax fasciolata",
+        (0.48, 0.50, 1.25),
+        "Strong sexual dimorphism! Unlike the solid black male with his yellow cere, the female Bare-faced Curassow wears intricately barred black-and-white plumage across her back and tail, a warm cinnamon-buff belly, a dark face, and a white-banded curly crest."
+    ),
+    30: (
+        "Ferruginous Pygmy-Owl",
+        "Glaucidium brasilianum",
+        (0.44, 0.52, 1.45),
+        "Turned around to face us with its real, piercing lemon-yellow eyes and bold rufous-and-white streaked breast—despite measuring only six inches tall, the Ferruginous Pygmy-Owl is a fearless daytime ambush hunter."
+    ),
+    366: (
+        "Blue Dacnis",
+        "Dacnis cayana",
+        (0.48, 0.52, 1.40),
+        "In striking contrast to the electric turquoise-and-black male, the female Blue Dacnis is dressed in bright leaf-green plumage with a soft powder-blue crown and cheeks, perched beside a hummingbird feeder at Iguazú."
+    ),
+}
+
+# Primary tile index -> list of (variant_index, toggle_label)
+ALTERNATE_SHOTS = {
+    243: [
+        (243, "Photo"),
+        (409, "Video"),
+    ],
+    283: [
+        (283, "Adult"),
+        (210, "Juvenile"),
+    ],
+    39: [
+        (39, "Male"),
+        (40, "Female"),
+    ],
+    31: [
+        (31, "Back (False Eyes)"),
+        (30, "Front"),
+    ],
+    367: [
+        (367, "Male"),
+        (366, "Female"),
+    ],
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -877,11 +925,11 @@ GROUPS_SPEC = [
     {
         "id": "bizarre",
         "title": "Bizarre",
-        "indices": [409, 277, 104, 175, 5, 132, 113, 206, 39],
+        "indices": [243, 277, 104, 175, 5, 132, 113, 206, 39],
         "cloud": [
             {"align": "end", "offsetY": 16, "slots": [(206, 205, 220), (39, 250, 195)]},
             {"align": "end", "offsetY": -18, "slots": [(277, 310, 200), (104, 310, 240), (113, 310, 195)]},
-            {"align": "start", "offsetY": 10, "slots": [(409, 290, 265), [(5, 155, 200), (132, 132, 170)]]},
+            {"align": "start", "offsetY": 10, "slots": [(243, 290, 265), [(5, 155, 200), (132, 132, 170)]]},
             {"align": "start", "offsetY": -14, "slots": [(175, 235, 210)]}
         ]
     },
@@ -908,9 +956,9 @@ GROUPS_SPEC = [
     {
         "id": "herons",
         "title": "Herons",
-        "indices": [13, 20, 212, 187, 283, 210, 97, 92, 95, 134],
+        "indices": [13, 20, 212, 187, 283, 97, 92, 95, 134],
         "cloud": [
-            {"align": "end", "offsetY": -10, "slots": [(187, 210, 200), (210, 245, 195)]},
+            {"align": "end", "offsetY": -10, "slots": [(187, 225, 245)]},
             {"align": "end", "offsetY": 15, "slots": [(20, 310, 205), (13, 310, 245), (92, 310, 190)]},
             {"align": "start", "offsetY": -15, "slots": [[(212, 142, 210), (134, 140, 185)], (97, 285, 200), (283, 285, 205)]},
             {"align": "start", "offsetY": 18, "slots": [(95, 205, 255)]}
@@ -1074,6 +1122,28 @@ for g in GROUPS_SPEC:
         date_str = dt.strftime("%b %d, %Y")
         region = "Pantanal, Brazil" if (idx <= 298 or idx == 409) else "Iguazú Falls"
         dur_s = round(raw["video_duration_ms"] / 1000) if raw["is_video"] and raw["video_duration_ms"] else None
+        variants = None
+        if idx in ALTERNATE_SHOTS:
+            variants = []
+            for v_idx, v_label in ALTERNATE_SHOTS[idx]:
+                v_raw = catalog[v_idx]
+                v_species, _, _, v_caption = ANNOTATIONS[v_idx]
+                v_dt = datetime.datetime.utcfromtimestamp(v_raw["timestamp"] / 1000)
+                v_date_str = v_dt.strftime("%b %d, %Y")
+                v_region = "Pantanal, Brazil" if (v_idx <= 298 or v_idx == 409) else "Iguazú Falls"
+                variants.append({
+                    "index": v_idx,
+                    "label": v_label,
+                    "id": v_raw["id"],
+                    "species": v_species,
+                    "caption": v_caption,
+                    "isVideo": v_raw["is_video"],
+                    "photoUrl": f"media/photos/item_{v_idx:03d}.jpg",
+                    "videoUrl": f"media/videos/item_{v_idx:03d}.mp4" if v_raw["is_video"] else None,
+                    "date": v_date_str,
+                    "region": v_region,
+                })
+
         items_dict[idx] = {
             "index": idx,
             "id": raw["id"],
@@ -1090,6 +1160,7 @@ for g in GROUPS_SPEC:
             "date": date_str,
             "region": region,
             "filename": raw["filename"],
+            "variants": variants,
         }
 
     # Build cloud columns structure with hydrated item objects

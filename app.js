@@ -16,6 +16,8 @@
   // Lightbox elements
   const lightbox = document.getElementById('lightbox-modal');
   const lbMediaHolder = document.getElementById('lb-media-holder');
+  const lbStageVariants = document.getElementById('lb-stage-variants');
+  const lbInfoVariants = document.getElementById('lb-info-variants');
   const lbGroupLabel = document.getElementById('lb-group-label');
   const lbSpeciesTitle = document.getElementById('lb-species-title');
   const lbCaptionText = document.getElementById('lb-caption-text');
@@ -35,6 +37,7 @@
   let flatItems = [];
   let flatIndexByItemIndex = {};
   let currentLightboxIndex = -1;
+  let currentVariantIndex = 0;
 
   function getCaption(item) {
     return customCaptions[item.index] || item.caption;
@@ -84,6 +87,8 @@
     };
     tile.appendChild(imgEl);
 
+    const hasVariants = Array.isArray(item.variants) && item.variants.length > 1;
+
     if (item.isVideo) {
       const vidEl = document.createElement('video');
       vidEl.className = 'tile-video';
@@ -97,27 +102,41 @@
       vidEl.style.inset = '0';
       tile.appendChild(vidEl);
 
-      const indicator = document.createElement('div');
-      indicator.className = 'video-indicator';
-      indicator.textContent = '▶';
-      tile.appendChild(indicator);
+      if (!hasVariants) {
+        const indicator = document.createElement('div');
+        indicator.className = 'video-indicator';
+        indicator.textContent = '▶';
+        tile.appendChild(indicator);
+      }
 
       videoObserver.observe(vidEl);
     }
+
+    if (hasVariants) {
+      const vIndicator = document.createElement('div');
+      vIndicator.className = 'variant-indicator';
+      vIndicator.textContent = `⇄ ${item.variants.length}`;
+      tile.appendChild(vIndicator);
+    }
+
+    const variantBadgeHtml = hasVariants
+      ? `<div class="overlay-variant-badge">⇄ ${item.variants.map((v) => v.label).join(' · ')}</div>`
+      : '';
 
     const overlay = document.createElement('div');
     overlay.className = 'tile-caption-overlay';
     overlay.innerHTML = `
       <div class="overlay-species">${item.species}</div>
+      ${variantBadgeHtml}
       <p class="overlay-caption" data-caption-index="${item.index}">${getCaption(item)}</p>
     `;
     tile.appendChild(overlay);
 
-    tile.addEventListener('click', () => openLightbox(flatIdx));
+    tile.addEventListener('click', () => openLightbox(flatIdx, 0));
     tile.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        openLightbox(flatIdx);
+        openLightbox(flatIdx, 0);
       }
     });
 
@@ -188,36 +207,77 @@
     setupScrollSpy();
   }
 
-  function openLightbox(flatIdx) {
-    if (flatIdx < 0 || flatIdx >= flatItems.length) return;
-    currentLightboxIndex = flatIdx;
-    const { item, group } = flatItems[flatIdx];
+  function getActiveVariantObject(item) {
+    if (Array.isArray(item.variants) && item.variants.length > 1) {
+      return item.variants[currentVariantIndex] || item.variants[0];
+    }
+    return item;
+  }
+
+  function renderLightboxVariant(vIdx) {
+    if (currentLightboxIndex < 0 || currentLightboxIndex >= flatItems.length) return;
+    const { item, group } = flatItems[currentLightboxIndex];
+    const hasVariants = Array.isArray(item.variants) && item.variants.length > 1;
+    currentVariantIndex = hasVariants ? Math.max(0, Math.min(vIdx, item.variants.length - 1)) : 0;
+
+    const activeObj = getActiveVariantObject(item);
 
     lbGroupLabel.textContent = group.title;
-    lbSpeciesTitle.textContent = item.species;
-    lbCaptionText.textContent = getCaption(item);
-    lbMetaRegion.textContent = `${item.region} · ${item.date}`;
-    lbGoogleLink.href = `https://photos.google.com/share/AF1QipPqr8g8Zyc2JpTkgOB8ZXkqDgVu_L8GaxUfrZ9yESs6NeJppagzIptASC8BF7L-Cw/photo/${item.id}?key=MDdtYTlzbjhnWkJLcW94QXJmelpCaWtSV05DbkxB`;
+    lbSpeciesTitle.textContent = activeObj.species || item.species;
+    lbCaptionText.textContent = getCaption(activeObj);
+    lbMetaRegion.textContent = `${activeObj.region} · ${activeObj.date}`;
+    lbGoogleLink.href = `https://photos.google.com/share/AF1QipPqr8g8Zyc2JpTkgOB8ZXkqDgVu_L8GaxUfrZ9yESs6NeJppagzIptASC8BF7L-Cw/photo/${activeObj.id}?key=MDdtYTlzbjhnWkJLcW94QXJmelpCaWtSV05DbkxB`;
 
     lbEditContainer.classList.remove('open');
-    lbEditTextarea.value = getCaption(item);
+    lbEditTextarea.value = getCaption(activeObj);
+
+    // Update variant toggle buttons in both stage and info sidebar
+    [lbStageVariants, lbInfoVariants].forEach((container) => {
+      if (!container) return;
+      container.innerHTML = '';
+      if (hasVariants) {
+        container.classList.add('visible');
+        item.variants.forEach((v, idx) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = `lb-variant-btn${idx === currentVariantIndex ? ' active' : ''}`;
+          btn.setAttribute('role', 'tab');
+          btn.setAttribute('aria-selected', idx === currentVariantIndex ? 'true' : 'false');
+          btn.textContent = v.isVideo ? `▶ ${v.label}` : v.label;
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentVariantIndex !== idx) {
+              renderLightboxVariant(idx);
+            }
+          });
+          container.appendChild(btn);
+        });
+      } else {
+        container.classList.remove('visible');
+      }
+    });
 
     lbMediaHolder.innerHTML = '';
-    if (item.isVideo) {
+    if (activeObj.isVideo) {
       const vid = document.createElement('video');
-      vid.src = item.videoUrl;
-      vid.poster = item.photoUrl;
+      vid.src = activeObj.videoUrl;
+      vid.poster = activeObj.photoUrl;
       vid.controls = true;
       vid.autoplay = true;
       vid.playsInline = true;
       lbMediaHolder.appendChild(vid);
     } else {
       const img = document.createElement('img');
-      img.src = item.photoUrl;
-      img.alt = item.species;
+      img.src = activeObj.photoUrl;
+      img.alt = `${activeObj.species || item.species}${activeObj.label ? ' — ' + activeObj.label : ''}`;
       lbMediaHolder.appendChild(img);
     }
+  }
 
+  function openLightbox(flatIdx, variantIdx = 0) {
+    if (flatIdx < 0 || flatIdx >= flatItems.length) return;
+    currentLightboxIndex = flatIdx;
+    renderLightboxVariant(variantIdx);
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -227,6 +287,7 @@
     lbMediaHolder.innerHTML = '';
     document.body.style.overflow = '';
     currentLightboxIndex = -1;
+    currentVariantIndex = 0;
   }
 
   lbCloseBtn.addEventListener('click', closeLightbox);
@@ -237,13 +298,13 @@
   lbPrevBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     const prev = (currentLightboxIndex - 1 + flatItems.length) % flatItems.length;
-    openLightbox(prev);
+    openLightbox(prev, 0);
   });
 
   lbNextBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     const next = (currentLightboxIndex + 1) % flatItems.length;
-    openLightbox(next);
+    openLightbox(next, 0);
   });
 
   document.addEventListener('keydown', (e) => {
@@ -252,6 +313,14 @@
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowLeft') lbPrevBtn.click();
     if (e.key === 'ArrowRight') lbNextBtn.click();
+    if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+      const { item } = flatItems[currentLightboxIndex] || {};
+      if (item && Array.isArray(item.variants) && item.variants.length > 1) {
+        e.preventDefault();
+        const nextVar = (currentVariantIndex + 1) % item.variants.length;
+        renderLightboxVariant(nextVar);
+      }
+    }
   });
 
   lbToggleEditBtn.addEventListener('click', () => {
@@ -268,12 +337,13 @@
   lbSaveCaptionBtn.addEventListener('click', () => {
     if (currentLightboxIndex < 0) return;
     const { item } = flatItems[currentLightboxIndex];
+    const activeObj = getActiveVariantObject(item);
     const newText = lbEditTextarea.value.trim();
     if (newText) {
-      customCaptions[item.index] = newText;
+      customCaptions[activeObj.index] = newText;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(customCaptions));
       lbCaptionText.textContent = newText;
-      const tileCaption = document.querySelector(`[data-caption-index="${item.index}"]`);
+      const tileCaption = document.querySelector(`[data-caption-index="${activeObj.index}"]`);
       if (tileCaption) tileCaption.textContent = newText;
     }
     lbEditContainer.classList.remove('open');

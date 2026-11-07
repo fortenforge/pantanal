@@ -19,7 +19,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070510.JPG"
+          "filename": "P1070510.JPG",
+          "variants": null
         },
         {
           "index": 164,
@@ -36,7 +37,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070476.JPG"
+          "filename": "P1070476.JPG",
+          "variants": null
         },
         {
           "index": 159,
@@ -53,7 +55,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070465.JPG"
+          "filename": "P1070465.JPG",
+          "variants": null
         },
         {
           "index": 142,
@@ -70,7 +73,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070357.JPG"
+          "filename": "P1070357.JPG",
+          "variants": null
         },
         {
           "index": 171,
@@ -87,7 +91,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070534.JPG"
+          "filename": "P1070534.JPG",
+          "variants": null
         },
         {
           "index": 189,
@@ -104,7 +109,8 @@
           "videoUrl": null,
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070634.JPG"
+          "filename": "P1070634.JPG",
+          "variants": null
         },
         {
           "index": 160,
@@ -121,7 +127,8 @@
           "videoUrl": "media/videos/item_160.mp4",
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070469.MP4"
+          "filename": "P1070469.MP4",
+          "variants": null
         },
         {
           "index": 168,
@@ -138,7 +145,8 @@
           "videoUrl": "media/videos/item_168.mp4",
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070508.MP4"
+          "filename": "P1070508.MP4",
+          "variants": null
         },
         {
           "index": 173,
@@ -155,7 +163,8 @@
           "videoUrl": "media/videos/item_173.mp4",
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070540.MP4"
+          "filename": "P1070540.MP4",
+          "variants": null
         },
         {
           "index": 188,
@@ -172,7 +181,8 @@
           "videoUrl": "media/videos/item_188.mp4",
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070633.MP4"
+          "filename": "P1070633.MP4",
+          "variants": null
         }
       ],
       "cloud": [
@@ -197,7 +207,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070465.JPG"
+                "filename": "P1070465.JPG",
+                "variants": null
               }
             },
             {
@@ -217,7 +228,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070357.JPG"
+                "filename": "P1070357.JPG",
+                "variants": null
               }
             }
           ]
@@ -243,7 +255,8 @@
                 "videoUrl": "media/videos/item_160.mp4",
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070469.MP4"
+                "filename": "P1070469.MP4",
+                "variants": null
               }
             },
             {
@@ -263,7 +276,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070510.JPG"
+                "filename": "P1070510.JPG",
+                "variants": null
               }
             },
             {
@@ -283,7 +297,8 @@
                 "videoUrl": "media/videos/item_188.mp4",
                 "date": "Oct 15, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070633.MP4"
+                "filename": "P1070633.MP4",
+                "variants": null
               }
             }
           ]
@@ -309,7 +324,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070476.JPG"
+                "filename": "P1070476.JPG",
+                "variants": null
               }
             },
             {
@@ -329,7 +345,8 @@
                 "videoUrl": "media/videos/item_173.mp4",
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070540.MP4"
+                "filename": "P1070540.MP4",
+                "variants": null
               }
             },
             {
@@ -350,7 +367,8 @@
                   "videoUrl": null,
                   "date": "Oct 14, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070534.JPG"
+                  "filename": "P1070534.JPG",
+                  "variants": null
                 },
                 {
                   "index": 189,
@@ -367,7 +385,8 @@
                   "videoUrl": null,
                   "date": "Oct 15, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070634.JPG"
+                  "filename": "P1070634.JPG",
+                  "variants": null
                 }
               ]
             }
@@ -394,7 +413,8 @@
                 "videoUrl": "media/videos/item_168.mp4",
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070508.MP4"
+                "filename": "P1070508.MP4",
+                "variants": null
               }
             }
           ]
@@ -420,7 +440,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070265.JPG"
+          "filename": "P1070265.JPG",
+          "variants": null
         },
         {
           "index": 281,
@@ -437,7 +458,8 @@
           "videoUrl": null,
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080223.JPG"
+          "filename": "P1080223.JPG",
+          "variants": null
         },
         {
           "index": 264,
@@ -454,7 +476,8 @@
           "videoUrl": null,
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080162.JPG"
+          "filename": "P1080162.JPG",
+          "variants": null
         },
         {
           "index": 153,
@@ -471,7 +494,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070435.JPG"
+          "filename": "P1070435.JPG",
+          "variants": null
         },
         {
           "index": 146,
@@ -488,7 +512,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070375.JPG"
+          "filename": "P1070375.JPG",
+          "variants": null
         },
         {
           "index": 398,
@@ -505,7 +530,8 @@
           "videoUrl": null,
           "date": "Oct 22, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1090127.JPG"
+          "filename": "P1090127.JPG",
+          "variants": null
         },
         {
           "index": 367,
@@ -522,7 +548,33 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080823.JPG"
+          "filename": "P1080823.JPG",
+          "variants": [
+            {
+              "index": 367,
+              "label": "Male",
+              "id": "AF1QipPS_4WGhqv3am8jZ2sjcOhuqJO7SYotwRGw1PrL",
+              "species": "Blue Dacnis",
+              "caption": "Glowing in saturated turquoise and velvet black with bright coral legs as he pauses among the Atlantic Forest foliage.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_367.jpg",
+              "videoUrl": null,
+              "date": "Oct 20, 2026",
+              "region": "Iguazú Falls"
+            },
+            {
+              "index": 366,
+              "label": "Female",
+              "id": "AF1QipP8yTgzG7mPNLS5Labjz0M_NFih4kw6VrEAqbGc",
+              "species": "Blue Dacnis",
+              "caption": "In striking contrast to the electric turquoise-and-black male, the female Blue Dacnis is dressed in bright leaf-green plumage with a soft powder-blue crown and cheeks, perched beside a hummingbird feeder at Iguazú.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_366.jpg",
+              "videoUrl": null,
+              "date": "Oct 20, 2026",
+              "region": "Iguazú Falls"
+            }
+          ]
         }
       ],
       "cloud": [
@@ -547,7 +599,8 @@
                 "videoUrl": null,
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080162.JPG"
+                "filename": "P1080162.JPG",
+                "variants": null
               }
             },
             {
@@ -567,7 +620,8 @@
                 "videoUrl": null,
                 "date": "Oct 22, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1090127.JPG"
+                "filename": "P1090127.JPG",
+                "variants": null
               }
             }
           ]
@@ -593,7 +647,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070435.JPG"
+                "filename": "P1070435.JPG",
+                "variants": null
               }
             },
             {
@@ -613,7 +668,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070265.JPG"
+                "filename": "P1070265.JPG",
+                "variants": null
               }
             },
             {
@@ -633,7 +689,33 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080823.JPG"
+                "filename": "P1080823.JPG",
+                "variants": [
+                  {
+                    "index": 367,
+                    "label": "Male",
+                    "id": "AF1QipPS_4WGhqv3am8jZ2sjcOhuqJO7SYotwRGw1PrL",
+                    "species": "Blue Dacnis",
+                    "caption": "Glowing in saturated turquoise and velvet black with bright coral legs as he pauses among the Atlantic Forest foliage.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_367.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 20, 2026",
+                    "region": "Iguazú Falls"
+                  },
+                  {
+                    "index": 366,
+                    "label": "Female",
+                    "id": "AF1QipP8yTgzG7mPNLS5Labjz0M_NFih4kw6VrEAqbGc",
+                    "species": "Blue Dacnis",
+                    "caption": "In striking contrast to the electric turquoise-and-black male, the female Blue Dacnis is dressed in bright leaf-green plumage with a soft powder-blue crown and cheeks, perched beside a hummingbird feeder at Iguazú.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_366.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 20, 2026",
+                    "region": "Iguazú Falls"
+                  }
+                ]
               }
             }
           ]
@@ -659,7 +741,8 @@
                 "videoUrl": null,
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080223.JPG"
+                "filename": "P1080223.JPG",
+                "variants": null
               }
             },
             {
@@ -679,7 +762,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070375.JPG"
+                "filename": "P1070375.JPG",
+                "variants": null
               }
             }
           ]
@@ -691,21 +775,47 @@
       "title": "Bizarre",
       "items": [
         {
-          "index": 409,
-          "id": "AF1QipPtwPIylsHBtzer-tdT8xLTgIeswNXgRj8T1zVP",
+          "index": 243,
+          "id": "AF1QipPSMLUrisDkp1Lg2t0ZFOqYy90FRvqG_RLn7dLa",
           "species": "Great Potoo",
-          "caption": "Watch the zoom reveal! From a distance it looks like nothing more than a dead stub on a bare tree—until the camera zooms in to reveal a Great Potoo frozen upright with its eyes shut, peering through tiny 'magic slits' in its eyelids to watch passing intruders without breaking its bark camouflage.",
-          "originalNote": "",
-          "isVideo": true,
-          "durationSec": 6,
+          "caption": "Frozen upright at the end of a rough-barked limb with its eyes shut, the nocturnal Great Potoo looks indistinguishable from a broken gray tree stump—peering through tiny 'magic slits' in its closed eyelids to watch passing intruders without breaking its camouflage.",
+          "originalNote": "Great Potoo",
+          "isVideo": false,
+          "durationSec": null,
           "tileWidth": 290,
           "tileHeight": 265,
-          "cropUrl": "media/crops/item_409.jpg",
-          "photoUrl": "media/photos/item_409.jpg",
-          "videoUrl": "media/videos/item_409.mp4",
+          "cropUrl": "media/crops/item_243.jpg",
+          "photoUrl": "media/photos/item_243.jpg",
+          "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "IMG_2385.MOV"
+          "filename": "P1080043.JPG",
+          "variants": [
+            {
+              "index": 243,
+              "label": "Photo",
+              "id": "AF1QipPSMLUrisDkp1Lg2t0ZFOqYy90FRvqG_RLn7dLa",
+              "species": "Great Potoo",
+              "caption": "Frozen upright at the end of a rough-barked limb with its eyes shut, the nocturnal Great Potoo looks indistinguishable from a broken gray tree stump—peering through tiny 'magic slits' in its closed eyelids to watch passing intruders without breaking its camouflage.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_243.jpg",
+              "videoUrl": null,
+              "date": "Oct 16, 2026",
+              "region": "Pantanal, Brazil"
+            },
+            {
+              "index": 409,
+              "label": "Video",
+              "id": "AF1QipPtwPIylsHBtzer-tdT8xLTgIeswNXgRj8T1zVP",
+              "species": "Great Potoo",
+              "caption": "Watch the zoom reveal! From a distance it looks like nothing more than a dead stub on a bare tree—until the camera zooms in to reveal a Great Potoo frozen upright with its eyes shut, peering through tiny 'magic slits' in its eyelids to watch passing intruders without breaking its bark camouflage.",
+              "isVideo": true,
+              "photoUrl": "media/photos/item_409.jpg",
+              "videoUrl": "media/videos/item_409.mp4",
+              "date": "Oct 16, 2026",
+              "region": "Pantanal, Brazil"
+            }
+          ]
         },
         {
           "index": 277,
@@ -722,7 +832,8 @@
           "videoUrl": null,
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080211.JPG"
+          "filename": "P1080211.JPG",
+          "variants": null
         },
         {
           "index": 104,
@@ -739,7 +850,8 @@
           "videoUrl": "media/videos/item_104.mp4",
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070124.MP4"
+          "filename": "P1070124.MP4",
+          "variants": null
         },
         {
           "index": 175,
@@ -756,7 +868,8 @@
           "videoUrl": null,
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070556.JPG"
+          "filename": "P1070556.JPG",
+          "variants": null
         },
         {
           "index": 5,
@@ -773,7 +886,8 @@
           "videoUrl": "media/videos/item_005.mp4",
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060405.MP4"
+          "filename": "P1060405.MP4",
+          "variants": null
         },
         {
           "index": 132,
@@ -790,7 +904,8 @@
           "videoUrl": "media/videos/item_132.mp4",
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070294.MP4"
+          "filename": "P1070294.MP4",
+          "variants": null
         },
         {
           "index": 113,
@@ -807,7 +922,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070166.JPG"
+          "filename": "P1070166.JPG",
+          "variants": null
         },
         {
           "index": 206,
@@ -824,7 +940,8 @@
           "videoUrl": null,
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070736.JPG"
+          "filename": "P1070736.JPG",
+          "variants": null
         },
         {
           "index": 39,
@@ -841,7 +958,33 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060629.JPG"
+          "filename": "P1060629.JPG",
+          "variants": [
+            {
+              "index": 39,
+              "label": "Male",
+              "id": "AF1QipO29koJzefHmcnC692JsKUMQKL_LglsX488t6fR",
+              "species": "Bare-faced Curassow",
+              "caption": "The male Bare-faced Curassow struts in formal jet-black attire with a snowy white belly, a tightly curled punk crest, and a bright sulfur-yellow cere at the base of his bill.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_039.jpg",
+              "videoUrl": null,
+              "date": "Oct 12, 2026",
+              "region": "Pantanal, Brazil"
+            },
+            {
+              "index": 40,
+              "label": "Female",
+              "id": "AF1QipMmagsrEwllpZJhTGM09KhT_OYJJ59lbPxTLv4K",
+              "species": "Bare-faced Curassow",
+              "caption": "Strong sexual dimorphism! Unlike the solid black male with his yellow cere, the female Bare-faced Curassow wears intricately barred black-and-white plumage across her back and tail, a warm cinnamon-buff belly, a dark face, and a white-banded curly crest.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_040.jpg",
+              "videoUrl": null,
+              "date": "Oct 12, 2026",
+              "region": "Pantanal, Brazil"
+            }
+          ]
         }
       ],
       "cloud": [
@@ -866,7 +1009,8 @@
                 "videoUrl": null,
                 "date": "Oct 15, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070736.JPG"
+                "filename": "P1070736.JPG",
+                "variants": null
               }
             },
             {
@@ -886,7 +1030,33 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060629.JPG"
+                "filename": "P1060629.JPG",
+                "variants": [
+                  {
+                    "index": 39,
+                    "label": "Male",
+                    "id": "AF1QipO29koJzefHmcnC692JsKUMQKL_LglsX488t6fR",
+                    "species": "Bare-faced Curassow",
+                    "caption": "The male Bare-faced Curassow struts in formal jet-black attire with a snowy white belly, a tightly curled punk crest, and a bright sulfur-yellow cere at the base of his bill.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_039.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 12, 2026",
+                    "region": "Pantanal, Brazil"
+                  },
+                  {
+                    "index": 40,
+                    "label": "Female",
+                    "id": "AF1QipMmagsrEwllpZJhTGM09KhT_OYJJ59lbPxTLv4K",
+                    "species": "Bare-faced Curassow",
+                    "caption": "Strong sexual dimorphism! Unlike the solid black male with his yellow cere, the female Bare-faced Curassow wears intricately barred black-and-white plumage across her back and tail, a warm cinnamon-buff belly, a dark face, and a white-banded curly crest.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_040.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 12, 2026",
+                    "region": "Pantanal, Brazil"
+                  }
+                ]
               }
             }
           ]
@@ -912,7 +1082,8 @@
                 "videoUrl": null,
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080211.JPG"
+                "filename": "P1080211.JPG",
+                "variants": null
               }
             },
             {
@@ -932,7 +1103,8 @@
                 "videoUrl": "media/videos/item_104.mp4",
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070124.MP4"
+                "filename": "P1070124.MP4",
+                "variants": null
               }
             },
             {
@@ -952,7 +1124,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070166.JPG"
+                "filename": "P1070166.JPG",
+                "variants": null
               }
             }
           ]
@@ -964,21 +1137,47 @@
             {
               "type": "single",
               "item": {
-                "index": 409,
-                "id": "AF1QipPtwPIylsHBtzer-tdT8xLTgIeswNXgRj8T1zVP",
+                "index": 243,
+                "id": "AF1QipPSMLUrisDkp1Lg2t0ZFOqYy90FRvqG_RLn7dLa",
                 "species": "Great Potoo",
-                "caption": "Watch the zoom reveal! From a distance it looks like nothing more than a dead stub on a bare tree—until the camera zooms in to reveal a Great Potoo frozen upright with its eyes shut, peering through tiny 'magic slits' in its eyelids to watch passing intruders without breaking its bark camouflage.",
-                "originalNote": "",
-                "isVideo": true,
-                "durationSec": 6,
+                "caption": "Frozen upright at the end of a rough-barked limb with its eyes shut, the nocturnal Great Potoo looks indistinguishable from a broken gray tree stump—peering through tiny 'magic slits' in its closed eyelids to watch passing intruders without breaking its camouflage.",
+                "originalNote": "Great Potoo",
+                "isVideo": false,
+                "durationSec": null,
                 "tileWidth": 290,
                 "tileHeight": 265,
-                "cropUrl": "media/crops/item_409.jpg",
-                "photoUrl": "media/photos/item_409.jpg",
-                "videoUrl": "media/videos/item_409.mp4",
+                "cropUrl": "media/crops/item_243.jpg",
+                "photoUrl": "media/photos/item_243.jpg",
+                "videoUrl": null,
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "IMG_2385.MOV"
+                "filename": "P1080043.JPG",
+                "variants": [
+                  {
+                    "index": 243,
+                    "label": "Photo",
+                    "id": "AF1QipPSMLUrisDkp1Lg2t0ZFOqYy90FRvqG_RLn7dLa",
+                    "species": "Great Potoo",
+                    "caption": "Frozen upright at the end of a rough-barked limb with its eyes shut, the nocturnal Great Potoo looks indistinguishable from a broken gray tree stump—peering through tiny 'magic slits' in its closed eyelids to watch passing intruders without breaking its camouflage.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_243.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 16, 2026",
+                    "region": "Pantanal, Brazil"
+                  },
+                  {
+                    "index": 409,
+                    "label": "Video",
+                    "id": "AF1QipPtwPIylsHBtzer-tdT8xLTgIeswNXgRj8T1zVP",
+                    "species": "Great Potoo",
+                    "caption": "Watch the zoom reveal! From a distance it looks like nothing more than a dead stub on a bare tree—until the camera zooms in to reveal a Great Potoo frozen upright with its eyes shut, peering through tiny 'magic slits' in its eyelids to watch passing intruders without breaking its bark camouflage.",
+                    "isVideo": true,
+                    "photoUrl": "media/photos/item_409.jpg",
+                    "videoUrl": "media/videos/item_409.mp4",
+                    "date": "Oct 16, 2026",
+                    "region": "Pantanal, Brazil"
+                  }
+                ]
               }
             },
             {
@@ -999,7 +1198,8 @@
                   "videoUrl": "media/videos/item_005.mp4",
                   "date": "Oct 12, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1060405.MP4"
+                  "filename": "P1060405.MP4",
+                  "variants": null
                 },
                 {
                   "index": 132,
@@ -1016,7 +1216,8 @@
                   "videoUrl": "media/videos/item_132.mp4",
                   "date": "Oct 14, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070294.MP4"
+                  "filename": "P1070294.MP4",
+                  "variants": null
                 }
               ]
             }
@@ -1043,7 +1244,8 @@
                 "videoUrl": null,
                 "date": "Oct 15, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070556.JPG"
+                "filename": "P1070556.JPG",
+                "variants": null
               }
             }
           ]
@@ -1069,7 +1271,8 @@
           "videoUrl": null,
           "date": "Oct 22, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1090156.JPG"
+          "filename": "P1090156.JPG",
+          "variants": null
         },
         {
           "index": 319,
@@ -1086,7 +1289,8 @@
           "videoUrl": null,
           "date": "Oct 19, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080523.JPG"
+          "filename": "P1080523.JPG",
+          "variants": null
         },
         {
           "index": 122,
@@ -1103,7 +1307,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070227.JPG"
+          "filename": "P1070227.JPG",
+          "variants": null
         },
         {
           "index": 242,
@@ -1120,7 +1325,8 @@
           "videoUrl": "media/videos/item_242.mp4",
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080039.MP4"
+          "filename": "P1080039.MP4",
+          "variants": null
         },
         {
           "index": 387,
@@ -1137,7 +1343,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1090059.JPG"
+          "filename": "P1090059.JPG",
+          "variants": null
         },
         {
           "index": 214,
@@ -1154,7 +1361,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "IMG_8804.HEIC"
+          "filename": "IMG_8804.HEIC",
+          "variants": null
         }
       ],
       "cloud": [
@@ -1179,7 +1387,8 @@
                 "videoUrl": null,
                 "date": "Oct 19, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080523.JPG"
+                "filename": "P1080523.JPG",
+                "variants": null
               }
             }
           ]
@@ -1205,7 +1414,8 @@
                 "videoUrl": "media/videos/item_242.mp4",
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080039.MP4"
+                "filename": "P1080039.MP4",
+                "variants": null
               }
             },
             {
@@ -1225,7 +1435,8 @@
                 "videoUrl": null,
                 "date": "Oct 22, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1090156.JPG"
+                "filename": "P1090156.JPG",
+                "variants": null
               }
             }
           ]
@@ -1252,7 +1463,8 @@
                   "videoUrl": null,
                   "date": "Oct 14, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070227.JPG"
+                  "filename": "P1070227.JPG",
+                  "variants": null
                 },
                 {
                   "index": 214,
@@ -1269,7 +1481,8 @@
                   "videoUrl": null,
                   "date": "Oct 16, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "IMG_8804.HEIC"
+                  "filename": "IMG_8804.HEIC",
+                  "variants": null
                 }
               ]
             },
@@ -1290,7 +1503,8 @@
                 "videoUrl": null,
                 "date": "Oct 21, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1090059.JPG"
+                "filename": "P1090059.JPG",
+                "variants": null
               }
             }
           ]
@@ -1316,7 +1530,8 @@
           "videoUrl": null,
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070638.JPG"
+          "filename": "P1070638.JPG",
+          "variants": null
         },
         {
           "index": 45,
@@ -1333,7 +1548,8 @@
           "videoUrl": "media/videos/item_045.mp4",
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060672.MP4"
+          "filename": "P1060672.MP4",
+          "variants": null
         },
         {
           "index": 9,
@@ -1350,7 +1566,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060430.JPG"
+          "filename": "P1060430.JPG",
+          "variants": null
         },
         {
           "index": 400,
@@ -1367,7 +1584,8 @@
           "videoUrl": null,
           "date": "Oct 22, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1090137-EDIT.jpg"
+          "filename": "P1090137-EDIT.jpg",
+          "variants": null
         },
         {
           "index": 131,
@@ -1384,7 +1602,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070280.JPG"
+          "filename": "P1070280.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -1409,7 +1628,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060430.JPG"
+                "filename": "P1060430.JPG",
+                "variants": null
               }
             }
           ]
@@ -1435,7 +1655,8 @@
                 "videoUrl": "media/videos/item_045.mp4",
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060672.MP4"
+                "filename": "P1060672.MP4",
+                "variants": null
               }
             },
             {
@@ -1455,7 +1676,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070280.JPG"
+                "filename": "P1070280.JPG",
+                "variants": null
               }
             }
           ]
@@ -1481,7 +1703,8 @@
                 "videoUrl": null,
                 "date": "Oct 22, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1090137-EDIT.jpg"
+                "filename": "P1090137-EDIT.jpg",
+                "variants": null
               }
             },
             {
@@ -1501,7 +1724,8 @@
                 "videoUrl": null,
                 "date": "Oct 15, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070638.JPG"
+                "filename": "P1070638.JPG",
+                "variants": null
               }
             }
           ]
@@ -1527,7 +1751,8 @@
           "videoUrl": "media/videos/item_013.mp4",
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060449.MP4"
+          "filename": "P1060449.MP4",
+          "variants": null
         },
         {
           "index": 20,
@@ -1544,7 +1769,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060483.JPG"
+          "filename": "P1060483.JPG",
+          "variants": null
         },
         {
           "index": 212,
@@ -1561,7 +1787,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070819.JPG"
+          "filename": "P1070819.JPG",
+          "variants": null
         },
         {
           "index": 187,
@@ -1571,19 +1798,20 @@
           "originalNote": "Boat-billed heron",
           "isVideo": false,
           "durationSec": null,
-          "tileWidth": 210,
-          "tileHeight": 200,
+          "tileWidth": 225,
+          "tileHeight": 245,
           "cropUrl": "media/crops/item_187.jpg",
           "photoUrl": "media/photos/item_187.jpg",
           "videoUrl": null,
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070631.JPG"
+          "filename": "P1070631.JPG",
+          "variants": null
         },
         {
           "index": 283,
           "id": "AF1QipPVtQb8Zpk-VFJFujCjkTDvUUSx1cPZ-dk9uZc-",
-          "species": "Rufescent Tiger-Heron (Adult)",
+          "species": "Rufescent Tiger-Heron",
           "caption": "The adult Rufescent Tiger-Heron wears a rich, unbarred mahogany-chestnut head and neck with a vertical white-and-brown stripe running down its throat.",
           "originalNote": "Rufescent Tiger-Heron",
           "isVideo": false,
@@ -1595,24 +1823,33 @@
           "videoUrl": null,
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080238.JPG"
-        },
-        {
-          "index": 210,
-          "id": "AF1QipMez-g_uSw-PXa0TX4PhenLRpcpYIrD6R5fP0qV",
-          "species": "Rufescent Tiger-Heron (Juvenile)",
-          "caption": "Look how different the juvenile plumage is from the adult! Young Rufescent Tiger-Herons are covered head-to-tail in bold tawny-and-black 'tiger stripes' that blend seamlessly into dried reeds and grass.",
-          "originalNote": "Rufescent Tiger-Heron (juv.)",
-          "isVideo": false,
-          "durationSec": null,
-          "tileWidth": 245,
-          "tileHeight": 195,
-          "cropUrl": "media/crops/item_210.jpg",
-          "photoUrl": "media/photos/item_210.jpg",
-          "videoUrl": null,
-          "date": "Oct 16, 2026",
-          "region": "Pantanal, Brazil",
-          "filename": "P1070808.JPG"
+          "filename": "P1080238.JPG",
+          "variants": [
+            {
+              "index": 283,
+              "label": "Adult",
+              "id": "AF1QipPVtQb8Zpk-VFJFujCjkTDvUUSx1cPZ-dk9uZc-",
+              "species": "Rufescent Tiger-Heron",
+              "caption": "The adult Rufescent Tiger-Heron wears a rich, unbarred mahogany-chestnut head and neck with a vertical white-and-brown stripe running down its throat.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_283.jpg",
+              "videoUrl": null,
+              "date": "Oct 17, 2026",
+              "region": "Pantanal, Brazil"
+            },
+            {
+              "index": 210,
+              "label": "Juvenile",
+              "id": "AF1QipMez-g_uSw-PXa0TX4PhenLRpcpYIrD6R5fP0qV",
+              "species": "Rufescent Tiger-Heron",
+              "caption": "Look how different the juvenile plumage is from the adult! Young Rufescent Tiger-Herons are covered head-to-tail in bold tawny-and-black 'tiger stripes' that blend seamlessly into dried reeds and grass.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_210.jpg",
+              "videoUrl": null,
+              "date": "Oct 16, 2026",
+              "region": "Pantanal, Brazil"
+            }
+          ]
         },
         {
           "index": 97,
@@ -1629,7 +1866,8 @@
           "videoUrl": "media/videos/item_097.mp4",
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070087.MP4"
+          "filename": "P1070087.MP4",
+          "variants": null
         },
         {
           "index": 92,
@@ -1646,7 +1884,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070071.JPG"
+          "filename": "P1070071.JPG",
+          "variants": null
         },
         {
           "index": 95,
@@ -1663,7 +1902,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070078.JPG"
+          "filename": "P1070078.JPG",
+          "variants": null
         },
         {
           "index": 134,
@@ -1680,7 +1920,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070311.JPG"
+          "filename": "P1070311.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -1698,34 +1939,15 @@
                 "originalNote": "Boat-billed heron",
                 "isVideo": false,
                 "durationSec": null,
-                "tileWidth": 210,
-                "tileHeight": 200,
+                "tileWidth": 225,
+                "tileHeight": 245,
                 "cropUrl": "media/crops/item_187.jpg",
                 "photoUrl": "media/photos/item_187.jpg",
                 "videoUrl": null,
                 "date": "Oct 15, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070631.JPG"
-              }
-            },
-            {
-              "type": "single",
-              "item": {
-                "index": 210,
-                "id": "AF1QipMez-g_uSw-PXa0TX4PhenLRpcpYIrD6R5fP0qV",
-                "species": "Rufescent Tiger-Heron (Juvenile)",
-                "caption": "Look how different the juvenile plumage is from the adult! Young Rufescent Tiger-Herons are covered head-to-tail in bold tawny-and-black 'tiger stripes' that blend seamlessly into dried reeds and grass.",
-                "originalNote": "Rufescent Tiger-Heron (juv.)",
-                "isVideo": false,
-                "durationSec": null,
-                "tileWidth": 245,
-                "tileHeight": 195,
-                "cropUrl": "media/crops/item_210.jpg",
-                "photoUrl": "media/photos/item_210.jpg",
-                "videoUrl": null,
-                "date": "Oct 16, 2026",
-                "region": "Pantanal, Brazil",
-                "filename": "P1070808.JPG"
+                "filename": "P1070631.JPG",
+                "variants": null
               }
             }
           ]
@@ -1751,7 +1973,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060483.JPG"
+                "filename": "P1060483.JPG",
+                "variants": null
               }
             },
             {
@@ -1771,7 +1994,8 @@
                 "videoUrl": "media/videos/item_013.mp4",
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060449.MP4"
+                "filename": "P1060449.MP4",
+                "variants": null
               }
             },
             {
@@ -1791,7 +2015,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070071.JPG"
+                "filename": "P1070071.JPG",
+                "variants": null
               }
             }
           ]
@@ -1818,7 +2043,8 @@
                   "videoUrl": null,
                   "date": "Oct 16, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070819.JPG"
+                  "filename": "P1070819.JPG",
+                  "variants": null
                 },
                 {
                   "index": 134,
@@ -1835,7 +2061,8 @@
                   "videoUrl": null,
                   "date": "Oct 14, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070311.JPG"
+                  "filename": "P1070311.JPG",
+                  "variants": null
                 }
               ]
             },
@@ -1856,7 +2083,8 @@
                 "videoUrl": "media/videos/item_097.mp4",
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070087.MP4"
+                "filename": "P1070087.MP4",
+                "variants": null
               }
             },
             {
@@ -1864,7 +2092,7 @@
               "item": {
                 "index": 283,
                 "id": "AF1QipPVtQb8Zpk-VFJFujCjkTDvUUSx1cPZ-dk9uZc-",
-                "species": "Rufescent Tiger-Heron (Adult)",
+                "species": "Rufescent Tiger-Heron",
                 "caption": "The adult Rufescent Tiger-Heron wears a rich, unbarred mahogany-chestnut head and neck with a vertical white-and-brown stripe running down its throat.",
                 "originalNote": "Rufescent Tiger-Heron",
                 "isVideo": false,
@@ -1876,7 +2104,33 @@
                 "videoUrl": null,
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080238.JPG"
+                "filename": "P1080238.JPG",
+                "variants": [
+                  {
+                    "index": 283,
+                    "label": "Adult",
+                    "id": "AF1QipPVtQb8Zpk-VFJFujCjkTDvUUSx1cPZ-dk9uZc-",
+                    "species": "Rufescent Tiger-Heron",
+                    "caption": "The adult Rufescent Tiger-Heron wears a rich, unbarred mahogany-chestnut head and neck with a vertical white-and-brown stripe running down its throat.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_283.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 17, 2026",
+                    "region": "Pantanal, Brazil"
+                  },
+                  {
+                    "index": 210,
+                    "label": "Juvenile",
+                    "id": "AF1QipMez-g_uSw-PXa0TX4PhenLRpcpYIrD6R5fP0qV",
+                    "species": "Rufescent Tiger-Heron",
+                    "caption": "Look how different the juvenile plumage is from the adult! Young Rufescent Tiger-Herons are covered head-to-tail in bold tawny-and-black 'tiger stripes' that blend seamlessly into dried reeds and grass.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_210.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 16, 2026",
+                    "region": "Pantanal, Brazil"
+                  }
+                ]
               }
             }
           ]
@@ -1902,7 +2156,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070078.JPG"
+                "filename": "P1070078.JPG",
+                "variants": null
               }
             }
           ]
@@ -1928,7 +2183,8 @@
           "videoUrl": "media/videos/item_081.mp4",
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070028.MP4"
+          "filename": "P1070028.MP4",
+          "variants": null
         },
         {
           "index": 0,
@@ -1945,7 +2201,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060376.JPG"
+          "filename": "P1060376.JPG",
+          "variants": null
         },
         {
           "index": 2,
@@ -1962,7 +2219,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060383.JPG"
+          "filename": "P1060383.JPG",
+          "variants": null
         },
         {
           "index": 240,
@@ -1979,7 +2237,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080025.JPG"
+          "filename": "P1080025.JPG",
+          "variants": null
         },
         {
           "index": 155,
@@ -1996,7 +2255,8 @@
           "videoUrl": "media/videos/item_155.mp4",
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070446.MP4"
+          "filename": "P1070446.MP4",
+          "variants": null
         },
         {
           "index": 332,
@@ -2013,7 +2273,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080603.JPG"
+          "filename": "P1080603.JPG",
+          "variants": null
         },
         {
           "index": 23,
@@ -2030,7 +2291,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060510.JPG"
+          "filename": "P1060510.JPG",
+          "variants": null
         },
         {
           "index": 57,
@@ -2047,7 +2309,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060744.JPG"
+          "filename": "P1060744.JPG",
+          "variants": null
         },
         {
           "index": 123,
@@ -2064,7 +2327,8 @@
           "videoUrl": "media/videos/item_123.mp4",
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070233.MP4"
+          "filename": "P1070233.MP4",
+          "variants": null
         },
         {
           "index": 127,
@@ -2081,7 +2345,8 @@
           "videoUrl": "media/videos/item_127.mp4",
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070257.MP4"
+          "filename": "P1070257.MP4",
+          "variants": null
         }
       ],
       "cloud": [
@@ -2106,7 +2371,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060383.JPG"
+                "filename": "P1060383.JPG",
+                "variants": null
               }
             },
             {
@@ -2126,7 +2392,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060744.JPG"
+                "filename": "P1060744.JPG",
+                "variants": null
               }
             }
           ]
@@ -2152,7 +2419,8 @@
                 "videoUrl": "media/videos/item_123.mp4",
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070233.MP4"
+                "filename": "P1070233.MP4",
+                "variants": null
               }
             },
             {
@@ -2172,7 +2440,8 @@
                 "videoUrl": "media/videos/item_081.mp4",
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070028.MP4"
+                "filename": "P1070028.MP4",
+                "variants": null
               }
             },
             {
@@ -2192,7 +2461,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060510.JPG"
+                "filename": "P1060510.JPG",
+                "variants": null
               }
             }
           ]
@@ -2219,7 +2489,8 @@
                   "videoUrl": null,
                   "date": "Oct 16, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1080025.JPG"
+                  "filename": "P1080025.JPG",
+                  "variants": null
                 },
                 {
                   "index": 332,
@@ -2236,7 +2507,8 @@
                   "videoUrl": null,
                   "date": "Oct 20, 2026",
                   "region": "Iguazú Falls",
-                  "filename": "P1080603.JPG"
+                  "filename": "P1080603.JPG",
+                  "variants": null
                 }
               ]
             },
@@ -2257,7 +2529,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060376.JPG"
+                "filename": "P1060376.JPG",
+                "variants": null
               }
             },
             {
@@ -2277,7 +2550,8 @@
                 "videoUrl": "media/videos/item_155.mp4",
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070446.MP4"
+                "filename": "P1070446.MP4",
+                "variants": null
               }
             }
           ]
@@ -2303,7 +2577,8 @@
                 "videoUrl": "media/videos/item_127.mp4",
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070257.MP4"
+                "filename": "P1070257.MP4",
+                "variants": null
               }
             }
           ]
@@ -2329,7 +2604,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080801.JPG"
+          "filename": "P1080801.JPG",
+          "variants": null
         },
         {
           "index": 358,
@@ -2346,7 +2622,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080770.JPG"
+          "filename": "P1080770.JPG",
+          "variants": null
         },
         {
           "index": 235,
@@ -2363,7 +2640,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070869.JPG"
+          "filename": "P1070869.JPG",
+          "variants": null
         },
         {
           "index": 353,
@@ -2380,7 +2658,8 @@
           "videoUrl": "media/videos/item_353.mp4",
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080797.MP4"
+          "filename": "P1080797.MP4",
+          "variants": null
         },
         {
           "index": 368,
@@ -2397,7 +2676,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080825.JPG"
+          "filename": "P1080825.JPG",
+          "variants": null
         },
         {
           "index": 355,
@@ -2414,7 +2694,8 @@
           "videoUrl": "media/videos/item_355.mp4",
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1090001.MP4"
+          "filename": "P1090001.MP4",
+          "variants": null
         },
         {
           "index": 364,
@@ -2431,7 +2712,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080813.JPG"
+          "filename": "P1080813.JPG",
+          "variants": null
         },
         {
           "index": 363,
@@ -2448,7 +2730,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080810.JPG"
+          "filename": "P1080810.JPG",
+          "variants": null
         },
         {
           "index": 369,
@@ -2465,7 +2748,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080833.JPG"
+          "filename": "P1080833.JPG",
+          "variants": null
         },
         {
           "index": 378,
@@ -2482,7 +2766,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1090018.JPG"
+          "filename": "P1090018.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -2507,7 +2792,8 @@
                 "videoUrl": null,
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070869.JPG"
+                "filename": "P1070869.JPG",
+                "variants": null
               }
             },
             {
@@ -2527,7 +2813,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080813.JPG"
+                "filename": "P1080813.JPG",
+                "variants": null
               }
             }
           ]
@@ -2553,7 +2840,8 @@
                 "videoUrl": "media/videos/item_353.mp4",
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080797.MP4"
+                "filename": "P1080797.MP4",
+                "variants": null
               }
             },
             {
@@ -2573,7 +2861,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080801.JPG"
+                "filename": "P1080801.JPG",
+                "variants": null
               }
             },
             {
@@ -2593,7 +2882,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080833.JPG"
+                "filename": "P1080833.JPG",
+                "variants": null
               }
             }
           ]
@@ -2619,7 +2909,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080825.JPG"
+                "filename": "P1080825.JPG",
+                "variants": null
               }
             },
             {
@@ -2639,7 +2930,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080770.JPG"
+                "filename": "P1080770.JPG",
+                "variants": null
               }
             },
             {
@@ -2660,7 +2952,8 @@
                   "videoUrl": "media/videos/item_355.mp4",
                   "date": "Oct 20, 2026",
                   "region": "Iguazú Falls",
-                  "filename": "P1090001.MP4"
+                  "filename": "P1090001.MP4",
+                  "variants": null
                 },
                 {
                   "index": 378,
@@ -2677,7 +2970,8 @@
                   "videoUrl": null,
                   "date": "Oct 21, 2026",
                   "region": "Iguazú Falls",
-                  "filename": "P1090018.JPG"
+                  "filename": "P1090018.JPG",
+                  "variants": null
                 }
               ]
             }
@@ -2704,7 +2998,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080810.JPG"
+                "filename": "P1080810.JPG",
+                "variants": null
               }
             }
           ]
@@ -2730,7 +3025,8 @@
           "videoUrl": null,
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080111.JPG"
+          "filename": "P1080111.JPG",
+          "variants": null
         },
         {
           "index": 245,
@@ -2747,7 +3043,8 @@
           "videoUrl": "media/videos/item_245.mp4",
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080049.MP4"
+          "filename": "P1080049.MP4",
+          "variants": null
         },
         {
           "index": 50,
@@ -2764,7 +3061,8 @@
           "videoUrl": "media/videos/item_050.mp4",
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "PXL_20261012_224635025.mp4"
+          "filename": "PXL_20261012_224635025.mp4",
+          "variants": null
         },
         {
           "index": 66,
@@ -2781,7 +3079,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060810.JPG"
+          "filename": "P1060810.JPG",
+          "variants": null
         },
         {
           "index": 350,
@@ -2798,7 +3097,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080747.JPG"
+          "filename": "P1080747.JPG",
+          "variants": null
         },
         {
           "index": 192,
@@ -2815,7 +3115,8 @@
           "videoUrl": "media/videos/item_192.mp4",
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070646.MP4"
+          "filename": "P1070646.MP4",
+          "variants": null
         },
         {
           "index": 94,
@@ -2832,7 +3133,8 @@
           "videoUrl": "media/videos/item_094.mp4",
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "PXL_20261013_201505117.mp4"
+          "filename": "PXL_20261013_201505117.mp4",
+          "variants": null
         },
         {
           "index": 98,
@@ -2849,7 +3151,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070089.JPG"
+          "filename": "P1070089.JPG",
+          "variants": null
         },
         {
           "index": 41,
@@ -2866,7 +3169,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060642.JPG"
+          "filename": "P1060642.JPG",
+          "variants": null
         },
         {
           "index": 193,
@@ -2883,7 +3187,8 @@
           "videoUrl": null,
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070656.JPG"
+          "filename": "P1070656.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -2908,7 +3213,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060810.JPG"
+                "filename": "P1060810.JPG",
+                "variants": null
               }
             },
             {
@@ -2928,7 +3234,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060642.JPG"
+                "filename": "P1060642.JPG",
+                "variants": null
               }
             }
           ]
@@ -2954,7 +3261,8 @@
                 "videoUrl": "media/videos/item_245.mp4",
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080049.MP4"
+                "filename": "P1080049.MP4",
+                "variants": null
               }
             },
             {
@@ -2974,7 +3282,8 @@
                 "videoUrl": null,
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080111.JPG"
+                "filename": "P1080111.JPG",
+                "variants": null
               }
             },
             {
@@ -2994,7 +3303,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070089.JPG"
+                "filename": "P1070089.JPG",
+                "variants": null
               }
             }
           ]
@@ -3021,7 +3331,8 @@
                   "videoUrl": null,
                   "date": "Oct 20, 2026",
                   "region": "Iguazú Falls",
-                  "filename": "P1080747.JPG"
+                  "filename": "P1080747.JPG",
+                  "variants": null
                 },
                 {
                   "index": 193,
@@ -3038,7 +3349,8 @@
                   "videoUrl": null,
                   "date": "Oct 15, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070656.JPG"
+                  "filename": "P1070656.JPG",
+                  "variants": null
                 }
               ]
             },
@@ -3059,7 +3371,8 @@
                 "videoUrl": "media/videos/item_094.mp4",
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "PXL_20261013_201505117.mp4"
+                "filename": "PXL_20261013_201505117.mp4",
+                "variants": null
               }
             },
             {
@@ -3079,7 +3392,8 @@
                 "videoUrl": "media/videos/item_192.mp4",
                 "date": "Oct 15, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070646.MP4"
+                "filename": "P1070646.MP4",
+                "variants": null
               }
             }
           ]
@@ -3105,7 +3419,8 @@
                 "videoUrl": "media/videos/item_050.mp4",
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "PXL_20261012_224635025.mp4"
+                "filename": "PXL_20261012_224635025.mp4",
+                "variants": null
               }
             }
           ]
@@ -3131,7 +3446,8 @@
           "videoUrl": null,
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080270.JPG"
+          "filename": "P1080270.JPG",
+          "variants": null
         },
         {
           "index": 218,
@@ -3148,7 +3464,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1180225.JPG"
+          "filename": "P1180225.JPG",
+          "variants": null
         },
         {
           "index": 58,
@@ -3165,7 +3482,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060758.JPG"
+          "filename": "P1060758.JPG",
+          "variants": null
         },
         {
           "index": 231,
@@ -3182,7 +3500,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070851.JPG"
+          "filename": "P1070851.JPG",
+          "variants": null
         },
         {
           "index": 298,
@@ -3199,7 +3518,8 @@
           "videoUrl": null,
           "date": "Oct 18, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080355.JPG"
+          "filename": "P1080355.JPG",
+          "variants": null
         },
         {
           "index": 309,
@@ -3216,7 +3536,8 @@
           "videoUrl": null,
           "date": "Oct 19, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080439.JPG"
+          "filename": "P1080439.JPG",
+          "variants": null
         },
         {
           "index": 313,
@@ -3233,7 +3554,8 @@
           "videoUrl": null,
           "date": "Oct 19, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080461.JPG"
+          "filename": "P1080461.JPG",
+          "variants": null
         },
         {
           "index": 377,
@@ -3250,7 +3572,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1180480.JPG"
+          "filename": "P1180480.JPG",
+          "variants": null
         },
         {
           "index": 379,
@@ -3267,7 +3590,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1090029.JPG"
+          "filename": "P1090029.JPG",
+          "variants": null
         },
         {
           "index": 56,
@@ -3284,7 +3608,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060739.JPG"
+          "filename": "P1060739.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -3309,7 +3634,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060758.JPG"
+                "filename": "P1060758.JPG",
+                "variants": null
               }
             },
             {
@@ -3329,7 +3655,8 @@
                 "videoUrl": null,
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070851.JPG"
+                "filename": "P1070851.JPG",
+                "variants": null
               }
             }
           ]
@@ -3355,7 +3682,8 @@
                 "videoUrl": null,
                 "date": "Oct 18, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080355.JPG"
+                "filename": "P1080355.JPG",
+                "variants": null
               }
             },
             {
@@ -3375,7 +3703,8 @@
                 "videoUrl": null,
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080270.JPG"
+                "filename": "P1080270.JPG",
+                "variants": null
               }
             },
             {
@@ -3395,7 +3724,8 @@
                 "videoUrl": null,
                 "date": "Oct 19, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080461.JPG"
+                "filename": "P1080461.JPG",
+                "variants": null
               }
             }
           ]
@@ -3421,7 +3751,8 @@
                 "videoUrl": null,
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1180225.JPG"
+                "filename": "P1180225.JPG",
+                "variants": null
               }
             },
             {
@@ -3441,7 +3772,8 @@
                 "videoUrl": null,
                 "date": "Oct 21, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1090029.JPG"
+                "filename": "P1090029.JPG",
+                "variants": null
               }
             },
             {
@@ -3462,7 +3794,8 @@
                   "videoUrl": null,
                   "date": "Oct 19, 2026",
                   "region": "Iguazú Falls",
-                  "filename": "P1080439.JPG"
+                  "filename": "P1080439.JPG",
+                  "variants": null
                 },
                 {
                   "index": 377,
@@ -3479,7 +3812,8 @@
                   "videoUrl": null,
                   "date": "Oct 21, 2026",
                   "region": "Iguazú Falls",
-                  "filename": "P1180480.JPG"
+                  "filename": "P1180480.JPG",
+                  "variants": null
                 }
               ]
             }
@@ -3506,7 +3840,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060739.JPG"
+                "filename": "P1060739.JPG",
+                "variants": null
               }
             }
           ]
@@ -3532,7 +3867,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070226.JPG"
+          "filename": "P1070226.JPG",
+          "variants": null
         },
         {
           "index": 14,
@@ -3549,7 +3885,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060457.JPG"
+          "filename": "P1060457.JPG",
+          "variants": null
         },
         {
           "index": 12,
@@ -3566,7 +3903,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060442.JPG"
+          "filename": "P1060442.JPG",
+          "variants": null
         },
         {
           "index": 136,
@@ -3583,7 +3921,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070320.JPG"
+          "filename": "P1070320.JPG",
+          "variants": null
         },
         {
           "index": 135,
@@ -3600,7 +3939,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070313.JPG"
+          "filename": "P1070313.JPG",
+          "variants": null
         },
         {
           "index": 224,
@@ -3617,7 +3957,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070830.JPG"
+          "filename": "P1070830.JPG",
+          "variants": null
         },
         {
           "index": 140,
@@ -3634,7 +3975,8 @@
           "videoUrl": "media/videos/item_140.mp4",
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070343.MP4"
+          "filename": "P1070343.MP4",
+          "variants": null
         },
         {
           "index": 213,
@@ -3651,7 +3993,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070825.JPG"
+          "filename": "P1070825.JPG",
+          "variants": null
         },
         {
           "index": 31,
@@ -3668,7 +4011,33 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060566.JPG"
+          "filename": "P1060566.JPG",
+          "variants": [
+            {
+              "index": 31,
+              "label": "Back (False Eyes)",
+              "id": "AF1QipPxvBpmwuZJ24dnOOVLHhcpLjNDWJWYLpYQuURg",
+              "species": "Ferruginous Pygmy-Owl",
+              "caption": "Look closely at the two dark, white-bordered spots on the back of its head! Those 'false eyes' (ocelli) fool mobbing songbirds and larger predators into thinking this tiny, fierce diurnal owl is staring straight at them even when its back is turned.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_031.jpg",
+              "videoUrl": null,
+              "date": "Oct 12, 2026",
+              "region": "Pantanal, Brazil"
+            },
+            {
+              "index": 30,
+              "label": "Front",
+              "id": "AF1QipNPs6YV7wjo0OXVuYxWpCZQ1NPHNClqeMUpY14d",
+              "species": "Ferruginous Pygmy-Owl",
+              "caption": "Turned around to face us with its real, piercing lemon-yellow eyes and bold rufous-and-white streaked breast—despite measuring only six inches tall, the Ferruginous Pygmy-Owl is a fearless daytime ambush hunter.",
+              "isVideo": false,
+              "photoUrl": "media/photos/item_030.jpg",
+              "videoUrl": null,
+              "date": "Oct 12, 2026",
+              "region": "Pantanal, Brazil"
+            }
+          ]
         },
         {
           "index": 292,
@@ -3685,7 +4054,8 @@
           "videoUrl": "media/videos/item_292.mp4",
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080297.MP4"
+          "filename": "P1080297.MP4",
+          "variants": null
         }
       ],
       "cloud": [
@@ -3710,7 +4080,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060442.JPG"
+                "filename": "P1060442.JPG",
+                "variants": null
               }
             },
             {
@@ -3730,7 +4101,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070320.JPG"
+                "filename": "P1070320.JPG",
+                "variants": null
               }
             }
           ]
@@ -3756,7 +4128,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060457.JPG"
+                "filename": "P1060457.JPG",
+                "variants": null
               }
             },
             {
@@ -3776,7 +4149,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070226.JPG"
+                "filename": "P1070226.JPG",
+                "variants": null
               }
             },
             {
@@ -3796,7 +4170,8 @@
                 "videoUrl": null,
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070830.JPG"
+                "filename": "P1070830.JPG",
+                "variants": null
               }
             }
           ]
@@ -3823,7 +4198,8 @@
                   "videoUrl": null,
                   "date": "Oct 14, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070313.JPG"
+                  "filename": "P1070313.JPG",
+                  "variants": null
                 },
                 {
                   "index": 213,
@@ -3840,7 +4216,8 @@
                   "videoUrl": null,
                   "date": "Oct 16, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1070825.JPG"
+                  "filename": "P1070825.JPG",
+                  "variants": null
                 }
               ]
             },
@@ -3861,7 +4238,33 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060566.JPG"
+                "filename": "P1060566.JPG",
+                "variants": [
+                  {
+                    "index": 31,
+                    "label": "Back (False Eyes)",
+                    "id": "AF1QipPxvBpmwuZJ24dnOOVLHhcpLjNDWJWYLpYQuURg",
+                    "species": "Ferruginous Pygmy-Owl",
+                    "caption": "Look closely at the two dark, white-bordered spots on the back of its head! Those 'false eyes' (ocelli) fool mobbing songbirds and larger predators into thinking this tiny, fierce diurnal owl is staring straight at them even when its back is turned.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_031.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 12, 2026",
+                    "region": "Pantanal, Brazil"
+                  },
+                  {
+                    "index": 30,
+                    "label": "Front",
+                    "id": "AF1QipNPs6YV7wjo0OXVuYxWpCZQ1NPHNClqeMUpY14d",
+                    "species": "Ferruginous Pygmy-Owl",
+                    "caption": "Turned around to face us with its real, piercing lemon-yellow eyes and bold rufous-and-white streaked breast—despite measuring only six inches tall, the Ferruginous Pygmy-Owl is a fearless daytime ambush hunter.",
+                    "isVideo": false,
+                    "photoUrl": "media/photos/item_030.jpg",
+                    "videoUrl": null,
+                    "date": "Oct 12, 2026",
+                    "region": "Pantanal, Brazil"
+                  }
+                ]
               }
             },
             {
@@ -3881,7 +4284,8 @@
                 "videoUrl": "media/videos/item_292.mp4",
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080297.MP4"
+                "filename": "P1080297.MP4",
+                "variants": null
               }
             }
           ]
@@ -3907,7 +4311,8 @@
                 "videoUrl": "media/videos/item_140.mp4",
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070343.MP4"
+                "filename": "P1070343.MP4",
+                "variants": null
               }
             }
           ]
@@ -3933,7 +4338,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070410.JPG"
+          "filename": "P1070410.JPG",
+          "variants": null
         },
         {
           "index": 137,
@@ -3950,7 +4356,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070323.JPG"
+          "filename": "P1070323.JPG",
+          "variants": null
         },
         {
           "index": 27,
@@ -3967,7 +4374,8 @@
           "videoUrl": null,
           "date": "Oct 12, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060529.JPG"
+          "filename": "P1060529.JPG",
+          "variants": null
         },
         {
           "index": 139,
@@ -3984,7 +4392,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070339.JPG"
+          "filename": "P1070339.JPG",
+          "variants": null
         },
         {
           "index": 106,
@@ -4001,7 +4410,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070142.JPG"
+          "filename": "P1070142.JPG",
+          "variants": null
         },
         {
           "index": 93,
@@ -4018,7 +4428,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070076.JPG"
+          "filename": "P1070076.JPG",
+          "variants": null
         },
         {
           "index": 143,
@@ -4035,7 +4446,8 @@
           "videoUrl": null,
           "date": "Oct 14, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070363.JPG"
+          "filename": "P1070363.JPG",
+          "variants": null
         },
         {
           "index": 262,
@@ -4052,7 +4464,8 @@
           "videoUrl": null,
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080151.JPG"
+          "filename": "P1080151.JPG",
+          "variants": null
         },
         {
           "index": 276,
@@ -4069,7 +4482,8 @@
           "videoUrl": null,
           "date": "Oct 17, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1080202.JPG"
+          "filename": "P1080202.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -4094,7 +4508,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070323.JPG"
+                "filename": "P1070323.JPG",
+                "variants": null
               }
             },
             {
@@ -4114,7 +4529,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070076.JPG"
+                "filename": "P1070076.JPG",
+                "variants": null
               }
             }
           ]
@@ -4140,7 +4556,8 @@
                 "videoUrl": null,
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080151.JPG"
+                "filename": "P1080151.JPG",
+                "variants": null
               }
             },
             {
@@ -4160,7 +4577,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070410.JPG"
+                "filename": "P1070410.JPG",
+                "variants": null
               }
             },
             {
@@ -4180,7 +4598,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070363.JPG"
+                "filename": "P1070363.JPG",
+                "variants": null
               }
             }
           ]
@@ -4206,7 +4625,8 @@
                 "videoUrl": null,
                 "date": "Oct 17, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1080202.JPG"
+                "filename": "P1080202.JPG",
+                "variants": null
               }
             },
             {
@@ -4226,7 +4646,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070142.JPG"
+                "filename": "P1070142.JPG",
+                "variants": null
               }
             },
             {
@@ -4246,7 +4667,8 @@
                 "videoUrl": null,
                 "date": "Oct 12, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060529.JPG"
+                "filename": "P1060529.JPG",
+                "variants": null
               }
             }
           ]
@@ -4272,7 +4694,8 @@
                 "videoUrl": null,
                 "date": "Oct 14, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070339.JPG"
+                "filename": "P1070339.JPG",
+                "variants": null
               }
             }
           ]
@@ -4298,7 +4721,8 @@
           "videoUrl": "media/videos/item_085.mp4",
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "IMG_8775.MOV"
+          "filename": "IMG_8775.MOV",
+          "variants": null
         },
         {
           "index": 198,
@@ -4315,7 +4739,8 @@
           "videoUrl": "media/videos/item_198.mp4",
           "date": "Oct 15, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070692.MP4"
+          "filename": "P1070692.MP4",
+          "variants": null
         },
         {
           "index": 84,
@@ -4332,7 +4757,8 @@
           "videoUrl": "media/videos/item_084.mp4",
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "IMG_8774.MOV"
+          "filename": "IMG_8774.MOV",
+          "variants": null
         },
         {
           "index": 312,
@@ -4349,7 +4775,8 @@
           "videoUrl": null,
           "date": "Oct 19, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080452.JPG"
+          "filename": "P1080452.JPG",
+          "variants": null
         },
         {
           "index": 232,
@@ -4366,7 +4793,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070852.JPG"
+          "filename": "P1070852.JPG",
+          "variants": null
         },
         {
           "index": 418,
@@ -4383,7 +4811,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2494.HEIC"
+          "filename": "IMG_2494.HEIC",
+          "variants": null
         },
         {
           "index": 75,
@@ -4400,7 +4829,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060856.JPG"
+          "filename": "P1060856.JPG",
+          "variants": null
         },
         {
           "index": 54,
@@ -4417,7 +4847,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060733.JPG"
+          "filename": "P1060733.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -4442,7 +4873,8 @@
                 "videoUrl": null,
                 "date": "Oct 19, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080452.JPG"
+                "filename": "P1080452.JPG",
+                "variants": null
               }
             },
             {
@@ -4462,7 +4894,8 @@
                 "videoUrl": null,
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070852.JPG"
+                "filename": "P1070852.JPG",
+                "variants": null
               }
             }
           ]
@@ -4488,7 +4921,8 @@
                 "videoUrl": "media/videos/item_085.mp4",
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "IMG_8775.MOV"
+                "filename": "IMG_8775.MOV",
+                "variants": null
               }
             },
             {
@@ -4508,7 +4942,8 @@
                 "videoUrl": "media/videos/item_084.mp4",
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "IMG_8774.MOV"
+                "filename": "IMG_8774.MOV",
+                "variants": null
               }
             },
             {
@@ -4528,7 +4963,8 @@
                 "videoUrl": null,
                 "date": "Oct 13, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1060856.JPG"
+                "filename": "P1060856.JPG",
+                "variants": null
               }
             }
           ]
@@ -4555,7 +4991,8 @@
                   "videoUrl": null,
                   "date": "Oct 13, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1060733.JPG"
+                  "filename": "P1060733.JPG",
+                  "variants": null
                 },
                 {
                   "index": 418,
@@ -4572,7 +5009,8 @@
                   "videoUrl": null,
                   "date": "Oct 21, 2026",
                   "region": "Iguazú Falls",
-                  "filename": "IMG_2494.HEIC"
+                  "filename": "IMG_2494.HEIC",
+                  "variants": null
                 }
               ]
             },
@@ -4593,7 +5031,8 @@
                 "videoUrl": "media/videos/item_198.mp4",
                 "date": "Oct 15, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070692.MP4"
+                "filename": "P1070692.MP4",
+                "variants": null
               }
             }
           ]
@@ -4619,7 +5058,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "PXL_20261020_132933593.MACRO_FOCUS.MP.jpg"
+          "filename": "PXL_20261020_132933593.MACRO_FOCUS.MP.jpg",
+          "variants": null
         },
         {
           "index": 415,
@@ -4636,7 +5076,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2462.HEIC"
+          "filename": "IMG_2462.HEIC",
+          "variants": null
         },
         {
           "index": 410,
@@ -4653,7 +5094,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2432.HEIC"
+          "filename": "IMG_2432.HEIC",
+          "variants": null
         },
         {
           "index": 389,
@@ -4670,7 +5112,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1180534.JPG"
+          "filename": "P1180534.JPG",
+          "variants": null
         },
         {
           "index": 413,
@@ -4687,7 +5130,8 @@
           "videoUrl": "media/videos/item_413.mp4",
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2442.MOV"
+          "filename": "IMG_2442.MOV",
+          "variants": null
         },
         {
           "index": 416,
@@ -4704,7 +5148,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2475.HEIC"
+          "filename": "IMG_2475.HEIC",
+          "variants": null
         },
         {
           "index": 414,
@@ -4721,7 +5166,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2443.HEIC"
+          "filename": "IMG_2443.HEIC",
+          "variants": null
         },
         {
           "index": 374,
@@ -4738,7 +5184,8 @@
           "videoUrl": "media/videos/item_374.mp4",
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "00218.MTS"
+          "filename": "00218.MTS",
+          "variants": null
         },
         {
           "index": 234,
@@ -4755,7 +5202,8 @@
           "videoUrl": null,
           "date": "Oct 16, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1070868.JPG"
+          "filename": "P1070868.JPG",
+          "variants": null
         },
         {
           "index": 68,
@@ -4772,7 +5220,8 @@
           "videoUrl": null,
           "date": "Oct 13, 2026",
           "region": "Pantanal, Brazil",
-          "filename": "P1060821.JPG"
+          "filename": "P1060821.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -4797,7 +5246,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "IMG_2432.HEIC"
+                "filename": "IMG_2432.HEIC",
+                "variants": null
               }
             },
             {
@@ -4817,7 +5267,8 @@
                 "videoUrl": null,
                 "date": "Oct 21, 2026",
                 "region": "Iguazú Falls",
-                "filename": "IMG_2475.HEIC"
+                "filename": "IMG_2475.HEIC",
+                "variants": null
               }
             }
           ]
@@ -4843,7 +5294,8 @@
                 "videoUrl": null,
                 "date": "Oct 21, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1180534.JPG"
+                "filename": "P1180534.JPG",
+                "variants": null
               }
             },
             {
@@ -4863,7 +5315,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "PXL_20261020_132933593.MACRO_FOCUS.MP.jpg"
+                "filename": "PXL_20261020_132933593.MACRO_FOCUS.MP.jpg",
+                "variants": null
               }
             },
             {
@@ -4883,7 +5336,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "IMG_2443.HEIC"
+                "filename": "IMG_2443.HEIC",
+                "variants": null
               }
             }
           ]
@@ -4910,7 +5364,8 @@
                   "videoUrl": null,
                   "date": "Oct 20, 2026",
                   "region": "Iguazú Falls",
-                  "filename": "IMG_2462.HEIC"
+                  "filename": "IMG_2462.HEIC",
+                  "variants": null
                 },
                 {
                   "index": 68,
@@ -4927,7 +5382,8 @@
                   "videoUrl": null,
                   "date": "Oct 13, 2026",
                   "region": "Pantanal, Brazil",
-                  "filename": "P1060821.JPG"
+                  "filename": "P1060821.JPG",
+                  "variants": null
                 }
               ]
             },
@@ -4948,7 +5404,8 @@
                 "videoUrl": null,
                 "date": "Oct 16, 2026",
                 "region": "Pantanal, Brazil",
-                "filename": "P1070868.JPG"
+                "filename": "P1070868.JPG",
+                "variants": null
               }
             },
             {
@@ -4968,7 +5425,8 @@
                 "videoUrl": "media/videos/item_374.mp4",
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "00218.MTS"
+                "filename": "00218.MTS",
+                "variants": null
               }
             }
           ]
@@ -4994,7 +5452,8 @@
                 "videoUrl": "media/videos/item_413.mp4",
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "IMG_2442.MOV"
+                "filename": "IMG_2442.MOV",
+                "variants": null
               }
             }
           ]
@@ -5020,7 +5479,8 @@
           "videoUrl": "media/videos/item_420.mp4",
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2506.MOV"
+          "filename": "IMG_2506.MOV",
+          "variants": null
         },
         {
           "index": 419,
@@ -5037,7 +5497,8 @@
           "videoUrl": "media/videos/item_419.mp4",
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2503.MOV"
+          "filename": "IMG_2503.MOV",
+          "variants": null
         },
         {
           "index": 422,
@@ -5054,7 +5515,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2517.HEIC"
+          "filename": "IMG_2517.HEIC",
+          "variants": null
         },
         {
           "index": 421,
@@ -5071,7 +5533,8 @@
           "videoUrl": null,
           "date": "Oct 21, 2026",
           "region": "Iguazú Falls",
-          "filename": "IMG_2516.HEIC"
+          "filename": "IMG_2516.HEIC",
+          "variants": null
         },
         {
           "index": 345,
@@ -5088,7 +5551,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080693.JPG"
+          "filename": "P1080693.JPG",
+          "variants": null
         },
         {
           "index": 334,
@@ -5105,7 +5569,8 @@
           "videoUrl": "media/videos/item_334.mp4",
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080646.MP4"
+          "filename": "P1080646.MP4",
+          "variants": null
         },
         {
           "index": 341,
@@ -5122,7 +5587,8 @@
           "videoUrl": null,
           "date": "Oct 20, 2026",
           "region": "Iguazú Falls",
-          "filename": "P1080660.JPG"
+          "filename": "P1080660.JPG",
+          "variants": null
         }
       ],
       "cloud": [
@@ -5147,7 +5613,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080660.JPG"
+                "filename": "P1080660.JPG",
+                "variants": null
               }
             }
           ]
@@ -5173,7 +5640,8 @@
                 "videoUrl": null,
                 "date": "Oct 21, 2026",
                 "region": "Iguazú Falls",
-                "filename": "IMG_2517.HEIC"
+                "filename": "IMG_2517.HEIC",
+                "variants": null
               }
             },
             {
@@ -5193,7 +5661,8 @@
                 "videoUrl": "media/videos/item_420.mp4",
                 "date": "Oct 21, 2026",
                 "region": "Iguazú Falls",
-                "filename": "IMG_2506.MOV"
+                "filename": "IMG_2506.MOV",
+                "variants": null
               }
             },
             {
@@ -5213,7 +5682,8 @@
                 "videoUrl": null,
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080693.JPG"
+                "filename": "P1080693.JPG",
+                "variants": null
               }
             }
           ]
@@ -5239,7 +5709,8 @@
                 "videoUrl": "media/videos/item_419.mp4",
                 "date": "Oct 21, 2026",
                 "region": "Iguazú Falls",
-                "filename": "IMG_2503.MOV"
+                "filename": "IMG_2503.MOV",
+                "variants": null
               }
             },
             {
@@ -5259,7 +5730,8 @@
                 "videoUrl": null,
                 "date": "Oct 21, 2026",
                 "region": "Iguazú Falls",
-                "filename": "IMG_2516.HEIC"
+                "filename": "IMG_2516.HEIC",
+                "variants": null
               }
             },
             {
@@ -5279,7 +5751,8 @@
                 "videoUrl": "media/videos/item_334.mp4",
                 "date": "Oct 20, 2026",
                 "region": "Iguazú Falls",
-                "filename": "P1080646.MP4"
+                "filename": "P1080646.MP4",
+                "variants": null
               }
             }
           ]
