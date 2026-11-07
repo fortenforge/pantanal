@@ -943,6 +943,24 @@ ANNOTATIONS = {
         (0.58, 0.50, 1.40),
         "A social, coal-black member of the cuckoo family sporting a bizarre, high-arched laterally compressed bill crest and an oversized floppy tail—communal groups even lay their eggs together in a single shared stick nest!"
     ),
+    266: (
+        "Azara's Agouti",
+        "Dasyprocta azarae",
+        (0.49, 0.53, 1.35),
+        "A sleek, long-legged forest rodent dressed in grizzled olive-brown and warm golden-ochre fur—nicknamed the 'jungle gardener' because it buries hard palm nuts across the forest floor and forgets enough of them to regenerate the canopy!"
+    ),
+    205: (
+        "Snail Kite",
+        "Rostrhamus sociabilis",
+        (0.50, 0.50, 1.05),
+        "A swirling kettle of Snail Kites riding a thermal high above the Pantanal wetlands—unlike most raptors, Snail Kites are remarkably social, often foraging and roosting in large flocks where apple snails are abundant."
+    ),
+    331: (
+        "Plumbeous Kite",
+        "Ictinia plumbea",
+        (0.53, 0.65, 1.85),
+        "Perched high in a sunlit canopy against the blue Pantanal sky, this sleek, slate-gray aerialist watches for cicadas, dragonflies, and winged termites that it snatches on the wing with acrobatic grace."
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -967,6 +985,14 @@ ALTERNATE_SHOTS = {
         (367, "Male"),
         (366, "Female"),
     ],
+    98: [
+        (98, "3-Day-Old Pups"),
+        (94, "With Babies (Video)"),
+    ],
+    135: [
+        (135, "Perched"),
+        (205, "Kettle (Video)"),
+    ],
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -987,10 +1013,10 @@ GROUPS_SPEC = [
     {
         "id": "beautiful",
         "title": "Beautiful",
-        "indices": [128, 281, 264, 153, 418, 398, 367],
+        "indices": [128, 281, 264, 418, 398, 367],
         "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(264, 215, 245), (398, 250, 195)]},
-            {"align": "end", "offsetY": -14, "slots": [(153, 320, 190), (128, 320, 255), (367, 320, 205)]},
+            {"align": "end", "offsetY": 14, "slots": [(264, 225, 240), (398, 255, 195)]},
+            {"align": "end", "offsetY": -12, "slots": [(128, 325, 250), (367, 325, 210)]},
             {"align": "start", "offsetY": 10, "slots": [(281, 285, 215), (418, 250, 225)]}
         ]
     },
@@ -1071,21 +1097,21 @@ GROUPS_SPEC = [
     {
         "id": "mammals",
         "title": "Mammals",
-        "indices": [258, 245, 50, 66, 350, 192, 94, 98, 41, 193],
+        "indices": [258, 245, 50, 66, 350, 192, 266, 98, 41, 193],
         "cloud": [
             {"align": "end", "offsetY": 14, "slots": [(66, 210, 195), (41, 255, 205)]},
             {"align": "end", "offsetY": -15, "slots": [(245, 320, 185), (258, 320, 235), (98, 320, 195)]},
-            {"align": "start", "offsetY": 10, "slots": [[(350, 148, 235), (193, 144, 205)], (94, 295, 195), (192, 295, 190)]},
+            {"align": "start", "offsetY": 10, "slots": [[(350, 148, 235), (193, 144, 205)], (266, 295, 195), (192, 295, 190)]},
             {"align": "start", "offsetY": -12, "slots": [(50, 200, 265)]}
         ]
     },
     {
         "id": "woodpeckers",
         "title": "Woodpeckers",
-        "indices": [288, 218, 58, 231, 298, 309, 313, 377, 379, 56],
+        "indices": [288, 218, 58, 231, 298, 309, 377, 379, 56],
         "cloud": [
             {"align": "end", "offsetY": -10, "slots": [(218, 225, 210), (231, 245, 195)]},
-            {"align": "end", "offsetY": 16, "slots": [(58, 315, 210), (288, 315, 245), (313, 315, 195)]},
+            {"align": "end", "offsetY": 14, "slots": [(58, 315, 215), (288, 315, 250)]},
             {"align": "start", "offsetY": -14, "slots": [(379, 290, 210), (298, 290, 200), [(309, 142, 200), (377, 145, 170)]]},
             {"align": "start", "offsetY": 12, "slots": [(56, 225, 225)]}
         ]
@@ -1093,10 +1119,10 @@ GROUPS_SPEC = [
     {
         "id": "raptors",
         "title": "Raptors & Owls",
-        "indices": [121, 14, 12, 136, 135, 224, 140, 213, 30, 292],
+        "indices": [121, 331, 12, 136, 135, 224, 140, 213, 30, 292],
         "cloud": [
             {"align": "end", "offsetY": 15, "slots": [(12, 205, 210), (136, 245, 195)]},
-            {"align": "end", "offsetY": -12, "slots": [(14, 310, 195), (121, 310, 240), (224, 310, 190)]},
+            {"align": "end", "offsetY": -12, "slots": [(331, 310, 195), (121, 310, 240), (224, 310, 190)]},
             {"align": "start", "offsetY": 14, "slots": [[(135, 148, 205), (213, 144, 175)], (30, 295, 225), (292, 295, 190)]},
             {"align": "start", "offsetY": -16, "slots": [(140, 235, 200)]}
         ]
