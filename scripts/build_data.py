@@ -961,6 +961,12 @@ ANNOTATIONS = {
         (0.53, 0.65, 1.85),
         "Perched high in a sunlit canopy against the blue Pantanal sky, this sleek, slate-gray aerialist watches for cicadas, dragonflies, and winged termites that it snatches on the wing with acrobatic grace."
     ),
+    423: (
+        "Black-collared Hawk",
+        "Busarellus nigricollis",
+        (0.32, 0.45, 1.25),
+        "Despite its fierce raptor stature, snow-white head, and bold black throat crescent, the Black-collared Hawk opens its beak to let out a comical, high-pitched raspy wheeze—as you hear on the recording, 'Hard to take you seriously, you know that?'"
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -1054,11 +1060,11 @@ GROUPS_SPEC = [
     {
         "id": "bird-calls",
         "title": "Bird Calls",
-        "indices": [297, 198, 268, 322],
+        "indices": [423, 297, 198, 268, 322],
         "cloud": [
             {"align": "end", "offsetY": 12, "slots": [(297, 255, 220)]},
-            {"align": "end", "offsetY": -12, "slots": [(198, 325, 210), (268, 325, 225)]},
-            {"align": "start", "offsetY": 10, "slots": [(322, 260, 225)]}
+            {"align": "end", "offsetY": -12, "slots": [(423, 325, 225), (198, 325, 210)]},
+            {"align": "start", "offsetY": 10, "slots": [(268, 260, 215), (322, 235, 225)]}
         ]
     },
     {
