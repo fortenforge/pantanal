@@ -297,11 +297,11 @@ ANNOTATIONS = {
         (0.48, 0.52, 1.40),
         "True to its name, the Versicolored Emerald shifts from glittering aquamarine on the cheeks to emerald green on the back and a pale-centered throat."
     ),
-    360: (
+    363: (
         "Swallow-tailed Hummingbird",
         "Eupetomena macroura",
-        (0.50, 0.50, 1.35),
-        "With its deeply forked, scissor-like cobalt tail and violet hood, the large and assertive Swallow-tailed Hummingbird dominates prime flowering perches."
+        (0.43, 0.56, 1.25),
+        "With its deeply forked, scissor-like cobalt tail spread in a dramatic V and a glowing violet-blue hood, the large and assertive Swallow-tailed Hummingbird dominates prime flowering perches."
     ),
     369: (
         "Glittering-bellied Emerald",
@@ -835,6 +835,12 @@ ANNOTATIONS = {
         (0.55, 0.56, 1.40),
         "Captured right through the eyepiece of our spotting scope! Even across the distant marsh grass, the Scarlet-headed Blackbird's incandescent red-orange hood glows like a beacon against its velvet-black body."
     ),
+    134: (
+        "Western Cattle-Egret",
+        "Bubulcus ibis",
+        (0.52, 0.52, 1.15),
+        "Perched right atop the back of a white Nelore cow! Originally native to Africa and southern Europe, Cattle Egrets naturally crossed the Atlantic to South America in the late 1800s and spread across the Americas by following grazing livestock to snatch up flushed grasshoppers and ticks."
+    ),
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -856,12 +862,11 @@ GROUPS_SPEC = [
     {
         "id": "beautiful",
         "title": "Beautiful",
-        "indices": [128, 281, 264, 153, 110, 146, 398, 367, 19],
+        "indices": [128, 281, 264, 153, 146, 398, 367],
         "cloud": [
-            {"align": "end", "offsetY": -12, "slots": [(264, 205, 235), (398, 245, 190)]},
-            {"align": "end", "offsetY": 14, "slots": [(153, 315, 185), (128, 315, 250), (367, 235, 175)]},
-            {"align": "start", "offsetY": -16, "slots": [(281, 265, 195), (110, 295, 225), (146, 245, 185)]},
-            {"align": "start", "offsetY": 20, "slots": [(19, 225, 235)]}
+            {"align": "end", "offsetY": 14, "slots": [(264, 215, 245), (398, 250, 195)]},
+            {"align": "end", "offsetY": -14, "slots": [(153, 320, 190), (128, 320, 255), (367, 245, 185)]},
+            {"align": "start", "offsetY": 10, "slots": [(281, 285, 215), (146, 250, 225)]}
         ]
     },
     {
@@ -898,11 +903,11 @@ GROUPS_SPEC = [
     {
         "id": "herons",
         "title": "Herons",
-        "indices": [13, 20, 212, 187, 283, 210, 97, 92, 95],
+        "indices": [13, 20, 212, 187, 283, 210, 97, 92, 95, 134],
         "cloud": [
             {"align": "end", "offsetY": -10, "slots": [(187, 210, 200), (210, 245, 195)]},
             {"align": "end", "offsetY": 15, "slots": [(20, 310, 205), (13, 310, 245), (92, 235, 175)]},
-            {"align": "start", "offsetY": -15, "slots": [(212, 285, 215), (97, 285, 200), (283, 225, 205)]},
+            {"align": "start", "offsetY": -15, "slots": [[(212, 142, 210), (134, 140, 185)], (97, 285, 200), (283, 225, 205)]},
             {"align": "start", "offsetY": 18, "slots": [(95, 205, 255)]}
         ]
     },
@@ -920,12 +925,12 @@ GROUPS_SPEC = [
     {
         "id": "hummingbirds",
         "title": "Hummingbirds",
-        "indices": [362, 358, 235, 353, 368, 355, 364, 360, 369, 378],
+        "indices": [362, 358, 235, 353, 368, 355, 364, 363, 369, 378],
         "cloud": [
             {"align": "end", "offsetY": -14, "slots": [(235, 215, 195), (364, 250, 205)]},
             {"align": "end", "offsetY": 12, "slots": [(353, 310, 185), (362, 310, 245), (369, 230, 180)]},
-            {"align": "start", "offsetY": -12, "slots": [(368, 290, 215), (358, 290, 230), [(360, 145, 195), (378, 142, 165)]]},
-            {"align": "start", "offsetY": 16, "slots": [(355, 235, 205)]}
+            {"align": "start", "offsetY": -12, "slots": [(368, 290, 215), (358, 290, 230), [(355, 145, 195), (378, 142, 165)]]},
+            {"align": "start", "offsetY": 16, "slots": [(363, 215, 260)]}
         ]
     },
     {
@@ -975,11 +980,11 @@ GROUPS_SPEC = [
     {
         "id": "songbirds",
         "title": "Songbirds & Flycatchers",
-        "indices": [89, 198, 84, 312, 232, 418, 75, 54],
+        "indices": [198, 84, 312, 232, 418, 75, 54],
         "cloud": [
             {"align": "end", "offsetY": 14, "slots": [(312, 205, 215), (232, 245, 190)]},
-            {"align": "end", "offsetY": -14, "slots": [(89, 310, 185), (84, 310, 235), (75, 240, 185)]},
-            {"align": "start", "offsetY": 12, "slots": [[(54, 148, 195), (418, 144, 220)], (198, 295, 205)]}
+            {"align": "end", "offsetY": -12, "slots": [(84, 315, 240), (75, 245, 195)]},
+            {"align": "start", "offsetY": 10, "slots": [[(54, 148, 195), (418, 144, 220)], (198, 295, 205)]}
         ]
     },
     {
@@ -996,9 +1001,9 @@ GROUPS_SPEC = [
     {
         "id": "iguazu",
         "title": "Iguazú Falls",
-        "indices": [420, 419, 422, 421, 345, 334, 341, 11],
+        "indices": [420, 419, 422, 421, 345, 334, 341],
         "cloud": [
-            {"align": "end", "offsetY": 12, "slots": [(11, 225, 195), (341, 255, 195)]},
+            {"align": "end", "offsetY": 12, "slots": [(341, 245, 215)]},
             {"align": "end", "offsetY": -14, "slots": [(422, 340, 175), (420, 340, 235), (345, 260, 185)]},
             {"align": "start", "offsetY": 10, "slots": [(419, 305, 195), (421, 305, 220), (334, 235, 185)]}
         ]
