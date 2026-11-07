@@ -3136,8 +3136,8 @@
         {
           "index": 218,
           "id": "AF1QipMu85nB06btL7W-8de3Q0CG2pmxlA_Lq9dc_YMo",
-          "species": "Pale-crested Woodpecker (Male)",
-          "caption": "Peering over a rough limb in close-up profile, the male Pale-crested Woodpecker shows off the bold crimson-red malar ('mustache') patch and windblown straw-yellow crest that distinguish him.",
+          "species": "Cream-colored Woodpecker",
+          "caption": "Dressed almost entirely in soft, buttery cream-yellow plumage with chestnut-brown wings and a bold crimson malar ('mustache') patch, this Cream-colored Woodpecker peers over a lichen-crusted branch.",
           "originalNote": "",
           "isVideo": false,
           "durationSec": null,
@@ -3153,8 +3153,8 @@
         {
           "index": 58,
           "id": "AF1QipNOkP8HoHsvIFlXb-47vOcG7EE9QT3FT-Kn9lHJ",
-          "species": "Pale-crested Woodpecker (Female)",
-          "caption": "Lacking the male's red cheek patch, this female Pale-crested Woodpecker uses her chisel bill to excavate an arboreal termite nest.",
+          "species": "Pale-crested Woodpecker",
+          "caption": "Crowned with a bushy straw-yellow crest against a dark, golden-barred back, this female Pale-crested Woodpecker uses her chisel bill to excavate an arboreal termite nest.",
           "originalNote": "Pale-crested Woodpecker (f.)",
           "isVideo": false,
           "durationSec": null,
@@ -3297,8 +3297,8 @@
               "item": {
                 "index": 58,
                 "id": "AF1QipNOkP8HoHsvIFlXb-47vOcG7EE9QT3FT-Kn9lHJ",
-                "species": "Pale-crested Woodpecker (Female)",
-                "caption": "Lacking the male's red cheek patch, this female Pale-crested Woodpecker uses her chisel bill to excavate an arboreal termite nest.",
+                "species": "Pale-crested Woodpecker",
+                "caption": "Crowned with a bushy straw-yellow crest against a dark, golden-barred back, this female Pale-crested Woodpecker uses her chisel bill to excavate an arboreal termite nest.",
                 "originalNote": "Pale-crested Woodpecker (f.)",
                 "isVideo": false,
                 "durationSec": null,
@@ -3409,8 +3409,8 @@
               "item": {
                 "index": 218,
                 "id": "AF1QipMu85nB06btL7W-8de3Q0CG2pmxlA_Lq9dc_YMo",
-                "species": "Pale-crested Woodpecker (Male)",
-                "caption": "Peering over a rough limb in close-up profile, the male Pale-crested Woodpecker shows off the bold crimson-red malar ('mustache') patch and windblown straw-yellow crest that distinguish him.",
+                "species": "Cream-colored Woodpecker",
+                "caption": "Dressed almost entirely in soft, buttery cream-yellow plumage with chestnut-brown wings and a bold crimson malar ('mustache') patch, this Cream-colored Woodpecker peers over a lichen-crusted branch.",
                 "originalNote": "",
                 "isVideo": false,
                 "durationSec": null,
@@ -4284,6 +4284,23 @@
       "title": "Songbirds & Flycatchers",
       "items": [
         {
+          "index": 85,
+          "id": "AF1QipNdFiegi30dZTFJXKX2vePK-kfpY5Gkrk36wpVU",
+          "species": "Red-billed Scythebill",
+          "caption": "Hitching up the wooden rafters and probing beneath the terracotta roof tiles of the lodge with its extraordinary, sickle-curved red bill—specialized for reaching spiders and insects tucked deep inside crevices and bamboo stems.",
+          "originalNote": "",
+          "isVideo": true,
+          "durationSec": 64,
+          "tileWidth": 315,
+          "tileHeight": 200,
+          "cropUrl": "media/crops/item_085.jpg",
+          "photoUrl": "media/photos/item_085.jpg",
+          "videoUrl": "media/videos/item_085.mp4",
+          "date": "Oct 13, 2026",
+          "region": "Pantanal, Brazil",
+          "filename": "IMG_8775.MOV"
+        },
+        {
           "index": 198,
           "id": "AF1QipPKSJixK5YhIuEfWgaHqJMtmL0EJvShzFT6Mh2p",
           "species": "Barred Antshrike",
@@ -4309,7 +4326,7 @@
           "isVideo": true,
           "durationSec": 31,
           "tileWidth": 315,
-          "tileHeight": 240,
+          "tileHeight": 235,
           "cropUrl": "media/crops/item_084.jpg",
           "photoUrl": "media/photos/item_084.jpg",
           "videoUrl": "media/videos/item_084.mp4",
@@ -4377,7 +4394,7 @@
           "isVideo": false,
           "durationSec": null,
           "tileWidth": 315,
-          "tileHeight": 205,
+          "tileHeight": 190,
           "cropUrl": "media/crops/item_075.jpg",
           "photoUrl": "media/photos/item_075.jpg",
           "videoUrl": null,
@@ -4452,8 +4469,28 @@
         },
         {
           "align": "end",
-          "offsetY": -12,
+          "offsetY": -14,
           "slots": [
+            {
+              "type": "single",
+              "item": {
+                "index": 85,
+                "id": "AF1QipNdFiegi30dZTFJXKX2vePK-kfpY5Gkrk36wpVU",
+                "species": "Red-billed Scythebill",
+                "caption": "Hitching up the wooden rafters and probing beneath the terracotta roof tiles of the lodge with its extraordinary, sickle-curved red bill—specialized for reaching spiders and insects tucked deep inside crevices and bamboo stems.",
+                "originalNote": "",
+                "isVideo": true,
+                "durationSec": 64,
+                "tileWidth": 315,
+                "tileHeight": 200,
+                "cropUrl": "media/crops/item_085.jpg",
+                "photoUrl": "media/photos/item_085.jpg",
+                "videoUrl": "media/videos/item_085.mp4",
+                "date": "Oct 13, 2026",
+                "region": "Pantanal, Brazil",
+                "filename": "IMG_8775.MOV"
+              }
+            },
             {
               "type": "single",
               "item": {
@@ -4465,7 +4502,7 @@
                 "isVideo": true,
                 "durationSec": 31,
                 "tileWidth": 315,
-                "tileHeight": 240,
+                "tileHeight": 235,
                 "cropUrl": "media/crops/item_084.jpg",
                 "photoUrl": "media/photos/item_084.jpg",
                 "videoUrl": "media/videos/item_084.mp4",
@@ -4485,7 +4522,7 @@
                 "isVideo": false,
                 "durationSec": null,
                 "tileWidth": 315,
-                "tileHeight": 205,
+                "tileHeight": 190,
                 "cropUrl": "media/crops/item_075.jpg",
                 "photoUrl": "media/photos/item_075.jpg",
                 "videoUrl": null,

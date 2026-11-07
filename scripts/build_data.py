@@ -448,16 +448,16 @@ ANNOTATIONS = {
         "Both sexes together on the same V-shaped tree fork! The male on the right has a completely crimson head and malar stripe, while the female on the left sports a black central crown and a sweeping white cheek stripe."
     ),
     218: (
-        "Pale-crested Woodpecker (Male)",
-        "Celeus lugubris",
+        "Cream-colored Woodpecker",
+        "Celeus flavus",
         (0.45, 0.46, 1.30),
-        "Peering over a rough limb in close-up profile, the male Pale-crested Woodpecker shows off the bold crimson-red malar ('mustache') patch and windblown straw-yellow crest that distinguish him."
+        "Dressed almost entirely in soft, buttery cream-yellow plumage with chestnut-brown wings and a bold crimson malar ('mustache') patch, this Cream-colored Woodpecker peers over a lichen-crusted branch."
     ),
     58: (
-        "Pale-crested Woodpecker (Female)",
+        "Pale-crested Woodpecker",
         "Celeus lugubris",
         (0.48, 0.48, 1.35),
-        "Lacking the male's red cheek patch, this female Pale-crested Woodpecker uses her chisel bill to excavate an arboreal termite nest."
+        "Crowned with a bushy straw-yellow crest against a dark, golden-barred back, this female Pale-crested Woodpecker uses her chisel bill to excavate an arboreal termite nest."
     ),
     231: (
         "Campo Flicker",
@@ -841,6 +841,12 @@ ANNOTATIONS = {
         (0.52, 0.52, 1.15),
         "Perched right atop the back of a white Nelore cow! Originally native to Africa and southern Europe, Cattle Egrets naturally crossed the Atlantic to South America in the late 1800s and spread across the Americas by following grazing livestock to snatch up flushed grasshoppers and ticks."
     ),
+    85: (
+        "Red-billed Scythebill",
+        "Campylorhamphus trochilirostris",
+        (0.52, 0.21, 1.30),
+        "Hitching up the wooden rafters and probing beneath the terracotta roof tiles of the lodge with its extraordinary, sickle-curved red bill—specialized for reaching spiders and insects tucked deep inside crevices and bamboo stems."
+    ),
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -979,10 +985,10 @@ GROUPS_SPEC = [
     {
         "id": "songbirds",
         "title": "Songbirds & Flycatchers",
-        "indices": [198, 84, 312, 232, 418, 75, 54],
+        "indices": [85, 198, 84, 312, 232, 418, 75, 54],
         "cloud": [
             {"align": "end", "offsetY": 14, "slots": [(312, 205, 215), (232, 245, 190)]},
-            {"align": "end", "offsetY": -12, "slots": [(84, 315, 240), (75, 315, 205)]},
+            {"align": "end", "offsetY": -14, "slots": [(85, 315, 200), (84, 315, 235), (75, 315, 190)]},
             {"align": "start", "offsetY": 10, "slots": [[(54, 148, 220), (418, 144, 195)], (198, 295, 205)]}
         ]
     },
