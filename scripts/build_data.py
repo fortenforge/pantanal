@@ -1220,6 +1220,16 @@ for g in GROUPS_SPEC:
         "cloud": cloud_cols
     })
 
+import hashlib, re
+
+json_str = json.dumps({"groups": output_groups}, indent=2, ensure_ascii=False)
+version_hash = hashlib.sha256(json_str.encode("utf-8")).hexdigest()[:8]
+
+# Append cache-busting query param to cropUrls so updated crops never serve stale from browser cache
+for g in output_groups:
+    for item in g["items"]:
+        item["cropUrl"] = f"{item['cropUrl']}?v={version_hash}"
+
 with open("/home/antigravity/fortenforge/pantanal/data/wildlife_data.json", "w", encoding="utf-8") as f:
     json.dump({"groups": output_groups}, f, indent=2, ensure_ascii=False)
 
@@ -1228,4 +1238,14 @@ with open("/home/antigravity/fortenforge/pantanal/data/wildlife_data.js", "w", e
     json.dump({"groups": output_groups}, f, indent=2, ensure_ascii=False)
     f.write(";\n")
 
-print(f"Built {len(output_groups)} photo-cloud collages with {sum(len(g['items']) for g in output_groups)} custom-cropped tiles!")
+# Stamp version_hash into index.html for index.css, data/wildlife_data.js, and app.js
+index_html_path = "/home/antigravity/fortenforge/pantanal/index.html"
+with open(index_html_path, "r", encoding="utf-8") as f:
+    html = f.read()
+html = re.sub(r'href="index\.css(\?v=[^"]*)?"', f'href="index.css?v={version_hash}"', html)
+html = re.sub(r'src="data/wildlife_data\.js(\?v=[^"]*)?"', f'src="data/wildlife_data.js?v={version_hash}"', html)
+html = re.sub(r'src="app\.js(\?v=[^"]*)?"', f'src="app.js?v={version_hash}"', html)
+with open(index_html_path, "w", encoding="utf-8") as f:
+    f.write(html)
+
+print(f"Built {len(output_groups)} photo-cloud collages with {sum(len(g['items']) for g in output_groups)} custom-cropped tiles! (v={version_hash})")
