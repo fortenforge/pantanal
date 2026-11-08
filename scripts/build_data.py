@@ -1009,6 +1009,60 @@ ANNOTATIONS = {
         (0.44, 0.48, 1.50),
         "Unlike the rufous-chested male, the female Amazon Kingfisher displays a clean white breast framed by an incomplete bottle-green collar on the sides of her chest."
     ),
+    156: (
+        "Turquoise-fronted Amazon",
+        "Amazona aestiva",
+        (0.45, 0.50, 1.30),
+        "Perched in the gallery forest canopy showing off its bright turquoise forehead, lemon-yellow face and throat, crimson wing speculum, and fan of yellow-tipped tail feathers."
+    ),
+    343: (
+        "Violaceous Euphonia",
+        "Euphonia violacea",
+        (0.55, 0.43, 1.55),
+        "Singing from a shaded twig, the male Violaceous Euphonia gleams in iridescent violet-blue above and egg-yolk yellow from forehead to belly—a pint-sized frugivore with a gift for mimicking the calls of other forest birds."
+    ),
+    356: (
+        "Bananaquit",
+        "Coereba flaveola",
+        (0.48, 0.45, 1.50),
+        "Sporting a bold white supercilium, decurved nectar-sipping bill, and bright lemon-yellow breast, this energetic Bananaquit visits a garden feeder at Iguazú."
+    ),
+    230: (
+        "Hooded Capuchin Family",
+        "Sapajus cay",
+        (0.52, 0.46, 1.45),
+        "A charming family moment on a lichen-covered bough: one Hooded Capuchin stares intently at its companion while a tiny infant peers out from underneath the mother's belly on the left."
+    ),
+    424: (
+        "Twig-Girdler Long-horned Beetle",
+        "Onciderini (Cerambycidae)",
+        (0.50, 0.50, 1.15),
+        "The handiwork of the Twig-Girdler Beetle! The female chews a remarkably clean, lathe-like circular bevel all the way around a living branch so her larvae can develop inside the freshly felled wood without being drowned by tree sap."
+    ),
+    145: (
+        "Jabiru",
+        "Jabiru mycteria",
+        (0.56, 0.48, 1.25),
+        "Scooping up mouthfuls of river water with its massive, slightly upturned foot-long black bill and tipping its head back to drink along the marshy bank."
+    ),
+    130: (
+        "Toco Toucan",
+        "Ramphastos toco",
+        (0.55, 0.50, 1.25),
+        "Using the serrated tip of its long orange bill like precision tongs to pluck ripe fruit in the canopy before tossing its head back to flip the berry down its throat."
+    ),
+    304: (
+        "Chestnut-bellied Euphonia",
+        "Euphonia pectoralis",
+        (0.50, 0.42, 1.20),
+        "A male Chestnut-bellied Euphonia—glossy midnight-blue with golden-yellow shoulder tufts and a deep chestnut belly—and an olive-green female sharing a long dangling forest catkin sprout."
+    ),
+    73: (
+        "Cattle Tyrant",
+        "Machetornis rixosa",
+        (0.55, 0.28, 1.35),
+        "Strutting across the lodge walkway with a freshly caught moth in its bill! True to its name, this terrestrial flycatcher often rides on the backs of capybaras and cattle to snatch up insects flushed from the grass."
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -1053,6 +1107,16 @@ ALTERNATE_SHOTS = {
         (258, "Photo"),
         (249, "Eating Ants (Video)"),
     ],
+    27: [
+        (27, "Plumbeous Ibis"),
+        (139, "Buff-necked Ibis"),
+        (107, "Green Ibis"),
+        (211, "Bare-faced Ibis"),
+    ],
+    389: [
+        (389, "Beetle"),
+        (424, "Chopped Stick"),
+    ],
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -1062,11 +1126,11 @@ GROUPS_SPEC = [
     {
         "id": "beautiful",
         "title": "Beautiful",
-        "indices": [128, 281, 264, 184, 418, 398, 367],
+        "indices": [128, 281, 264, 184, 418, 343, 356, 367],
         "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(264, 215, 245), (398, 250, 195)]},
-            {"align": "end", "offsetY": -14, "slots": [(184, 320, 195), (128, 320, 255), (367, 320, 205)]},
-            {"align": "start", "offsetY": 10, "slots": [(281, 285, 215), (418, 250, 225)]}
+            {"align": "end", "offsetY": 10, "slots": [(264, 215, 235), (343, 245, 195)]},
+            {"align": "end", "offsetY": -8, "slots": [(184, 315, 195), (128, 315, 245), (367, 315, 195)]},
+            {"align": "start", "offsetY": 8, "slots": [(281, 295, 215), (418, 295, 215), (356, 260, 190)]}
         ]
     },
     {
@@ -1074,52 +1138,43 @@ GROUPS_SPEC = [
         "title": "...and Bizarre",
         "indices": [243, 277, 104, 175, 5, 132, 206, 39, 48],
         "cloud": [
-            {"align": "end", "offsetY": 16, "slots": [(206, 215, 220), (39, 250, 195)]},
-            {"align": "end", "offsetY": -14, "slots": [(277, 315, 215), (104, 315, 245)]},
-            {"align": "start", "offsetY": 10, "slots": [(243, 290, 225), (48, 290, 190), [(5, 155, 200), (132, 132, 170)]]},
-            {"align": "start", "offsetY": -14, "slots": [(175, 235, 210)]}
+            {"align": "end", "offsetY": 10, "slots": [(206, 215, 210), (39, 245, 195)]},
+            {"align": "end", "offsetY": -8, "slots": [(277, 310, 210), (104, 310, 195), (5, 310, 190)]},
+            {"align": "start", "offsetY": 8, "slots": [(243, 295, 215), (132, 295, 185), (48, 265, 190)]},
+            {"align": "start", "offsetY": -6, "slots": [(175, 235, 215)]}
         ]
     },
     {
         "id": "parrots",
         "title": "Parrots & Macaws",
-        "indices": [80, 0, 2, 240, 155, 332, 23, 57, 123, 127],
+        "indices": [80, 0, 2, 240, 156, 23, 57, 123, 127],
         "cloud": [
-            {"align": "end", "offsetY": 12, "slots": [(2, 200, 210), (57, 245, 190)]},
-            {"align": "end", "offsetY": -16, "slots": [(123, 315, 180), (80, 315, 250), (23, 315, 195)]},
-            {"align": "start", "offsetY": 14, "slots": [[(240, 145, 200), (332, 147, 170)], (0, 295, 245), (155, 295, 185)]},
-            {"align": "start", "offsetY": -8, "slots": [(127, 235, 205)]}
+            {"align": "end", "offsetY": 10, "slots": [(2, 205, 210), (57, 245, 190)]},
+            {"align": "end", "offsetY": -8, "slots": [(123, 315, 185), (80, 315, 235), (23, 315, 190)]},
+            {"align": "start", "offsetY": 8, "slots": [(240, 295, 195), (0, 295, 225), (156, 265, 185)]},
+            {"align": "start", "offsetY": -6, "slots": [(127, 255, 175)]}
         ]
     },
     {
         "id": "herons",
         "title": "Herons",
-        "indices": [13, 20, 212, 187, 283, 97, 92, 95, 134],
+        "indices": [20, 212, 187, 283, 97, 92, 95, 134],
         "cloud": [
-            {"align": "end", "offsetY": -10, "slots": [(187, 225, 245)]},
-            {"align": "end", "offsetY": 15, "slots": [(20, 310, 205), (13, 310, 245), (92, 310, 190)]},
-            {"align": "start", "offsetY": -15, "slots": [[(212, 142, 210), (134, 140, 185)], (97, 285, 200), (283, 285, 205)]},
-            {"align": "start", "offsetY": 18, "slots": [(95, 205, 255)]}
-        ]
-    },
-    {
-        "id": "waders",
-        "title": "Waders",
-        "indices": [113, 27, 139, 107, 211, 106],
-        "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(27, 225, 215), (107, 250, 195)]},
-            {"align": "end", "offsetY": -12, "slots": [(113, 325, 240), (106, 325, 215)]},
-            {"align": "start", "offsetY": 10, "slots": [(139, 275, 215), (211, 245, 200)]}
+            {"align": "end", "offsetY": 10, "slots": [(187, 220, 220), (92, 245, 195)]},
+            {"align": "end", "offsetY": -8, "slots": [(20, 315, 215), (283, 315, 235)]},
+            {"align": "start", "offsetY": 8, "slots": [[(212, 146, 210), (134, 144, 185)], (97, 293, 195)]},
+            {"align": "start", "offsetY": -6, "slots": [(95, 215, 250)]}
         ]
     },
     {
         "id": "waterbirds",
-        "title": "Waterbirds",
-        "indices": [150, 93, 143, 262, 276],
+        "title": "Waterbirds & Waders",
+        "indices": [150, 113, 106, 27, 93, 143, 262, 276],
         "cloud": [
-            {"align": "end", "offsetY": 12, "slots": [(93, 245, 215)]},
-            {"align": "end", "offsetY": -12, "slots": [(262, 325, 195), (150, 325, 240)]},
-            {"align": "start", "offsetY": 10, "slots": [(276, 280, 215), (143, 245, 205)]}
+            {"align": "end", "offsetY": 10, "slots": [(93, 215, 205), (143, 245, 195)]},
+            {"align": "end", "offsetY": -8, "slots": [(113, 315, 230), (150, 315, 230)]},
+            {"align": "start", "offsetY": 8, "slots": [(27, 295, 220), (276, 295, 215)]},
+            {"align": "start", "offsetY": -6, "slots": [(262, 245, 190), (106, 215, 210)]}
         ]
     },
     {
@@ -1127,10 +1182,10 @@ GROUPS_SPEC = [
         "title": "Jaguars",
         "indices": [169, 164, 159, 142, 171, 189, 160, 168, 173, 188],
         "cloud": [
-            {"align": "end", "offsetY": 18, "slots": [(159, 210, 230), (142, 245, 190)]},
-            {"align": "end", "offsetY": -14, "slots": [(160, 320, 185), (169, 320, 255), (188, 320, 185)]},
-            {"align": "start", "offsetY": 12, "slots": [(164, 295, 200), (173, 295, 190), [(171, 160, 205), (189, 132, 175)]]},
-            {"align": "start", "offsetY": -10, "slots": [(168, 240, 185)]}
+            {"align": "end", "offsetY": 10, "slots": [(159, 210, 220), (142, 245, 190)]},
+            {"align": "end", "offsetY": -8, "slots": [(160, 320, 185), (169, 320, 240), (188, 320, 185)]},
+            {"align": "start", "offsetY": 8, "slots": [(164, 295, 200), (173, 295, 185), [(171, 155, 205), (189, 137, 180)]]},
+            {"align": "start", "offsetY": -6, "slots": [(168, 255, 175)]}
         ]
     },
     {
@@ -1138,9 +1193,9 @@ GROUPS_SPEC = [
         "title": "Rare Finds",
         "indices": [405, 319, 122, 242, 387, 214],
         "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(319, 225, 215)]},
-            {"align": "end", "offsetY": -12, "slots": [(242, 320, 195), (405, 320, 240)]},
-            {"align": "start", "offsetY": 10, "slots": [[(122, 148, 225), (214, 144, 190)], (387, 295, 215)]}
+            {"align": "end", "offsetY": 10, "slots": [(319, 230, 215)]},
+            {"align": "end", "offsetY": -8, "slots": [(242, 320, 195), (405, 320, 235)]},
+            {"align": "start", "offsetY": 8, "slots": [[(122, 148, 215), (214, 144, 190)], (387, 295, 210)]}
         ]
     },
     {
@@ -1148,9 +1203,9 @@ GROUPS_SPEC = [
         "title": "Nests",
         "indices": [190, 45, 9, 400, 131],
         "cloud": [
-            {"align": "end", "offsetY": -10, "slots": [(9, 240, 220)]},
-            {"align": "end", "offsetY": 14, "slots": [(45, 325, 200), (131, 325, 235)]},
-            {"align": "start", "offsetY": -12, "slots": [(400, 255, 225), (190, 215, 245)]}
+            {"align": "end", "offsetY": -8, "slots": [(9, 240, 220)]},
+            {"align": "end", "offsetY": 10, "slots": [(45, 325, 200), (131, 325, 230)]},
+            {"align": "start", "offsetY": -8, "slots": [(400, 255, 215), (190, 215, 225)]}
         ]
     },
     {
@@ -1158,9 +1213,20 @@ GROUPS_SPEC = [
         "title": "Bird Calls",
         "indices": [423, 297, 198, 268, 322],
         "cloud": [
-            {"align": "end", "offsetY": 12, "slots": [(297, 255, 220)]},
-            {"align": "end", "offsetY": -12, "slots": [(423, 325, 225), (198, 325, 210)]},
-            {"align": "start", "offsetY": 10, "slots": [(268, 260, 215), (322, 235, 225)]}
+            {"align": "end", "offsetY": 8, "slots": [(297, 265, 180)]},
+            {"align": "end", "offsetY": -8, "slots": [(423, 325, 200), (198, 325, 195)]},
+            {"align": "start", "offsetY": 8, "slots": [(268, 285, 185), (322, 260, 175)]}
+        ]
+    },
+    {
+        "id": "eating-drinking",
+        "title": "Eating and Drinking",
+        "indices": [85, 13, 84, 145, 130, 304, 73],
+        "cloud": [
+            {"align": "end", "offsetY": 8, "slots": [(85, 210, 295)]},
+            {"align": "end", "offsetY": -8, "slots": [(13, 320, 195), (84, 320, 195)]},
+            {"align": "start", "offsetY": 8, "slots": [(130, 300, 190), (304, 300, 190)]},
+            {"align": "start", "offsetY": -6, "slots": [(145, 265, 175), (73, 250, 170)]}
         ]
     },
     {
@@ -1168,10 +1234,10 @@ GROUPS_SPEC = [
         "title": "Hummingbirds",
         "indices": [362, 358, 235, 353, 368, 355, 364, 363, 369, 378],
         "cloud": [
-            {"align": "end", "offsetY": -14, "slots": [(235, 215, 195), (364, 250, 205)]},
-            {"align": "end", "offsetY": 12, "slots": [(353, 310, 185), (362, 310, 245), (369, 310, 195)]},
-            {"align": "start", "offsetY": -12, "slots": [(368, 290, 215), (358, 290, 230), [(355, 145, 195), (378, 142, 165)]]},
-            {"align": "start", "offsetY": 16, "slots": [(363, 215, 260)]}
+            {"align": "end", "offsetY": -8, "slots": [(235, 215, 195), (364, 250, 200)]},
+            {"align": "end", "offsetY": 8, "slots": [(353, 310, 185), (362, 310, 235), (369, 310, 190)]},
+            {"align": "start", "offsetY": -8, "slots": [(355, 293, 185), (358, 293, 220), [(368, 146, 200), (378, 144, 175)]]},
+            {"align": "start", "offsetY": 10, "slots": [(363, 215, 255)]}
         ]
     },
     {
@@ -1179,10 +1245,10 @@ GROUPS_SPEC = [
         "title": "Woodpeckers",
         "indices": [288, 218, 58, 231, 298, 309, 377, 379, 56],
         "cloud": [
-            {"align": "end", "offsetY": -10, "slots": [(218, 225, 210), (231, 245, 195)]},
-            {"align": "end", "offsetY": 14, "slots": [(58, 315, 215), (288, 315, 250)]},
-            {"align": "start", "offsetY": -14, "slots": [(379, 290, 210), (298, 290, 200), [(309, 142, 200), (377, 145, 170)]]},
-            {"align": "start", "offsetY": 12, "slots": [(56, 225, 225)]}
+            {"align": "end", "offsetY": -8, "slots": [(218, 225, 210), (231, 245, 195)]},
+            {"align": "end", "offsetY": 8, "slots": [(58, 315, 220), (288, 315, 250)]},
+            {"align": "start", "offsetY": -8, "slots": [(379, 290, 205), (298, 290, 195), (309, 260, 185)]},
+            {"align": "start", "offsetY": 8, "slots": [(377, 235, 195), (56, 215, 205)]}
         ]
     },
     {
@@ -1190,21 +1256,21 @@ GROUPS_SPEC = [
         "title": "Raptors & Owls",
         "indices": [121, 331, 12, 136, 135, 224, 140, 213, 30, 292],
         "cloud": [
-            {"align": "end", "offsetY": 15, "slots": [(12, 205, 210), (136, 245, 195)]},
-            {"align": "end", "offsetY": -12, "slots": [(331, 310, 195), (121, 310, 240), (224, 310, 190)]},
-            {"align": "start", "offsetY": 14, "slots": [[(135, 148, 205), (213, 144, 175)], (30, 295, 225), (292, 295, 190)]},
-            {"align": "start", "offsetY": -16, "slots": [(140, 235, 200)]}
+            {"align": "end", "offsetY": 10, "slots": [(12, 205, 210), (136, 245, 195)]},
+            {"align": "end", "offsetY": -8, "slots": [(331, 310, 195), (121, 310, 235), (224, 310, 185)]},
+            {"align": "start", "offsetY": 8, "slots": [[(135, 148, 200), (213, 144, 175)], (30, 295, 220), (292, 295, 185)]},
+            {"align": "start", "offsetY": -8, "slots": [(140, 255, 175)]}
         ]
     },
     {
         "id": "mammals",
         "title": "Mammals",
-        "indices": [258, 245, 50, 66, 350, 192, 266, 98, 41, 193],
+        "indices": [258, 245, 50, 66, 350, 230, 192, 266, 98, 41, 193],
         "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(66, 210, 195), (41, 255, 205)]},
-            {"align": "end", "offsetY": -15, "slots": [(245, 320, 185), (258, 320, 235), (98, 320, 195)]},
-            {"align": "start", "offsetY": 10, "slots": [[(350, 148, 235), (193, 144, 205)], (266, 295, 195), (192, 295, 190)]},
-            {"align": "start", "offsetY": -12, "slots": [(50, 200, 265)]}
+            {"align": "end", "offsetY": 10, "slots": [(66, 210, 195), (41, 250, 200)]},
+            {"align": "end", "offsetY": -8, "slots": [(245, 315, 185), (258, 315, 225), (98, 315, 195)]},
+            {"align": "start", "offsetY": 8, "slots": [(230, 295, 205), [(350, 148, 205), (193, 144, 185)], (192, 295, 185)]},
+            {"align": "start", "offsetY": -8, "slots": [(266, 245, 185), (50, 215, 215)]}
         ]
     },
     {
@@ -1212,10 +1278,10 @@ GROUPS_SPEC = [
         "title": "Insects",
         "indices": [336, 342, 410, 389, 413, 416, 414, 374, 406, 386],
         "cloud": [
-            {"align": "end", "offsetY": -12, "slots": [(410, 205, 225), (416, 245, 190)]},
-            {"align": "end", "offsetY": 14, "slots": [(389, 315, 195), (336, 315, 240), (414, 315, 195)]},
-            {"align": "start", "offsetY": -16, "slots": [[(406, 145, 215), (386, 147, 185)], (342, 295, 210), (374, 295, 190)]},
-            {"align": "start", "offsetY": 10, "slots": [(413, 200, 250)]}
+            {"align": "end", "offsetY": -8, "slots": [(410, 210, 215), (416, 245, 190)]},
+            {"align": "end", "offsetY": 8, "slots": [(389, 315, 195), (336, 315, 235), (414, 315, 190)]},
+            {"align": "start", "offsetY": -8, "slots": [[(406, 146, 205), (386, 146, 180)], (342, 295, 205), (374, 295, 185)]},
+            {"align": "start", "offsetY": 8, "slots": [(413, 255, 175)]}
         ]
     },
     {
@@ -1223,9 +1289,9 @@ GROUPS_SPEC = [
         "title": "Reptiles & Amphibians",
         "indices": [74, 71, 111, 68, 37, 234, 147],
         "cloud": [
-            {"align": "end", "offsetY": 14, "slots": [(71, 215, 235), (111, 250, 195)]},
-            {"align": "end", "offsetY": -14, "slots": [(234, 320, 195), (74, 320, 245), (68, 320, 200)]},
-            {"align": "start", "offsetY": 10, "slots": [(147, 285, 215), (37, 250, 215)]}
+            {"align": "end", "offsetY": 10, "slots": [(71, 215, 225), (111, 250, 195)]},
+            {"align": "end", "offsetY": -8, "slots": [(234, 320, 195), (74, 320, 235), (68, 320, 195)]},
+            {"align": "start", "offsetY": 8, "slots": [(147, 285, 215), (37, 250, 210)]}
         ]
     },
     {
@@ -1233,9 +1299,9 @@ GROUPS_SPEC = [
         "title": "Iguazú Falls",
         "indices": [420, 419, 422, 421, 345, 334, 341],
         "cloud": [
-            {"align": "end", "offsetY": 12, "slots": [(341, 245, 215)]},
-            {"align": "end", "offsetY": -14, "slots": [(422, 340, 175), (420, 340, 235), (345, 340, 200)]},
-            {"align": "start", "offsetY": 10, "slots": [(419, 305, 195), (421, 305, 220), (334, 235, 185)]}
+            {"align": "end", "offsetY": 8, "slots": [(341, 255, 180)]},
+            {"align": "end", "offsetY": -8, "slots": [(422, 335, 175), (420, 335, 225), (345, 335, 195)]},
+            {"align": "start", "offsetY": 8, "slots": [(419, 300, 190), (421, 300, 200), (334, 255, 175)]}
         ]
     }
 ]
