@@ -1088,10 +1088,10 @@ ANNOTATIONS = {
         "Unlike almost all other parrots—which nest in tree hollows or cliff burrows—Monk Parakeets weave massive, multi-chambered stick apartment complexes high in the crown of an emergent tree, where dozens of pairs maintain separate entrance tunnels year-round."
     ),
     426: (
-        "The Pantanal & Iguazú Falls",
-        "Brazil Expedition Map",
-        (0.48, 0.52, 1.04),
-        "Our two-part wildlife expedition across Brazil: first exploring the vast seasonal floodplains of the Northern Pantanal along the Transpantaneira and Cuiabá River in Mato Grosso, then flying south to the Atlantic Forest and thundering cataracts of Iguazú Falls on the Argentine-Brazilian border."
+        "São Paulo ⇄ Cuiabá (The Pantanal) → Iguazú Falls",
+        "Brazil Expedition Route",
+        (0.49, 0.52, 1.02),
+        "Our route across Brazil: flying northwest from São Paulo into Cuiabá to explore the Northern Pantanal along the Transpantaneira and Cuiabá River, returning to São Paulo, and then flying southwest to the Atlantic Forest and thundering cataracts of Iguazú Falls."
     ),
     427: (
         "Beware of Wild Jaguars",
@@ -1178,6 +1178,11 @@ ALTERNATE_SHOTS = {
     258: [
         (258, "Photo"),
         (249, "Eating Ants (Video)"),
+        (432, "Anthill Graveyard"),
+    ],
+    405: [
+        (405, "Piping-Guan"),
+        (428, "Birding Tower"),
     ],
     27: [
         (27, "Plumbeous"),
@@ -1211,6 +1216,14 @@ ALTERNATE_SHOTS = {
 # where outer-left column aligns flex-end, outer-right column aligns flex-start, and inner columns can contain
 # single tiles or 2-up horizontal pairs with independent top/bottom heights so ALL 4 outer edges step organically!
 GROUPS_SPEC = [
+    {
+        "id": "route",
+        "title": "The Route",
+        "indices": [426],
+        "cloud": [
+            {"align": "start", "offsetY": 0, "slots": [(426, 620, 460)]}
+        ]
+    },
     {
         "id": "beautiful",
         "title": "Beautiful",
@@ -1268,12 +1281,12 @@ GROUPS_SPEC = [
     {
         "id": "jaguars",
         "title": "Jaguars",
-        "indices": [169, 164, 142, 171, 189, 160, 168, 173, 188],
+        "indices": [169, 164, 142, 171, 189, 160, 168, 427, 173, 188],
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(142, 245, 195), (189, 225, 205)]},
             {"align": "end", "offsetY": -8, "slots": [(160, 320, 185), (169, 320, 240), (188, 320, 185)]},
             {"align": "start", "offsetY": 8, "slots": [(164, 295, 200), (173, 295, 185), (171, 295, 205)]},
-            {"align": "start", "offsetY": -6, "slots": [(168, 255, 180)]}
+            {"align": "start", "offsetY": -6, "slots": [(427, 220, 235), (168, 255, 180)]}
         ]
     },
     {
@@ -1309,12 +1322,12 @@ GROUPS_SPEC = [
     {
         "id": "eating-drinking",
         "title": "Eating and Drinking",
-        "indices": [85, 13, 84, 145, 130, 304, 73],
+        "indices": [85, 13, 429, 84, 145, 130, 304, 73],
         "cloud": [
-            {"align": "end", "offsetY": 8, "slots": [(85, 210, 295)]},
-            {"align": "end", "offsetY": -8, "slots": [(13, 320, 195), (84, 320, 195)]},
-            {"align": "start", "offsetY": 8, "slots": [(130, 300, 190), (304, 300, 190)]},
-            {"align": "start", "offsetY": -6, "slots": [(145, 265, 175), (73, 250, 170)]}
+            {"align": "end", "offsetY": 8, "slots": [(85, 215, 250), (73, 245, 185)]},
+            {"align": "end", "offsetY": -8, "slots": [(13, 320, 215), (429, 320, 235)]},
+            {"align": "start", "offsetY": 8, "slots": [(130, 300, 220), (84, 300, 220)]},
+            {"align": "start", "offsetY": -6, "slots": [(145, 260, 195), (304, 240, 195)]}
         ]
     },
     {
@@ -1385,89 +1398,14 @@ GROUPS_SPEC = [
     {
         "id": "iguazu",
         "title": "Iguazú Falls",
-        "indices": [420, 419, 422, 421, 345, 334, 341],
+        "indices": [420, 419, 433, 430, 422, 421, 345, 334, 341],
         "cloud": [
-            {"align": "end", "offsetY": 8, "slots": [(341, 255, 180)]},
-            {"align": "end", "offsetY": -8, "slots": [(422, 335, 175), (420, 335, 225), (345, 335, 195)]},
-            {"align": "start", "offsetY": 8, "slots": [(419, 300, 190), (421, 300, 200), (334, 255, 175)]}
+            {"align": "end", "offsetY": 10, "slots": [(433, 215, 245), (341, 245, 185)]},
+            {"align": "end", "offsetY": -8, "slots": [(422, 330, 185), (420, 330, 230), (345, 330, 195)]},
+            {"align": "start", "offsetY": 8, "slots": [(419, 300, 195), (421, 300, 200), (430, 300, 195)]},
+            {"align": "start", "offsetY": -6, "slots": [(334, 250, 195)]}
         ]
     }
-]
-
-# Sidebar contextual one-off images positioned in the left/right margins and offset with respect to the main sections
-SIDEBAR_ITEMS_SPEC = [
-    {
-        "index": 426,
-        "anchorGroup": "beautiful",
-        "placement": "top",
-        "side": "left",
-        "tileWidth": 235,
-        "tileHeight": 180,
-        "contextTitle": "Trip Context"
-    },
-    {
-        "index": 11,
-        "anchorGroup": "herons",
-        "placement": "top",
-        "side": "right",
-        "tileWidth": 225,
-        "tileHeight": 175,
-        "contextTitle": "Trip Context"
-    },
-    {
-        "index": 427,
-        "anchorGroup": "jaguars",
-        "placement": "top",
-        "side": "left",
-        "tileWidth": 200,
-        "tileHeight": 235,
-        "contextTitle": "Trip Context"
-    },
-    {
-        "index": 428,
-        "anchorGroup": "rare-finds",
-        "placement": "bottom",
-        "side": "right",
-        "tileWidth": 200,
-        "tileHeight": 235,
-        "contextTitle": "Trip Context"
-    },
-    {
-        "index": 429,
-        "anchorGroup": "eating-drinking",
-        "placement": "top",
-        "side": "left",
-        "tileWidth": 225,
-        "tileHeight": 175,
-        "contextTitle": "Trip Context"
-    },
-    {
-        "index": 430,
-        "anchorGroup": "raptors",
-        "placement": "top",
-        "side": "right",
-        "tileWidth": 225,
-        "tileHeight": 175,
-        "contextTitle": "Trip Context"
-    },
-    {
-        "index": 432,
-        "anchorGroup": "insects",
-        "placement": "top",
-        "side": "left",
-        "tileWidth": 225,
-        "tileHeight": 175,
-        "contextTitle": "Trip Context"
-    },
-    {
-        "index": 433,
-        "anchorGroup": "iguazu",
-        "placement": "top",
-        "side": "right",
-        "tileWidth": 200,
-        "tileHeight": 240,
-        "contextTitle": "Trip Context"
-    },
 ]
 
 # Validate inner-column geometry so no interior gaps can ever occur
@@ -1623,18 +1561,9 @@ for g in GROUPS_SPEC:
         "cloud": cloud_cols
     })
 
-output_sidebar_items = []
-for s_spec in SIDEBAR_ITEMS_SPEC:
-    hydrated = build_hydrated_item(s_spec["index"], s_spec["tileWidth"], s_spec["tileHeight"])
-    hydrated["anchorGroup"] = s_spec["anchorGroup"]
-    hydrated["placement"] = s_spec["placement"]
-    hydrated["side"] = s_spec["side"]
-    hydrated["contextTitle"] = s_spec["contextTitle"]
-    output_sidebar_items.append(hydrated)
-
 import hashlib, re
 
-payload = {"groups": output_groups, "sidebarItems": output_sidebar_items}
+payload = {"groups": output_groups}
 json_str = json.dumps(payload, indent=2, ensure_ascii=False)
 version_hash = hashlib.sha256(json_str.encode("utf-8")).hexdigest()[:8]
 
@@ -1642,8 +1571,6 @@ version_hash = hashlib.sha256(json_str.encode("utf-8")).hexdigest()[:8]
 for g in output_groups:
     for item in g["items"]:
         item["cropUrl"] = f"{item['cropUrl']}?v={version_hash}"
-for s_item in output_sidebar_items:
-    s_item["cropUrl"] = f"{s_item['cropUrl']}?v={version_hash}"
 
 with open("/home/antigravity/fortenforge/pantanal/data/wildlife_data.json", "w", encoding="utf-8") as f:
     json.dump(payload, f, indent=2, ensure_ascii=False)
@@ -1663,5 +1590,6 @@ html = re.sub(r'src="app\.js(\?v=[^"]*)?"', f'src="app.js?v={version_hash}"', ht
 with open(index_html_path, "w", encoding="utf-8") as f:
     f.write(html)
 
-print(f"Built {len(output_groups)} photo-cloud collages with {sum(len(g['items']) for g in output_groups)} tiles + {len(output_sidebar_items)} sidebar context items! (v={version_hash})")
+print(f"Built {len(output_groups)} photo-cloud collages with {sum(len(g['items']) for g in output_groups)} tiles! (v={version_hash})")
+
 

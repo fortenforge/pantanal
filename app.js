@@ -143,65 +143,17 @@
     return tile;
   }
 
-  function createSidebarCardElement(sItem) {
-    const wrapper = document.createElement('aside');
-    wrapper.className = `sidebar-context-card side-${sItem.side} placement-${sItem.placement}`;
-    wrapper.setAttribute('aria-label', `Trip context: ${sItem.species}`);
-
-    const tileEl = createTileElement(sItem);
-    wrapper.appendChild(tileEl);
-
-    const label = document.createElement('div');
-    label.className = 'sidebar-card-label';
-    label.textContent = sItem.species;
-    wrapper.appendChild(label);
-
-    return wrapper;
-  }
-
   function renderAll() {
     chapterNav.innerHTML = '';
     collagesContainer.innerHTML = '';
     flatItems = [];
     flatIndexByItemIndex = {};
 
-    const sidebarByGroup = {};
-    if (Array.isArray(data.sidebarItems)) {
-      data.sidebarItems.forEach((sItem) => {
-        if (!sidebarByGroup[sItem.anchorGroup]) {
-          sidebarByGroup[sItem.anchorGroup] = [];
-        }
-        sidebarByGroup[sItem.anchorGroup].push(sItem);
-      });
-    }
-
     data.groups.forEach((group) => {
-      const groupSidebarItems = sidebarByGroup[group.id] || [];
-
-      groupSidebarItems
-        .filter((s) => s.placement === 'top')
-        .forEach((sItem) => {
-          flatIndexByItemIndex[sItem.index] = flatItems.length;
-          flatItems.push({
-            item: sItem,
-            group: { id: group.id, title: sItem.contextTitle || 'Trip Context' },
-          });
-        });
-
       group.items.forEach((item) => {
         flatIndexByItemIndex[item.index] = flatItems.length;
         flatItems.push({ item, group });
       });
-
-      groupSidebarItems
-        .filter((s) => s.placement === 'bottom')
-        .forEach((sItem) => {
-          flatIndexByItemIndex[sItem.index] = flatItems.length;
-          flatItems.push({
-            item: sItem,
-            group: { id: group.id, title: sItem.contextTitle || 'Trip Context' },
-          });
-        });
 
       // Minimal nav pill
       const navLink = document.createElement('a');
@@ -215,12 +167,6 @@
       const section = document.createElement('section');
       section.className = 'collage-section';
       section.id = `group-${group.id}`;
-
-      groupSidebarItems
-        .filter((s) => s.placement === 'top')
-        .forEach((sItem) => {
-          section.appendChild(createSidebarCardElement(sItem));
-        });
 
       const heading = document.createElement('h2');
       heading.className = 'section-title';
@@ -255,13 +201,6 @@
       });
 
       section.appendChild(cloud);
-
-      groupSidebarItems
-        .filter((s) => s.placement === 'bottom')
-        .forEach((sItem) => {
-          section.appendChild(createSidebarCardElement(sItem));
-        });
-
       collagesContainer.appendChild(section);
     });
 
