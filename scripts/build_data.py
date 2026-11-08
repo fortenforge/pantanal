@@ -274,13 +274,13 @@ ANNOTATIONS = {
         "Perched cleanly on a slender twig in the Pantanal, catching the light across its metallic emerald throat and coral-red lower mandible."
     ),
     353: (
-        "Black-throated Mango (Male)",
+        "Black-throated Mango",
         "Anthracothorax nigricollis",
         (0.50, 0.50, 1.10),
         "Hovering in slow-motion brilliance: the male Black-throated Mango displays a velvet-black center stripe bordered by glowing turquoise-blue along the sides of his neck."
     ),
     368: (
-        "Black-throated Mango (Female)",
+        "Black-throated Mango",
         "Anthracothorax nigricollis",
         (0.52, 0.55, 1.30),
         "Look at the dramatic central black stripe running down the female Black-throated Mango's snow-white underparts as she hovers with wings blurred at the feeder."
@@ -1143,6 +1143,10 @@ ALTERNATE_SHOTS = {
         (276, "Three Duck Species"),
         (270, "Teal Wings Upturned"),
     ],
+    353: [
+        (353, "Male (Video)"),
+        (368, "Female (Photo)"),
+    ],
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -1258,11 +1262,11 @@ GROUPS_SPEC = [
     {
         "id": "hummingbirds",
         "title": "Hummingbirds",
-        "indices": [362, 358, 235, 353, 368, 355, 364, 363, 369, 378],
+        "indices": [362, 358, 235, 353, 355, 364, 363, 369, 378],
         "cloud": [
             {"align": "end", "offsetY": -8, "slots": [(235, 215, 195), (364, 250, 200)]},
             {"align": "end", "offsetY": 8, "slots": [(353, 310, 185), (362, 310, 235), (369, 310, 190)]},
-            {"align": "start", "offsetY": -8, "slots": [(355, 293, 185), (358, 293, 220), [(368, 146, 200), (378, 144, 175)]]},
+            {"align": "start", "offsetY": -8, "slots": [(355, 295, 185), (358, 295, 220), (378, 295, 195)]},
             {"align": "start", "offsetY": 10, "slots": [(363, 215, 255)]}
         ]
     },
