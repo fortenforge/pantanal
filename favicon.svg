@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0b0f0c" stroke="#e6aa54" stroke-width="2.5"/>
+  <!-- Toucan body & head (jet black) -->
+  <path d="M12 54 C12 34, 16 20, 26 20 C31 20, 34 23, 34 29 L34 54 Z" fill="#141916"/>
+  <!-- White throat bib -->
+  <path d="M24 28 C29 28, 33 30, 33 36 C33 41, 28 43, 24 41 Z" fill="#f6f1e6"/>
+  <!-- Iconic oversized tangerine-ochre toucan bill -->
+  <path d="M31 21 C44 20, 54 24, 56 32 C48 34, 39 34, 31 33 Z" fill="#f08c2b"/>
+  <path d="M31 21 C43 20.5, 51 23, 54.5 28.5 C46 28, 38 27.5, 31 27 Z" fill="#f7b348"/>
+  <!-- Black bill tip -->
+  <path d="M49 23.2 C53 25, 55.2 28, 56 32 C53.2 32.6, 50.8 32.8, 48.5 32.8 C49.5 29.2, 49.6 26, 49 23.2 Z" fill="#0b0f0c"/>
+  <!-- Cobalt-blue eye ring & dark eye -->
+  <circle cx="26.5" cy="25.5" r="3.2" fill="#2d8cf0"/>
+  <circle cx="26.5" cy="25.5" r="1.6" fill="#0b0f0c"/>
+</svg>

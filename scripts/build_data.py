@@ -1224,10 +1224,6 @@ ALTERNATE_SHOTS = {
         (353, "Male (Video)"),
         (368, "Female (Photo)"),
     ],
-    430: [
-        (430, "River Bridge"),
-        (431, "Birding Bridge"),
-    ],
     166: [
         (166, "Golden Hour"),
         (434, "Setting Sun"),
@@ -1420,12 +1416,12 @@ GROUPS_SPEC = [
     {
         "id": "iguazu",
         "title": "Iguazú Falls",
-        "indices": [420, 419, 433, 430, 422, 421, 345, 334, 341],
+        "indices": [431, 420, 419, 433, 430, 422, 421, 345, 334, 341],
         "cloud": [
-            {"align": "end", "offsetY": 10, "slots": [(433, 215, 245), (341, 245, 185)]},
+            {"align": "end", "offsetY": 10, "slots": [(431, 245, 190), (433, 215, 245)]},
             {"align": "end", "offsetY": -8, "slots": [(422, 330, 185), (420, 330, 230), (345, 330, 195)]},
             {"align": "start", "offsetY": 8, "slots": [(419, 300, 195), (421, 300, 200), (430, 300, 195)]},
-            {"align": "start", "offsetY": -6, "slots": [(334, 250, 195)]}
+            {"align": "start", "offsetY": -6, "slots": [(341, 245, 190), (334, 225, 195)]}
         ]
     }
 ]
@@ -1446,7 +1442,7 @@ for _g in GROUPS_SPEC:
 
 def get_item_region(idx):
     if idx == 426:
-        return "Pantanal & Iguazú, Brazil"
+        return "Brazil"
     if idx <= 298 or idx in (409, 425, 427, 429, 432, 434, 435):
         return "Pantanal, Brazil"
     return "Iguazú Falls"
