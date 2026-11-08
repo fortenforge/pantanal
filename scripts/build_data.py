@@ -1126,10 +1126,10 @@ ALTERNATE_SHOTS = {
         (249, "Eating Ants (Video)"),
     ],
     27: [
-        (27, "Plumbeous Ibis"),
-        (139, "Buff-necked Ibis"),
-        (107, "Green Ibis"),
-        (211, "Bare-faced Ibis"),
+        (27, "Plumbeous"),
+        (139, "Buff-necked"),
+        (107, "Green"),
+        (211, "Bare-faced"),
     ],
     389: [
         (389, "Beetle"),
