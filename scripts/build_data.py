@@ -152,7 +152,7 @@ ANNOTATIONS = {
     212: (
         "Capped Heron",
         "Pilherodius pileatus",
-        (0.48, 0.48, 1.30),
+        (0.46, 0.46, 1.0),
         "Unmistakable with its electric cobalt-blue face and bill, jet-black cap, long creamy crown plumes, and a soft warm wash across its breast."
     ),
     187: (
@@ -202,7 +202,7 @@ ANNOTATIONS = {
     0: (
         "Blue-and-yellow Macaw",
         "Ara ararauna",
-        (0.48, 0.42, 1.20),
+        (0.56, 0.42, 1.05),
         "The very first photo of the trip: a Blue-and-yellow Macaw clinging to the rim of its hollowed palm-trunk nest cavity, glowing turquoise-blue above and golden-saffron below."
     ),
     2: (
@@ -1063,6 +1063,24 @@ ANNOTATIONS = {
         (0.55, 0.28, 1.35),
         "Strutting across the lodge walkway with a freshly caught moth in its bill! True to its name, this terrestrial flycatcher often rides on the backs of capybaras and cattle to snatch up insects flushed from the grass."
     ),
+    261: (
+        "Solitary Sandpiper",
+        "Tringa solitaria",
+        (0.68, 0.56, 1.55),
+        "A boreally breeding shorebird that migrates thousands of miles south from the muskeg bogs of Canada and Alaska to winter along quiet Pantanal pools—delicately wading on olive-green legs with a crisp white eye-ring and finely white-speckled wings."
+    ),
+    6: (
+        "Jabiru",
+        "Jabiru mycteria",
+        (0.63, 0.34, 1.65),
+        "Soaring effortlessly on thermal updrafts against the Pantanal sky: with an eight-foot wingspan—second only to the Andean Condor among South American landbirds—the Jabiru is a surprisingly graceful glider once airborne."
+    ),
+    270: (
+        "Brazilian Teal & White-faced Whistling-Ducks",
+        "Amazonetta brasiliensis & Dendrocygna viduata",
+        (0.46, 0.50, 1.25),
+        "With both wings raised straight up behind her back, the female Brazilian Teal in the center flashes the dazzling iridescent blue-teal and metallic green speculum bordered in crisp white that gives the species its name."
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -1117,6 +1135,14 @@ ALTERNATE_SHOTS = {
         (389, "Beetle"),
         (424, "Chopped Stick"),
     ],
+    175: [
+        (175, "Sitting on Heels"),
+        (6, "In Flight"),
+    ],
+    276: [
+        (276, "Three Duck Species"),
+        (270, "Teal Wings Upturned"),
+    ],
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -1149,9 +1175,9 @@ GROUPS_SPEC = [
         "title": "Parrots & Macaws",
         "indices": [80, 0, 2, 240, 156, 23, 57, 123, 127],
         "cloud": [
-            {"align": "end", "offsetY": 10, "slots": [(2, 205, 210), (57, 245, 190)]},
+            {"align": "end", "offsetY": 10, "slots": [(0, 215, 250), (2, 235, 195)]},
             {"align": "end", "offsetY": -8, "slots": [(123, 315, 185), (80, 315, 235), (23, 315, 190)]},
-            {"align": "start", "offsetY": 8, "slots": [(240, 295, 195), (0, 295, 225), (156, 265, 185)]},
+            {"align": "start", "offsetY": 8, "slots": [(240, 295, 195), (57, 295, 205), (156, 265, 190)]},
             {"align": "start", "offsetY": -6, "slots": [(127, 255, 175)]}
         ]
     },
@@ -1160,20 +1186,20 @@ GROUPS_SPEC = [
         "title": "Herons",
         "indices": [20, 212, 187, 283, 97, 92, 95, 134],
         "cloud": [
-            {"align": "end", "offsetY": 10, "slots": [(187, 220, 220), (92, 245, 195)]},
+            {"align": "end", "offsetY": 10, "slots": [(187, 220, 215), (92, 245, 195)]},
             {"align": "end", "offsetY": -8, "slots": [(20, 315, 215), (283, 315, 235)]},
-            {"align": "start", "offsetY": 8, "slots": [[(212, 146, 210), (134, 144, 185)], (97, 293, 195)]},
-            {"align": "start", "offsetY": -6, "slots": [(95, 215, 250)]}
+            {"align": "start", "offsetY": 8, "slots": [(212, 295, 225), (97, 295, 195)]},
+            {"align": "start", "offsetY": -6, "slots": [(95, 220, 225), (134, 245, 190)]}
         ]
     },
     {
         "id": "waterbirds",
         "title": "Waterbirds & Waders",
-        "indices": [150, 113, 106, 27, 93, 143, 262, 276],
+        "indices": [150, 113, 106, 27, 261, 93, 143, 262, 276],
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(93, 215, 205), (143, 245, 195)]},
-            {"align": "end", "offsetY": -8, "slots": [(113, 315, 230), (150, 315, 230)]},
-            {"align": "start", "offsetY": 8, "slots": [(27, 295, 220), (276, 295, 215)]},
+            {"align": "end", "offsetY": -8, "slots": [(113, 315, 235), (150, 315, 235)]},
+            {"align": "start", "offsetY": 8, "slots": [(27, 295, 210), (276, 295, 205), (261, 265, 185)]},
             {"align": "start", "offsetY": -6, "slots": [(262, 245, 190), (106, 215, 210)]}
         ]
     },
@@ -1265,12 +1291,12 @@ GROUPS_SPEC = [
     {
         "id": "mammals",
         "title": "Mammals",
-        "indices": [258, 245, 50, 66, 350, 230, 192, 266, 98, 41, 193],
+        "indices": [258, 245, 50, 66, 230, 192, 266, 98, 41, 193],
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(66, 210, 195), (41, 250, 200)]},
             {"align": "end", "offsetY": -8, "slots": [(245, 315, 185), (258, 315, 225), (98, 315, 195)]},
-            {"align": "start", "offsetY": 8, "slots": [(230, 295, 205), [(350, 148, 205), (193, 144, 185)], (192, 295, 185)]},
-            {"align": "start", "offsetY": -8, "slots": [(266, 245, 185), (50, 215, 215)]}
+            {"align": "start", "offsetY": 8, "slots": [(230, 295, 205), [(266, 148, 205), (193, 144, 185)], (192, 295, 185)]},
+            {"align": "start", "offsetY": -8, "slots": [(50, 215, 225)]}
         ]
     },
     {
