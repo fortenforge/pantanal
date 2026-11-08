@@ -1147,6 +1147,12 @@ ANNOTATIONS = {
         (0.52, 0.65, 1.05),
         "A wider view of the riverbank at dusk: the glowing orange disk of the setting sun hangs low on the left while the jaguar watches from the tangled green brush on the right."
     ),
+    435: (
+        "Birding by Boat",
+        "Pantanal River Excursion",
+        (0.50, 0.80, 1.0),
+        "Cruising the quiet Pantanal river channels by boat on October 13th—the best way to get eye-level views of herons, kingfishers, and caimans along the water's edge."
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -1275,11 +1281,11 @@ GROUPS_SPEC = [
     {
         "id": "herons",
         "title": "Herons",
-        "indices": [20, 212, 187, 283, 97, 92, 95, 134],
+        "indices": [20, 212, 187, 283, 435, 97, 92, 95, 134],
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(187, 220, 215), (92, 245, 195)]},
-            {"align": "end", "offsetY": -8, "slots": [(20, 315, 215), (283, 315, 235)]},
-            {"align": "start", "offsetY": 8, "slots": [(212, 295, 225), (97, 295, 195)]},
+            {"align": "end", "offsetY": -8, "slots": [(20, 315, 195), (283, 315, 215), (435, 315, 200)]},
+            {"align": "start", "offsetY": 8, "slots": [(212, 295, 235), (97, 295, 215)]},
             {"align": "start", "offsetY": -6, "slots": [(95, 220, 225), (134, 245, 190)]}
         ]
     },
@@ -1441,7 +1447,7 @@ for _g in GROUPS_SPEC:
 def get_item_region(idx):
     if idx == 426:
         return "Pantanal & Iguazú, Brazil"
-    if idx <= 298 or idx in (409, 425, 427, 429, 432, 434):
+    if idx <= 298 or idx in (409, 425, 427, 429, 432, 434, 435):
         return "Pantanal, Brazil"
     return "Iguazú Falls"
 
