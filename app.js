@@ -228,7 +228,7 @@
     lbMetaRegion.textContent = `${activeObj.region} · ${activeObj.date}`;
     if (activeObj.index === 426) {
       lbGoogleLink.href = activeObj.photoUrl;
-    } else if ([425, 427, 428, 429, 430, 431, 433].includes(activeObj.index)) {
+    } else if ([425, 427, 428, 429, 430, 431, 433, 434].includes(activeObj.index)) {
       lbGoogleLink.href = 'https://photos.app.goo.gl/7zzDVY2vMUL3mQhm6';
     } else {
       lbGoogleLink.href = `https://photos.google.com/share/AF1QipPqr8g8Zyc2JpTkgOB8ZXkqDgVu_L8GaxUfrZ9yESs6NeJppagzIptASC8BF7L-Cw/photo/${activeObj.id}?key=MDdtYTlzbjhnWkJLcW94QXJmelpCaWtSV05DbkxB`;

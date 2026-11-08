@@ -1135,6 +1135,18 @@ ANNOTATIONS = {
         (0.42, 0.56, 1.12),
         "Mom and Dad bundled up in rain jackets along the overlook walkway on October 21st, with the roaring horseshoe curtain of Iguazú Falls sending clouds of mist high into the Atlantic Forest behind them."
     ),
+    166: (
+        "Jaguar — At Sunset",
+        "Panthera onca",
+        (0.55, 0.55, 1.02),
+        "Resting quietly in the lush riverbank foliage as the golden Pantanal sun sinks behind the gallery forest canopy—prime hunting hour along the Cuiabá and Piquiri rivers."
+    ),
+    434: (
+        "Jaguar — Beneath the Setting Sun",
+        "Panthera onca",
+        (0.52, 0.65, 1.05),
+        "A wider view of the riverbank at dusk: the glowing orange disk of the setting sun hangs low on the left while the jaguar watches from the tangled green brush on the right."
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -1210,6 +1222,10 @@ ALTERNATE_SHOTS = {
         (430, "River Bridge"),
         (431, "Birding Bridge"),
     ],
+    166: [
+        (166, "Golden Hour"),
+        (434, "Setting Sun"),
+    ],
 }
 
 # Cloud layout templates: each collage is a list of columns (aligned center vertically & horizontally),
@@ -1226,7 +1242,7 @@ GROUPS_SPEC = [
     },
     {
         "id": "beautiful",
-        "title": "Beautiful",
+        "title": "The Beautiful",
         "indices": [128, 281, 264, 184, 418, 343, 356, 367],
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(264, 215, 235), (343, 245, 195)]},
@@ -1281,9 +1297,9 @@ GROUPS_SPEC = [
     {
         "id": "jaguars",
         "title": "Jaguars",
-        "indices": [169, 164, 142, 171, 189, 160, 168, 427, 173, 188],
+        "indices": [169, 164, 166, 171, 189, 160, 168, 427, 173, 188],
         "cloud": [
-            {"align": "end", "offsetY": 10, "slots": [(142, 245, 195), (189, 225, 205)]},
+            {"align": "end", "offsetY": 10, "slots": [(166, 245, 195), (189, 225, 205)]},
             {"align": "end", "offsetY": -8, "slots": [(160, 320, 185), (169, 320, 240), (188, 320, 185)]},
             {"align": "start", "offsetY": 8, "slots": [(164, 295, 200), (173, 295, 185), (171, 295, 205)]},
             {"align": "start", "offsetY": -6, "slots": [(427, 220, 235), (168, 255, 180)]}
@@ -1425,7 +1441,7 @@ for _g in GROUPS_SPEC:
 def get_item_region(idx):
     if idx == 426:
         return "Pantanal & Iguazú, Brazil"
-    if idx <= 298 or idx in (409, 425, 427, 429, 432):
+    if idx <= 298 or idx in (409, 425, 427, 429, 432, 434):
         return "Pantanal, Brazil"
     return "Iguazú Falls"
 
@@ -1567,10 +1583,14 @@ payload = {"groups": output_groups}
 json_str = json.dumps(payload, indent=2, ensure_ascii=False)
 version_hash = hashlib.sha256(json_str.encode("utf-8")).hexdigest()[:8]
 
-# Append cache-busting query param to cropUrls so updated crops never serve stale from browser cache
+# Append cache-busting query param to cropUrls and photoUrls so updated images never serve stale from browser cache
 for g in output_groups:
     for item in g["items"]:
         item["cropUrl"] = f"{item['cropUrl']}?v={version_hash}"
+        item["photoUrl"] = f"{item['photoUrl']}?v={version_hash}"
+        if item.get("variants"):
+            for v in item["variants"]:
+                v["photoUrl"] = f"{v['photoUrl']}?v={version_hash}"
 
 with open("/home/antigravity/fortenforge/pantanal/data/wildlife_data.json", "w", encoding="utf-8") as f:
     json.dump(payload, f, indent=2, ensure_ascii=False)
