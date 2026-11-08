@@ -143,17 +143,65 @@
     return tile;
   }
 
+  function createSidebarCardElement(sItem) {
+    const wrapper = document.createElement('aside');
+    wrapper.className = `sidebar-context-card side-${sItem.side} placement-${sItem.placement}`;
+    wrapper.setAttribute('aria-label', `Trip context: ${sItem.species}`);
+
+    const tileEl = createTileElement(sItem);
+    wrapper.appendChild(tileEl);
+
+    const label = document.createElement('div');
+    label.className = 'sidebar-card-label';
+    label.textContent = sItem.species;
+    wrapper.appendChild(label);
+
+    return wrapper;
+  }
+
   function renderAll() {
     chapterNav.innerHTML = '';
     collagesContainer.innerHTML = '';
     flatItems = [];
     flatIndexByItemIndex = {};
 
+    const sidebarByGroup = {};
+    if (Array.isArray(data.sidebarItems)) {
+      data.sidebarItems.forEach((sItem) => {
+        if (!sidebarByGroup[sItem.anchorGroup]) {
+          sidebarByGroup[sItem.anchorGroup] = [];
+        }
+        sidebarByGroup[sItem.anchorGroup].push(sItem);
+      });
+    }
+
     data.groups.forEach((group) => {
+      const groupSidebarItems = sidebarByGroup[group.id] || [];
+
+      groupSidebarItems
+        .filter((s) => s.placement === 'top')
+        .forEach((sItem) => {
+          flatIndexByItemIndex[sItem.index] = flatItems.length;
+          flatItems.push({
+            item: sItem,
+            group: { id: group.id, title: sItem.contextTitle || 'Trip Context' },
+          });
+        });
+
       group.items.forEach((item) => {
         flatIndexByItemIndex[item.index] = flatItems.length;
         flatItems.push({ item, group });
       });
+
+      groupSidebarItems
+        .filter((s) => s.placement === 'bottom')
+        .forEach((sItem) => {
+          flatIndexByItemIndex[sItem.index] = flatItems.length;
+          flatItems.push({
+            item: sItem,
+            group: { id: group.id, title: sItem.contextTitle || 'Trip Context' },
+          });
+        });
 
       // Minimal nav pill
       const navLink = document.createElement('a');
@@ -167,6 +215,12 @@
       const section = document.createElement('section');
       section.className = 'collage-section';
       section.id = `group-${group.id}`;
+
+      groupSidebarItems
+        .filter((s) => s.placement === 'top')
+        .forEach((sItem) => {
+          section.appendChild(createSidebarCardElement(sItem));
+        });
 
       const heading = document.createElement('h2');
       heading.className = 'section-title';
@@ -201,6 +255,13 @@
       });
 
       section.appendChild(cloud);
+
+      groupSidebarItems
+        .filter((s) => s.placement === 'bottom')
+        .forEach((sItem) => {
+          section.appendChild(createSidebarCardElement(sItem));
+        });
+
       collagesContainer.appendChild(section);
     });
 
@@ -226,7 +287,13 @@
     lbSpeciesTitle.textContent = activeObj.species || item.species;
     lbCaptionText.textContent = getCaption(activeObj);
     lbMetaRegion.textContent = `${activeObj.region} · ${activeObj.date}`;
-    lbGoogleLink.href = `https://photos.google.com/share/AF1QipPqr8g8Zyc2JpTkgOB8ZXkqDgVu_L8GaxUfrZ9yESs6NeJppagzIptASC8BF7L-Cw/photo/${activeObj.id}?key=MDdtYTlzbjhnWkJLcW94QXJmelpCaWtSV05DbkxB`;
+    if (activeObj.index === 426) {
+      lbGoogleLink.href = activeObj.photoUrl;
+    } else if ([425, 427, 428, 429, 430, 431, 433].includes(activeObj.index)) {
+      lbGoogleLink.href = 'https://photos.app.goo.gl/7zzDVY2vMUL3mQhm6';
+    } else {
+      lbGoogleLink.href = `https://photos.google.com/share/AF1QipPqr8g8Zyc2JpTkgOB8ZXkqDgVu_L8GaxUfrZ9yESs6NeJppagzIptASC8BF7L-Cw/photo/${activeObj.id}?key=MDdtYTlzbjhnWkJLcW94QXJmelpCaWtSV05DbkxB`;
+    }
 
     lbEditContainer.classList.remove('open');
     lbEditTextarea.value = getCaption(activeObj);

@@ -1081,6 +1081,60 @@ ANNOTATIONS = {
         (0.46, 0.50, 1.25),
         "With both wings raised straight up behind her back, the female Brazilian Teal in the center flashes the dazzling iridescent blue-teal and metallic green speculum bordered in crisp white that gives the species its name."
     ),
+    425: (
+        "Monk Parakeet Communal Nest",
+        "Myiopsitta monachus",
+        (0.50, 0.36, 1.20),
+        "Unlike almost all other parrots—which nest in tree hollows or cliff burrows—Monk Parakeets weave massive, multi-chambered stick apartment complexes high in the crown of an emergent tree, where dozens of pairs maintain separate entrance tunnels year-round."
+    ),
+    426: (
+        "The Pantanal & Iguazú Falls",
+        "Brazil Expedition Map",
+        (0.48, 0.52, 1.04),
+        "Our two-part wildlife expedition across Brazil: first exploring the vast seasonal floodplains of the Northern Pantanal along the Transpantaneira and Cuiabá River in Mato Grosso, then flying south to the Atlantic Forest and thundering cataracts of Iguazú Falls on the Argentine-Brazilian border."
+    ),
+    427: (
+        "Beware of Wild Jaguars",
+        "Porto Jofre Lodge Sign",
+        (0.63, 0.48, 1.45),
+        "Posted right at the edge of the hotel grounds in the Pantanal: 'ATTENTION / CAUTION: Please do not walk or jog alone beyond the hotel grounds! Wild jaguars may be in the area at any time.'"
+    ),
+    428: (
+        "Canopy Birding Tower",
+        "Parque Provincial Urugua-í",
+        (0.56, 0.44, 1.15),
+        "Rising into the wet Atlantic Forest canopy at Parque Provincial Urugua-í near Iguazú—climbing above the treetops here gives eye-level views of canopy specialists like the Black-fronted Piping-Guan, toucans, and tanagers."
+    ),
+    429: (
+        "Lunch in the Pantanal",
+        "Transpantaneira Stop",
+        (0.50, 0.50, 1.06),
+        "Taking a midday break with Mom for a traditional Pantanal buffet lunch—complete with cameras and binoculars still at the ready right on the table."
+    ),
+    430: (
+        "Integration Bridge",
+        "Triple Frontier (Brazil & Paraguay)",
+        (0.60, 0.44, 1.12),
+        "Spanning the muddy confluence of the Paraná and Iguazú Rivers at the Three Borders Landmark—toggle to see our birding group lined up along the forest road bridge scanning the Atlantic Forest canopy."
+    ),
+    431: (
+        "Birding from the Bridge",
+        "Atlantic Forest Road Bridge",
+        (0.50, 0.52, 1.08),
+        "Nine birders lined up shoulder-to-shoulder in rain gear along a quiet forest bridge railing—road bridges act like natural canopy walkways, opening up clear sightlines into the mid-story trees along the riverbanks."
+    ),
+    432: (
+        "The Anthill Graveyard",
+        "Pantanal Termite & Ant Mounds",
+        (0.50, 0.56, 1.08),
+        "An eerie 'anthill graveyard' stretching across a Pantanal savanna pasture on October 18th—hundreds of weathered, rock-hard grey earthen mounds rising like miniature tombstones above the seasonal high-water mark, prime foraging grounds for Giant Anteaters and Campo Flickers."
+    ),
+    433: (
+        "Mom & Dad at Iguazú Falls",
+        "Cataratas del Iguazú",
+        (0.42, 0.56, 1.12),
+        "Mom and Dad bundled up in rain jackets along the overlook walkway on October 21st, with the roaring horseshoe curtain of Iguazú Falls sending clouds of mist high into the Atlantic Forest behind them."
+    ),
 }
 
 # Primary tile index -> list of (variant_index, toggle_label)
@@ -1146,6 +1200,10 @@ ALTERNATE_SHOTS = {
     353: [
         (353, "Male (Video)"),
         (368, "Female (Photo)"),
+    ],
+    430: [
+        (430, "River Bridge"),
+        (431, "Birding Bridge"),
     ],
 }
 
@@ -1231,11 +1289,11 @@ GROUPS_SPEC = [
     {
         "id": "nests",
         "title": "Nests",
-        "indices": [190, 45, 9, 400, 131],
+        "indices": [190, 45, 9, 425, 400, 131],
         "cloud": [
-            {"align": "end", "offsetY": -8, "slots": [(9, 240, 220)]},
-            {"align": "end", "offsetY": 10, "slots": [(45, 325, 200), (131, 325, 230)]},
-            {"align": "start", "offsetY": -8, "slots": [(400, 255, 215), (190, 215, 225)]}
+            {"align": "end", "offsetY": -8, "slots": [(9, 240, 200), (425, 225, 235)]},
+            {"align": "end", "offsetY": 10, "slots": [(45, 325, 210), (131, 325, 240)]},
+            {"align": "start", "offsetY": -8, "slots": [(400, 255, 215), (190, 220, 225)]}
         ]
     },
     {
@@ -1336,6 +1394,82 @@ GROUPS_SPEC = [
     }
 ]
 
+# Sidebar contextual one-off images positioned in the left/right margins and offset with respect to the main sections
+SIDEBAR_ITEMS_SPEC = [
+    {
+        "index": 426,
+        "anchorGroup": "beautiful",
+        "placement": "top",
+        "side": "left",
+        "tileWidth": 235,
+        "tileHeight": 180,
+        "contextTitle": "Trip Context"
+    },
+    {
+        "index": 11,
+        "anchorGroup": "herons",
+        "placement": "top",
+        "side": "right",
+        "tileWidth": 225,
+        "tileHeight": 175,
+        "contextTitle": "Trip Context"
+    },
+    {
+        "index": 427,
+        "anchorGroup": "jaguars",
+        "placement": "top",
+        "side": "left",
+        "tileWidth": 200,
+        "tileHeight": 235,
+        "contextTitle": "Trip Context"
+    },
+    {
+        "index": 428,
+        "anchorGroup": "rare-finds",
+        "placement": "bottom",
+        "side": "right",
+        "tileWidth": 200,
+        "tileHeight": 235,
+        "contextTitle": "Trip Context"
+    },
+    {
+        "index": 429,
+        "anchorGroup": "eating-drinking",
+        "placement": "top",
+        "side": "left",
+        "tileWidth": 225,
+        "tileHeight": 175,
+        "contextTitle": "Trip Context"
+    },
+    {
+        "index": 430,
+        "anchorGroup": "raptors",
+        "placement": "top",
+        "side": "right",
+        "tileWidth": 225,
+        "tileHeight": 175,
+        "contextTitle": "Trip Context"
+    },
+    {
+        "index": 432,
+        "anchorGroup": "insects",
+        "placement": "top",
+        "side": "left",
+        "tileWidth": 225,
+        "tileHeight": 175,
+        "contextTitle": "Trip Context"
+    },
+    {
+        "index": 433,
+        "anchorGroup": "iguazu",
+        "placement": "top",
+        "side": "right",
+        "tileWidth": 200,
+        "tileHeight": 240,
+        "contextTitle": "Trip Context"
+    },
+]
+
 # Validate inner-column geometry so no interior gaps can ever occur
 for _g in GROUPS_SPEC:
     _ncols = len(_g["cloud"])
@@ -1349,6 +1483,13 @@ for _g in GROUPS_SPEC:
                 _slot_widths.append(_slot[1])
         if 0 < _ci < _ncols - 1:
             assert len(set(_slot_widths)) == 1, f"{_g['id']} inner col {_ci} has mismatched slot widths: {_slot_widths}"
+
+def get_item_region(idx):
+    if idx == 426:
+        return "Pantanal & Iguazú, Brazil"
+    if idx <= 298 or idx in (409, 425, 427, 429, 432):
+        return "Pantanal, Brazil"
+    return "Iguazú Falls"
 
 def create_cropped_tile(idx, target_w, target_h, focus):
     src_path = f"/home/antigravity/fortenforge/pantanal/media/photos/item_{idx:03d}.jpg"
@@ -1385,6 +1526,56 @@ def create_cropped_tile(idx, target_w, target_h, focus):
         resized = cropped.resize((out_w, out_h), Image.Resampling.LANCZOS)
         resized.save(out_path, "JPEG", quality=84, optimize=True)
 
+def build_hydrated_item(idx, tw, th):
+    raw = catalog[idx]
+    species, sci, focus, human_caption = ANNOTATIONS[idx]
+    create_cropped_tile(idx, tw, th, focus)
+
+    dt = datetime.datetime.utcfromtimestamp(raw["timestamp"] / 1000)
+    date_str = dt.strftime("%b %d, %Y")
+    region = get_item_region(idx)
+    dur_s = round(raw["video_duration_ms"] / 1000) if raw["is_video"] and raw["video_duration_ms"] else None
+    variants = None
+    if idx in ALTERNATE_SHOTS:
+        variants = []
+        for v_idx, v_label in ALTERNATE_SHOTS[idx]:
+            v_raw = catalog[v_idx]
+            v_species, _, _, v_caption = ANNOTATIONS[v_idx]
+            v_dt = datetime.datetime.utcfromtimestamp(v_raw["timestamp"] / 1000)
+            v_date_str = v_dt.strftime("%b %d, %Y")
+            v_region = get_item_region(v_idx)
+            variants.append({
+                "index": v_idx,
+                "label": v_label,
+                "id": v_raw["id"],
+                "species": v_species,
+                "caption": v_caption,
+                "isVideo": v_raw["is_video"],
+                "photoUrl": f"media/photos/item_{v_idx:03d}.jpg",
+                "videoUrl": f"media/videos/item_{v_idx:03d}.mp4" if v_raw["is_video"] else None,
+                "date": v_date_str,
+                "region": v_region,
+            })
+
+    return {
+        "index": idx,
+        "id": raw["id"],
+        "species": species,
+        "caption": human_caption,
+        "originalNote": raw["caption"],
+        "isVideo": raw["is_video"],
+        "durationSec": dur_s,
+        "tileWidth": tw,
+        "tileHeight": th,
+        "cropUrl": f"media/crops/item_{idx:03d}.jpg",
+        "photoUrl": f"media/photos/item_{idx:03d}.jpg",
+        "videoUrl": f"media/videos/item_{idx:03d}.mp4" if raw["is_video"] else None,
+        "date": date_str,
+        "region": region,
+        "filename": raw["filename"],
+        "variants": variants,
+    }
+
 output_groups = []
 for g in GROUPS_SPEC:
     items_dict = {}
@@ -1400,55 +1591,8 @@ for g in GROUPS_SPEC:
                 dims_by_idx[s_idx] = (w, h)
 
     for idx in g["indices"]:
-        raw = catalog[idx]
-        species, sci, focus, human_caption = ANNOTATIONS[idx]
         tw, th = dims_by_idx[idx]
-        create_cropped_tile(idx, tw, th, focus)
-
-        dt = datetime.datetime.utcfromtimestamp(raw["timestamp"] / 1000)
-        date_str = dt.strftime("%b %d, %Y")
-        region = "Pantanal, Brazil" if (idx <= 298 or idx == 409) else "Iguazú Falls"
-        dur_s = round(raw["video_duration_ms"] / 1000) if raw["is_video"] and raw["video_duration_ms"] else None
-        variants = None
-        if idx in ALTERNATE_SHOTS:
-            variants = []
-            for v_idx, v_label in ALTERNATE_SHOTS[idx]:
-                v_raw = catalog[v_idx]
-                v_species, _, _, v_caption = ANNOTATIONS[v_idx]
-                v_dt = datetime.datetime.utcfromtimestamp(v_raw["timestamp"] / 1000)
-                v_date_str = v_dt.strftime("%b %d, %Y")
-                v_region = "Pantanal, Brazil" if (v_idx <= 298 or v_idx == 409) else "Iguazú Falls"
-                variants.append({
-                    "index": v_idx,
-                    "label": v_label,
-                    "id": v_raw["id"],
-                    "species": v_species,
-                    "caption": v_caption,
-                    "isVideo": v_raw["is_video"],
-                    "photoUrl": f"media/photos/item_{v_idx:03d}.jpg",
-                    "videoUrl": f"media/videos/item_{v_idx:03d}.mp4" if v_raw["is_video"] else None,
-                    "date": v_date_str,
-                    "region": v_region,
-                })
-
-        items_dict[idx] = {
-            "index": idx,
-            "id": raw["id"],
-            "species": species,
-            "caption": human_caption,
-            "originalNote": raw["caption"],
-            "isVideo": raw["is_video"],
-            "durationSec": dur_s,
-            "tileWidth": tw,
-            "tileHeight": th,
-            "cropUrl": f"media/crops/item_{idx:03d}.jpg",
-            "photoUrl": f"media/photos/item_{idx:03d}.jpg",
-            "videoUrl": f"media/videos/item_{idx:03d}.mp4" if raw["is_video"] else None,
-            "date": date_str,
-            "region": region,
-            "filename": raw["filename"],
-            "variants": variants,
-        }
+        items_dict[idx] = build_hydrated_item(idx, tw, th)
 
     # Build cloud columns structure with hydrated item objects
     cloud_cols = []
@@ -1479,22 +1623,34 @@ for g in GROUPS_SPEC:
         "cloud": cloud_cols
     })
 
+output_sidebar_items = []
+for s_spec in SIDEBAR_ITEMS_SPEC:
+    hydrated = build_hydrated_item(s_spec["index"], s_spec["tileWidth"], s_spec["tileHeight"])
+    hydrated["anchorGroup"] = s_spec["anchorGroup"]
+    hydrated["placement"] = s_spec["placement"]
+    hydrated["side"] = s_spec["side"]
+    hydrated["contextTitle"] = s_spec["contextTitle"]
+    output_sidebar_items.append(hydrated)
+
 import hashlib, re
 
-json_str = json.dumps({"groups": output_groups}, indent=2, ensure_ascii=False)
+payload = {"groups": output_groups, "sidebarItems": output_sidebar_items}
+json_str = json.dumps(payload, indent=2, ensure_ascii=False)
 version_hash = hashlib.sha256(json_str.encode("utf-8")).hexdigest()[:8]
 
 # Append cache-busting query param to cropUrls so updated crops never serve stale from browser cache
 for g in output_groups:
     for item in g["items"]:
         item["cropUrl"] = f"{item['cropUrl']}?v={version_hash}"
+for s_item in output_sidebar_items:
+    s_item["cropUrl"] = f"{s_item['cropUrl']}?v={version_hash}"
 
 with open("/home/antigravity/fortenforge/pantanal/data/wildlife_data.json", "w", encoding="utf-8") as f:
-    json.dump({"groups": output_groups}, f, indent=2, ensure_ascii=False)
+    json.dump(payload, f, indent=2, ensure_ascii=False)
 
 with open("/home/antigravity/fortenforge/pantanal/data/wildlife_data.js", "w", encoding="utf-8") as f:
     f.write("window.WILDLIFE_DATA = ")
-    json.dump({"groups": output_groups}, f, indent=2, ensure_ascii=False)
+    json.dump(payload, f, indent=2, ensure_ascii=False)
     f.write(";\n")
 
 # Stamp version_hash into index.html for index.css, data/wildlife_data.js, and app.js
@@ -1507,4 +1663,5 @@ html = re.sub(r'src="app\.js(\?v=[^"]*)?"', f'src="app.js?v={version_hash}"', ht
 with open(index_html_path, "w", encoding="utf-8") as f:
     f.write(html)
 
-print(f"Built {len(output_groups)} photo-cloud collages with {sum(len(g['items']) for g in output_groups)} custom-cropped tiles! (v={version_hash})")
+print(f"Built {len(output_groups)} photo-cloud collages with {sum(len(g['items']) for g in output_groups)} tiles + {len(output_sidebar_items)} sidebar context items! (v={version_hash})")
+

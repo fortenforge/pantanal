@@ -107,17 +107,78 @@ body {
 
 /* MAIN CONTAINER & COLLAGE SECTIONS */
 .main-content {
-  max-width: 1480px;
+  max-width: 1680px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 6rem;
+  padding: 1.5rem 1.25rem 6rem;
 }
 
 .collage-section {
+  position: relative;
   padding: 3.25rem 0 2.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   scroll-margin-top: 5.5rem;
+}
+
+/* SIDEBAR CONTEXTUAL CARDS (OFFSET WITH RESPECT TO MAIN SECTIONS) */
+.sidebar-context-card {
+  position: absolute;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 6px 6px 8px;
+  background: hsla(150, 14%, 9%, 0.84);
+  border: 1px solid hsla(38, 76%, 62%, 0.24);
+  border-radius: 6px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.62);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.25s ease, box-shadow 0.28s ease;
+}
+
+.sidebar-context-card.side-left {
+  left: clamp(0.4rem, 1.8vw, 2.25rem);
+  transform: rotate(-1.25deg);
+}
+
+.sidebar-context-card.side-right {
+  right: clamp(0.4rem, 1.8vw, 2.25rem);
+  transform: rotate(1.25deg);
+}
+
+.sidebar-context-card.placement-top {
+  top: -42px;
+}
+
+#group-beautiful .sidebar-context-card.placement-top {
+  top: 14px;
+}
+
+.sidebar-context-card.placement-bottom {
+  bottom: -48px;
+}
+
+.sidebar-context-card:hover {
+  z-index: 28;
+  transform: rotate(0deg) translateY(-2px);
+  border-color: var(--border-hover);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.82);
+}
+
+.sidebar-card-label {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--text-sand);
+  letter-spacing: 0.01em;
+  text-align: center;
+  line-height: 1.15;
+  max-width: 220px;
+  pointer-events: none;
 }
 
 .section-title {
@@ -568,6 +629,16 @@ body {
 
 /* Responsive scaling for smaller viewports so the cloud shape stays intact */
 @media (max-width: 1120px) {
+  .sidebar-context-card,
+  #group-beautiful .sidebar-context-card.placement-top {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    margin: 0.5rem auto 1.25rem;
+  }
   .photo-cloud {
     transform: scale(0.82);
     transform-origin: top center;
