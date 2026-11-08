@@ -79,7 +79,7 @@ ANNOTATIONS = {
         "Great Potoo",
         "Nyctibius grandis",
         (0.52, 0.46, 1.15),
-        "Watch the zoom reveal! From a distance it looks like nothing more than a dead stub on a bare tree—until the camera zooms in to reveal a Great Potoo frozen upright with its eyes shut, peering through tiny 'magic slits' in its eyelids to watch passing intruders without breaking its bark camouflage."
+        "Our guide somehow spotted this Potoo, and we spent the rest of the trip scanning trees to find one for ourselves. We never did!"
     ),
     277: (
         "Red-legged Seriema",
@@ -91,7 +91,7 @@ ANNOTATIONS = {
         "Undulated Tinamou",
         "Crypturellus undulatus",
         (0.50, 0.50, 1.10),
-        "Far more often heard than seen! Its haunting, three-note whistled song is the signature soundtrack of the Pantanal, yet catching this football-shaped, cryptically barred member of one of Earth's most ancient bird lineages strolling in the open is a true birding prize."
+        "We were constantly hearing this bird all throughout the Pantanal, but we never could see it, even after trying very hard. Hunted as game birds, they're very shy. We were very lucky to see two cross our path at Piuval."
     ),
     104: (
         "Wattled Jacana",
@@ -133,7 +133,7 @@ ANNOTATIONS = {
         "Bare-faced Curassow",
         "Crax fasciolata",
         (0.48, 0.48, 1.25),
-        "The male Bare-faced Curassow struts in formal jet-black attire with a snowy white belly, a tightly curled punk crest, and a bright sulfur-yellow cere at the base of his bill."
+        "The male Bare-faced Curassow struts in formal jet-black attire with a snowy white belly, a tightly curled punk crest, and a bright sulfur-yellow cere at the base of his bill. They were remarkably tame and let us get quite close."
     ),
 
     # --- 3. HERONS (9 items) ---
@@ -259,7 +259,7 @@ ANNOTATIONS = {
         "Gilded Hummingbird",
         "Hylocharis chrysura",
         (0.46, 0.52, 1.30),
-        "Frozen in mid-air at a pink blossom, the Gilded Hummingbird glows like burnished copper-gold from crown to tail, offset by a bright coral-red bill tipped in black."
+        "Greedily consuming nectar at a feeder, the Gilded Hummingbird glows like burnished copper-gold on its tail feathers, offset by a bright coral-red bill tipped in black."
     ),
     358: (
         "Planalto Hermit",
@@ -277,7 +277,7 @@ ANNOTATIONS = {
         "Black-throated Mango",
         "Anthracothorax nigricollis",
         (0.50, 0.50, 1.10),
-        "Hovering in slow-motion brilliance: the male Black-throated Mango displays a velvet-black center stripe bordered by glowing turquoise-blue along the sides of his neck."
+        "The male Black-throated Mango has a gorgeous purplish-maroon tail in flight."
     ),
     368: (
         "Black-throated Mango",
@@ -289,13 +289,13 @@ ANNOTATIONS = {
         "Black Jacobin",
         "Florisuga fusca",
         (0.50, 0.50, 1.10),
-        "Dressed in sleek jet-black plumage, the Black Jacobin flares a startling snow-white tail fan in flight while hovering around the garden flowers."
+        "Dressed in sleek jet-black plumage, the Black Jacobin shows us its tongue."
     ),
     364: (
         "Versicolored Emerald",
         "Chrysuronia versicolor",
         (0.48, 0.52, 1.40),
-        "True to its name, the Versicolored Emerald shifts from glittering aquamarine on the cheeks to emerald green on the back and a pale-centered throat."
+        "True to its name, the Versicolored Emerald shifts from glittering aquamarine on its throat to emerald green on the back."
     ),
     363: (
         "Swallow-tailed Hummingbird",
@@ -351,19 +351,19 @@ ANNOTATIONS = {
         "Jaguar — Stepping onto the Mudbank",
         "Panthera onca",
         (0.48, 0.52, 1.25),
-        "Stepping out of the river onto the slick mudbank, wearing a conservation research collar used by biologists to study territory size and movement corridors across the Pantanal."
+        "This is Ousado, easily identifiable by his distinctive collar. Ousado suffered severe paw burns during devastating wildfires in 2020. He was rescued and collared, but the collar never came off as intended."
     ),
     160: (
         "Jaguar — Prowling Behind Hyacinths",
         "Panthera onca",
         (0.50, 0.50, 1.10),
-        "Over a full minute of watching a wild jaguar pace silently through the tangled root buttresses and floating mats of water hyacinth along the river's edge."
+        "Notice the jaguar marking its territory by spraying urine."
     ),
     168: (
         "Jaguar — In the Tall Grass",
         "Panthera onca",
         (0.50, 0.50, 1.10),
-        "Up-close motion in the riverbank reeds, showing the sheer power of its broad skull and shoulders—evolving the strongest bite force relative to body size of any big cat to pierce caiman skulls and turtle shells."
+        "Like all cats, Jaguars spend a lot of time preening themselves."
     ),
     173: (
         "Jaguar — River Crossing",
@@ -375,7 +375,7 @@ ANNOTATIONS = {
         "Jaguar — Swimming Close-up",
         "Panthera onca",
         (0.50, 0.50, 1.10),
-        "A tight view of a jaguar cutting through the amber ripples of the river with powerful, silent strokes."
+        "Ousado is renowned for a rare and specialized hunting technique where he submerges and swims underwater to ambush prey—such as caimans and capybaras—surprising them from below before delivering a fatal bite"
     ),
 
     # --- 7. MAMMALS (10 items) ---
@@ -395,13 +395,13 @@ ANNOTATIONS = {
         "Ocelot",
         "Leopardus pardalis",
         (0.50, 0.50, 1.10),
-        "A thrilling nocturnal encounter! Illuminated briefly in the night spotlight, an agile Ocelot scales a vertical tree trunk before pausing in the branches overhead."
+        "The first lodge we stayed at has trained this wild ocelot to come to this tree every night for a small snack. A crab-eating fox also regularly makes an occurrence and will eat the ocelot's scraps."
     ),
     66: (
         "Crab-eating Fox",
         "Cerdocyon thous",
         (0.48, 0.50, 1.30),
-        "Pausing in the dusty track to look back over its shoulder, the Crab-eating Fox switches its diet with the seasons—hunting crabs and frogs on the floodplains during the wet season and switching to fruits and insects when the waters recede."
+        "The Crab-eating Fox switches its diet with the seasons—hunting crabs and frogs on the floodplains during the wet season and switching to fruits and insects when the waters recede."
     ),
     350: (
         "Hooded Capuchin",
@@ -413,7 +413,7 @@ ANNOTATIONS = {
         "Black-and-gold Howler Monkey",
         "Alouatta caraya",
         (0.50, 0.50, 1.10),
-        "Adult male Black-and-gold Howler Monkeys turn jet-black as they mature (while females and juveniles stay golden-blonde), and their deep, resonant dawn chorus carries for up to three miles through the forest."
+        "Adult male Black-and-gold Howler Monkeys turn jet-black as they mature (while females and juveniles stay golden-blonde). We never once heard them howl."
     ),
     94: (
         "Capybara & Babies",
@@ -437,7 +437,7 @@ ANNOTATIONS = {
         "Proboscis Bats",
         "Rhynchonycteris naso",
         (0.50, 0.50, 1.35),
-        "Look closely along the vertical tree trunk: half a dozen tiny Proboscis Bats are lined up nose-to-tail in a neat row! Their grizzled fur and pale back stripes mimic lichens on the bark, and when a breeze blows they even sway in unison like loose bark flakes."
+        "Our guide on the Cuiabá River spotted half a dozen tiny Proboscis Bats are lined up nose-to-tail in a neat row!"
     ),
 
     # --- 8. WOODPECKERS (10 items) ---
@@ -451,31 +451,31 @@ ANNOTATIONS = {
         "Cream-colored Woodpecker",
         "Celeus flavus",
         (0.45, 0.46, 1.30),
-        "Dressed almost entirely in soft, buttery cream-yellow plumage with chestnut-brown wings and a bold crimson malar ('mustache') patch, this Cream-colored Woodpecker peers over a lichen-crusted branch."
+        "Our guide told us that young birders call this species Pikachu because of its resemblance to the Pokemon."
     ),
     58: (
         "Pale-crested Woodpecker",
         "Celeus lugubris",
         (0.48, 0.48, 1.35),
-        "Crowned with a bushy straw-yellow crest against a dark, golden-barred back, this female Pale-crested Woodpecker uses her chisel bill to excavate an arboreal termite nest."
+        "Crowned with a bushy straw-yellow crest against a dark, golden-barred back, we encountered this female Pale-crested Woodpecker early in the trip."
     ),
     231: (
         "Campo Flicker",
         "Colaptes campestris",
         (0.50, 0.50, 1.35),
-        "Perched atop a weathered fence post, the terrestrial Campo Flicker displays its bright golden-yellow collar and cheeks—spending most of its day on the ground raiding ant hills."
+        "Perched atop a weathered fence post, the terrestrial Campo Flicker displays its bright golden-yellow collar and cheeks—spending most of its day on the ground raiding ant hills. Compare to our Northern Flicker."
     ),
     298: (
         "White Woodpecker",
         "Melanerpes candidus",
         (0.45, 0.25, 1.85),
-        "Snow-white head and belly, jet-black back, and a striking golden-yellow eye ring and nape patch—White Woodpeckers travel in vocal family groups in search of wild honey and wasp larvae."
+        "The rest of our group spotted these distinctive woodpeckers at our hotel in Cuiabá, but we never did, so we were excited to see them on our last day in the Pantanal in Piuval."
     ),
     309: (
         "White-spotted Woodpecker",
         "Dryobates spilogaster",
         (0.56, 0.48, 1.40),
-        "Clinging vertically to a lichen-dappled trunk at Iguazú, intricately barred and spotted in olive, white, and black."
+        "Intricately barred and spotted in olive, white, and black."
     ),
     313: (
         "Ochre-collared Piculet",
@@ -487,13 +487,13 @@ ANNOTATIONS = {
         "Yellow-fronted Woodpecker",
         "Melanerpes flavifrons",
         (0.76, 0.36, 1.65),
-        "One of the most colorful woodpeckers of the Atlantic Forest, combining a golden forehead and throat, crimson crown, black eye-mask, and zebra-barred back."
+        "Only my parents managed to get a glimpse, despite the whole group looking for it on multiple occasions. Compare to our acorn woodpecker."
     ),
     379: (
         "Blond-crested Woodpecker",
         "Celeus flavescens",
         (0.50, 0.48, 1.35),
-        "Crowned with a lush, silky cream-blonde crest against a jet-black breast and barred wings in the Atlantic Forest."
+        "Crowned with a lush, silky cream-blonde crest against a jet-black breast and barred wings, this bird rounded out the trio of \"yellow\" woodpeckers that are found in the region."
     ),
     54: (
         "Great Rufous Woodcreeper",
@@ -531,7 +531,7 @@ ANNOTATIONS = {
         "Snail Kite",
         "Rostrhamus sociabilis",
         (0.48, 0.46, 1.30),
-        "Look at that extreme, needle-sharp hooked upper mandible—curved to the exact geometry needed to slip inside an apple snail's shell and sever its muscle without cracking the shell!"
+        "Its deeply hooked bill is curved to the exact geometry needed to slip inside an apple snail's shell and sever its muscle without cracking the shell!"
     ),
     224: (
         "Bat Falcon",
@@ -549,13 +549,13 @@ ANNOTATIONS = {
         "Turkey Vulture",
         "Cathartes aura ruficollis",
         (0.50, 0.48, 1.35),
-        "Notice the distinct band of creamy-white skin across the back of its red head and nape—a field mark specific to the South American subspecies (ruficollis) that you won't see on North American Turkey Vultures!"
+        "Notice the white skin across the back of its red head—a field mark specific to the South American subspecies."
     ),
     31: (
         "Ferruginous Pygmy-Owl",
         "Glaucidium brasilianum",
         (0.48, 0.48, 1.35),
-        "Look closely at the two dark, white-bordered spots on the back of its head! Those 'false eyes' (ocelli) fool mobbing songbirds and larger predators into thinking this tiny, fierce diurnal owl is staring straight at them even when its back is turned."
+        "Notice the'false eyes' (ocelli) on the back of its head, which fool mobbing songbirds and larger predators into thinking the owl is staring at them even when its back is turned."
     ),
     292: (
         "Burrowing Owl",
@@ -599,7 +599,7 @@ ANNOTATIONS = {
         "Gray-cowled Wood-Rail",
         "Aramides cajaneus",
         (0.50, 0.50, 1.30),
-        "Strutting boldly along the muddy bank with a slate-gray hood, olive back, bright yellow bill, and bubblegum-pink legs."
+        "Strutting boldly along the muddy bank with a slate-gray hood, olive back, bright yellow bill, and bubblegum-pink legs. Unlike many rail species, these are not at all shy."
     ),
     143: (
         "Pied Plover",
@@ -611,7 +611,7 @@ ANNOTATIONS = {
         "Large-billed Tern",
         "Phaetusa simplex",
         (0.50, 0.50, 1.25),
-        "A pair of Large-billed Terns showing off their heavy yellow bills and bold black-white-and-gray geometric wing panels found along South America's great river systems."
+        "A group of Large-billed Terns showing off their heavy yellow bills and bold black-white-and-gray geometric wing panels found along South America's great river systems."
     ),
     276: (
         "Three Duck Species Together",
@@ -623,7 +623,7 @@ ANNOTATIONS = {
         "Black-fronted Piping-Guan",
         "Pipile jacutinga",
         (0.48, 0.48, 1.35),
-        "An endangered jewel of the Atlantic Forest around Iguazú, sporting a black forehead, sky-blue eye patch, white crest, and bi-colored blue-and-red wattle."
+        "An endangered jewel of the Atlantic Forest around Iguazú, sporting a black forehead, sky-blue eye patch, white crest, and bi-colored blue-and-red wattle. Despite heavy, seemingly endless rain, we headed out on the final birding day of the trip to catch a glimpse of this bird—and we did!"
     ),
 
     # --- 11. SONGBIRDS & FLYCATCHERS (10 items) ---
@@ -679,7 +679,7 @@ ANNOTATIONS = {
         "Plush-crested Jay",
         "Cyanocorax chrysops",
         (0.50, 0.48, 1.35),
-        "Perched alertly in the Atlantic Forest with its velvety black bristle-crest, glowing golden eye, sky-blue cheek patches, and white-tipped tail."
+        "The most beautiful jay in the world."
     ),
     75: (
         "Orange-backed Troupial",
@@ -699,7 +699,7 @@ ANNOTATIONS = {
         "Hydaspes Butterfly",
         "Callicore hydaspes",
         (0.41, 0.52, 1.45),
-        "Often mistaken for an Eighty-eight butterfly at first glance, the Hydaspes Butterfly (Red-and-blue Callicore) is a close relative whose concentric black-and-cream hindwing rings enclose four shimmering blue-white dots rather than the digits '88', topped by a bold crimson forewing bar."
+        "A close relative  of the 88 butterfly whose concentric black-and-cream hindwing rings enclose four shimmering blue-white dots topped by a bold crimson forewing bar."
     ),
     415: (
         "Hydaspes Butterfly on Hand",
@@ -711,13 +711,13 @@ ANNOTATIONS = {
         "Scarlet Peacock Butterfly",
         "Anartia amathea",
         (0.43, 0.48, 2.15),
-        "Resting with wings spread against a lacework of perforated rainforest leaves, flashing brilliant scarlet inner wings bordered in jet-black and white spots."
+        "Flashing brilliant scarlet inner wings bordered in jet-black and white spots."
     ),
     386: (
         "Black Zale Moth",
         "Zale / Erebidae",
         (0.50, 0.49, 1.35),
-        "Spread flat against the forest leaf litter with scalloped, bark-textured charcoal and ebony wings that mimic charred wood or dark lichens."
+        "Seems to mimic charred wood or dark lichens."
     ),
     410: (
         "Iridescent Leaf Beetle",
@@ -735,7 +735,7 @@ ANNOTATIONS = {
         "Dead-Leaf Mimic Moth",
         "Noctuidae / Geometridae",
         (0.50, 0.50, 1.10),
-        "Resting on a painted green post, this moth looks indistinguishable from a curled, dried autumn leaf—complete with a false midrib vein and tiny dark 'fungal spots'—until it flutters to life in the video!"
+        "Resting on a painted green post, this moth looks indistinguishable from a curled, dried autumn leaf—complete with a false midrib vein and tiny dark 'fungal spots'."
     ),
     416: (
         "Owl-Eyed Satyr Butterfly",
@@ -753,7 +753,7 @@ ANNOTATIONS = {
         "Jataí Stingless Bees",
         "Tetragonisca angustula",
         (0.50, 0.50, 1.10),
-        "Tiny golden stingless bees hovering around their wax entrance tube! In late 2025 and 2026, select Amazonian municipalities in Peru (such as Satipo and Nauta) made history by granting native stingless bees legal rights as subjects with the right to exist and thrive."
+        "Tiny golden stingless bees hovering around their wax entrance tube!"
     ),
     74: (
         "Green Ameiva",
@@ -803,7 +803,7 @@ ANNOTATIONS = {
         "Iguazú Cataracts — Upper Rim",
         "Iguazú National Park",
         (0.50, 0.50, 1.05),
-        "Standing beside the thundering golden-brown torrents plunging over the basalt cliff edge into the misty gorge below."
+        "The Great Dusky Swifts circle in the mists of the falls eating insects, and come back down behind the raging waters to roost."
     ),
     419: (
         "The Amphitheater of Iguazú",
@@ -845,7 +845,7 @@ ANNOTATIONS = {
         "Here Begins the Pantanal",
         "Transpantaneira Highway",
         (0.50, 0.48, 1.15),
-        "The iconic wooden welcome sign marking Kilometer Zero of the Transpantaneira dirt highway—the gateway to the world's largest tropical wetland."
+        "The northern part of the Pantanal is accessible via a single dirt road starting from Cuiabá. This sign marks the start."
     ),
     56: (
         "Little Woodpecker",
@@ -863,7 +863,7 @@ ANNOTATIONS = {
         "Ultramarine Grosbeak",
         "Cyanoloxia brissonii",
         (0.52, 0.54, 1.85),
-        "Framed in a window of cecropia branches, the male Ultramarine Grosbeak gleams in deep midnight-cobalt with shimmering royal-blue shoulder and cheek patches and a massive conical seed-cracking bill."
+        "Even our guides were very excited to catch a glimpse of this bird. Framed in a window of cecropia branches, the male Ultramarine Grosbeak gleams in deep midnight-cobalt with shimmering royal-blue shoulder and cheek patches and a massive conical seed-cracking bill."
     ),
     122: (
         "Helmeted Manakin",
@@ -875,19 +875,19 @@ ANNOTATIONS = {
         "Southern Antpipit",
         "Corythopis delalandi",
         (0.48, 0.48, 1.50),
-        "A secretive terrestrial flycatcher of the forest floor that walks like a pipit along fallen branches and leaf litter, flashing a bold black necklace of streaks across its white breast and a bright orange lower mandible."
+        "A bird more often heard than seen. We were extremely lucky that this individual came as close as it did.\nA secretive terrestrial flycatcher of the forest floor that walks like a pipit along fallen branches and leaf litter, flashing a bold black necklace of streaks across its white breast and a bright orange lower mandible."
     ),
     214: (
         "Scarlet-headed Blackbird",
         "Amblyramphus holosericeus",
         (0.55, 0.56, 1.40),
-        "Captured right through the eyepiece of our spotting scope! Even across the distant marsh grass, the Scarlet-headed Blackbird's incandescent red-orange hood glows like a beacon against its velvet-black body."
+        "One of the members of our group somehow spotted this bird from a great distance away. Even across the distant marsh grass, the Scarlet-headed Blackbird's incandescent red-orange hood glows like a beacon against its velvet-black body."
     ),
     134: (
         "Western Cattle-Egret",
         "Bubulcus ibis",
         (0.52, 0.52, 1.15),
-        "Perched right atop the back of a white Nelore cow! Originally native to Africa and southern Europe, Cattle Egrets naturally crossed the Atlantic to South America in the late 1800s and spread across the Americas by following grazing livestock to snatch up flushed grasshoppers and ticks."
+        "Originally native to Africa and southern Europe, Cattle Egrets naturally crossed the Atlantic to South America in the late 1800s and spread across the Americas by following grazing livestock to snatch up flushed grasshoppers and ticks."
     ),
     85: (
         "Red-billed Scythebill",
@@ -911,7 +911,7 @@ ANNOTATIONS = {
         "Ferruginous Pygmy-Owl",
         "Glaucidium brasilianum",
         (0.44, 0.52, 1.45),
-        "Turned around to face us with its real, piercing lemon-yellow eyes and bold rufous-and-white streaked breast—despite measuring only six inches tall, the Ferruginous Pygmy-Owl is a fearless daytime ambush hunter."
+        "Despite measuring only six inches tall, the Ferruginous Pygmy-Owl is a fearless daytime ambush hunter."
     ),
     366: (
         "Blue Dacnis",
@@ -923,19 +923,19 @@ ANNOTATIONS = {
         "Ferruginous Pygmy-Owl",
         "Glaucidium brasilianum",
         (0.44, 0.45, 1.35),
-        "Listen to the rapid, hypnotic series of hollow toots! Despite its tiny size, the Ferruginous Pygmy-Owl's persistent daytime calling carries far through the gallery forest—often drawing in dozens of agitated small songbirds trying to mob it."
+        "Pygmy-Owls are the bane of smaller birds. Our guide would frequently play a recording of a Ferruginous Pygmy-Owl, which reliably brings songbirds out of the woodwork as they try to spot the owl to avoid being eaten!"
     ),
     322: (
         "Tropical Parula",
         "Setophaga pitiayumi",
         (0.43, 0.52, 1.45),
-        "Dressed in slate-blue above with a blazing lemon-yellow throat and breast washed in warm orange, this tiny canopy warbler throws back his head to deliver his signature rising, buzzy trill that spills over at the end."
+        "Dressed in slate-blue above with a blazing lemon-yellow throat and breast washed in warm orange, this tiny canopy warbler throws back his head to deliver his signature rising, buzzy trill that spills over at the end.\n\nIt responded super well to playback and came within a few feet of us."
     ),
     268: (
         "Dull-capped Attila",
         "Attila bolivianus",
         (0.58, 0.52, 1.45),
-        "Don't let the modest name fool you—perched upright in the shaded understory with its pale iris and warm cinnamon-rufous belly, the Dull-capped Attila belts out a rich, far-carrying series of whistled phrases that echoes across the flooded forest."
+        "Don't let the modest name fool you—perched upright in the shaded understory with its pale iris and warm cinnamon-rufous belly, the Dull-capped Attila belts out a rich, far-carrying series of whistled phrases that echoes across the flooded forest. Its white eye ring makes it look slightly manic."
     ),
     48: (
         "Smooth-billed Ani",
@@ -947,7 +947,7 @@ ANNOTATIONS = {
         "Azara's Agouti",
         "Dasyprocta azarae",
         (0.49, 0.53, 1.35),
-        "A sleek, long-legged forest rodent dressed in grizzled olive-brown and warm golden-ochre fur—nicknamed the 'jungle gardener' because it buries hard palm nuts across the forest floor and forgets enough of them to regenerate the canopy!"
+        "A sleek forest rodent dressed in olive-brown and warm golden-ochre fur. One member of our group kept feeding it mangos."
     ),
     205: (
         "Snail Kite",
@@ -959,7 +959,7 @@ ANNOTATIONS = {
         "Plumbeous Kite",
         "Ictinia plumbea",
         (0.53, 0.65, 1.85),
-        "Perched high in a sunlit canopy against the blue Pantanal sky, this sleek, slate-gray aerialist watches for cicadas, dragonflies, and winged termites that it snatches on the wing with acrobatic grace."
+        "Plumbeous refers to lead (Pb). Plumbeous birds are lead-colored. Similarly Ferruginous refers to iron (Fe), and Ferruginous birds are rusty-brown."
     ),
     423: (
         "Black-collared Hawk",
@@ -977,7 +977,7 @@ ANNOTATIONS = {
         "Hyacinth Macaw",
         "Anodorhynchus hyacinthinus",
         (0.55, 0.50, 1.05),
-        "Two cobalt-blue giants perched side by side in the canopy, both facing forward with their extraordinarily long, graduated tail feathers hanging in full view—the world's largest flying parrot, sporting a bright lemon-yellow eye-ring and mandible crescent."
+        "The world's largest flying parrot, sporting a bright lemon-yellow eye-ring and mandible crescent. Our driver spotted these two individuals and roused all of us from our mid-day siesta to see them."
     ),
     249: (
         "Giant Anteater",
@@ -1025,7 +1025,7 @@ ANNOTATIONS = {
         "Bananaquit",
         "Coereba flaveola",
         (0.48, 0.45, 1.50),
-        "Sporting a bold white supercilium, decurved nectar-sipping bill, and bright lemon-yellow breast, this energetic Bananaquit visits a garden feeder at Iguazú."
+        "Sporting a bold white supercilium, decurved nectar-sipping bill, and bright lemon-yellow breast, this Bananquit was one of the few non-hummingbirds that managed to drink from the feeders in the hummingbird garden."
     ),
     230: (
         "Hooded Capuchin Family",
@@ -1091,31 +1091,31 @@ ANNOTATIONS = {
         "São Paulo ⇄ Cuiabá (The Pantanal) → Iguazú Falls",
         "Brazil Expedition Route",
         (0.49, 0.52, 1.02),
-        "Our route across Brazil: flying northwest from São Paulo into Cuiabá to explore the Northern Pantanal along the Transpantaneira and Cuiabá River, returning to São Paulo, and then flying southwest to the Atlantic Forest and thundering cataracts of Iguazú Falls."
+        "Our route across Brazil: We started with a domestic flight from São Paulo into Cuiabá to explore the Northern Pantanal along the Transpantaneira and Cuiabá River. After returning to São Paulo we then flew to Foz do Iguaçu to bird this part of the Atlantic forest and visit Iguazú Falls."
     ),
     427: (
         "Beware of Wild Jaguars",
         "Porto Jofre Lodge Sign",
         (0.63, 0.48, 1.45),
-        "Posted right at the edge of the hotel grounds in the Pantanal: 'ATTENTION / CAUTION: Please do not walk or jog alone beyond the hotel grounds! Wild jaguars may be in the area at any time.'"
+        "These signs were posted all over the lodge we stayed at Porto Jofre."
     ),
     428: (
         "Canopy Birding Tower",
         "Parque Provincial Urugua-í",
         (0.56, 0.44, 1.15),
-        "Rising into the wet Atlantic Forest canopy at Parque Provincial Urugua-í near Iguazú—climbing above the treetops here gives eye-level views of canopy specialists like the Black-fronted Piping-Guan, toucans, and tanagers."
+        "This newly-constructed concrete tower sheltered us from the rain on the final day of birding. It had wifi and an elevator and we managed to spot quite a bit from it."
     ),
     429: (
         "Lunch in the Pantanal",
         "Transpantaneira Stop",
         (0.50, 0.50, 1.06),
-        "Taking a midday break with Mom for a traditional Pantanal buffet lunch—complete with cameras and binoculars still at the ready right on the table."
+        "Brazil is big on buffets apparently. All of the lodges we stayed at in Brazil had pretty decent buffet lunches."
     ),
     430: (
         "Integration Bridge",
         "Triple Frontier (Brazil & Paraguay)",
         (0.60, 0.44, 1.12),
-        "Spanning the muddy confluence of the Paraná and Iguazú Rivers at the Three Borders Landmark—toggle to see our birding group lined up along the forest road bridge scanning the Atlantic Forest canopy."
+        "You can see three countries in this photo. On the left is Paraguay, on the top right is Brazil and the photo is taken from Argentina. This is also the intersection of the Paraná and Iguazú rivers."
     ),
     431: (
         "Birding from the Bridge",
@@ -1127,13 +1127,13 @@ ANNOTATIONS = {
         "The Anthill Graveyard",
         "Pantanal Termite & Ant Mounds",
         (0.50, 0.56, 1.08),
-        "An eerie 'anthill graveyard' stretching across a Pantanal savanna pasture on October 18th—hundreds of weathered, rock-hard grey earthen mounds rising like miniature tombstones above the seasonal high-water mark, prime foraging grounds for Giant Anteaters and Campo Flickers."
+        "The drier part of the Pantanal is littered with anthill and termite mounds, like gravestones in a cemetary."
     ),
     433: (
         "Mom & Dad at Iguazú Falls",
         "Cataratas del Iguazú",
         (0.42, 0.56, 1.12),
-        "Mom and Dad bundled up in rain jackets along the overlook walkway on October 21st, with the roaring horseshoe curtain of Iguazú Falls sending clouds of mist high into the Atlantic Forest behind them."
+        "It was quite wet the day we visited the Argentinian side of Iguazú Falls."
     ),
     166: (
         "Jaguar — At Sunset",
