@@ -1166,7 +1166,7 @@ GROUPS_SPEC = [
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(206, 215, 210), (39, 245, 195)]},
             {"align": "end", "offsetY": -8, "slots": [(277, 310, 210), (104, 310, 195), (5, 310, 190)]},
-            {"align": "start", "offsetY": 8, "slots": [(243, 295, 215), (132, 295, 185), (48, 265, 190)]},
+            {"align": "start", "offsetY": 8, "slots": [(243, 295, 215), (132, 295, 185), (48, 295, 190)]},
             {"align": "start", "offsetY": -6, "slots": [(175, 235, 215)]}
         ]
     },
@@ -1177,7 +1177,7 @@ GROUPS_SPEC = [
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(0, 215, 250), (2, 235, 195)]},
             {"align": "end", "offsetY": -8, "slots": [(123, 315, 185), (80, 315, 235), (23, 315, 190)]},
-            {"align": "start", "offsetY": 8, "slots": [(240, 295, 195), (57, 295, 205), (156, 265, 190)]},
+            {"align": "start", "offsetY": 8, "slots": [(240, 295, 195), (57, 295, 205), (156, 295, 190)]},
             {"align": "start", "offsetY": -6, "slots": [(127, 255, 175)]}
         ]
     },
@@ -1199,7 +1199,7 @@ GROUPS_SPEC = [
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(93, 215, 205), (143, 245, 195)]},
             {"align": "end", "offsetY": -8, "slots": [(113, 315, 235), (150, 315, 235)]},
-            {"align": "start", "offsetY": 8, "slots": [(27, 295, 210), (276, 295, 205), (261, 265, 185)]},
+            {"align": "start", "offsetY": 8, "slots": [(27, 295, 210), (276, 295, 205), (261, 295, 185)]},
             {"align": "start", "offsetY": -6, "slots": [(262, 245, 190), (106, 215, 210)]}
         ]
     },
@@ -1273,7 +1273,7 @@ GROUPS_SPEC = [
         "cloud": [
             {"align": "end", "offsetY": -8, "slots": [(218, 225, 210), (231, 245, 195)]},
             {"align": "end", "offsetY": 8, "slots": [(58, 315, 220), (288, 315, 250)]},
-            {"align": "start", "offsetY": -8, "slots": [(379, 290, 205), (298, 290, 195), (309, 260, 185)]},
+            {"align": "start", "offsetY": -8, "slots": [(379, 290, 205), (298, 290, 195), (309, 290, 185)]},
             {"align": "start", "offsetY": 8, "slots": [(377, 235, 195), (56, 215, 205)]}
         ]
     },
@@ -1295,7 +1295,7 @@ GROUPS_SPEC = [
         "cloud": [
             {"align": "end", "offsetY": 10, "slots": [(66, 210, 195), (41, 250, 200)]},
             {"align": "end", "offsetY": -8, "slots": [(245, 315, 185), (258, 315, 225), (98, 315, 195)]},
-            {"align": "start", "offsetY": 8, "slots": [(230, 295, 205), [(266, 148, 205), (193, 144, 185)], (192, 295, 185)]},
+            {"align": "start", "offsetY": 8, "slots": [[(266, 148, 205), (193, 144, 185)], (230, 295, 205), (192, 295, 185)]},
             {"align": "start", "offsetY": -8, "slots": [(50, 215, 225)]}
         ]
     },
@@ -1331,6 +1331,20 @@ GROUPS_SPEC = [
         ]
     }
 ]
+
+# Validate inner-column geometry so no interior gaps can ever occur
+for _g in GROUPS_SPEC:
+    _ncols = len(_g["cloud"])
+    for _ci, _col in enumerate(_g["cloud"]):
+        _slot_widths = []
+        for _si, _slot in enumerate(_col["slots"]):
+            if isinstance(_slot, list):
+                assert _si == 0 or _si == len(_col["slots"]) - 1, f"{_g['id']} col {_ci} has a 2-up pair in the middle!"
+                _slot_widths.append(sum(x[1] for x in _slot) + 3 * (len(_slot) - 1))
+            else:
+                _slot_widths.append(_slot[1])
+        if 0 < _ci < _ncols - 1:
+            assert len(set(_slot_widths)) == 1, f"{_g['id']} inner col {_ci} has mismatched slot widths: {_slot_widths}"
 
 def create_cropped_tile(idx, target_w, target_h, focus):
     src_path = f"/home/antigravity/fortenforge/pantanal/media/photos/item_{idx:03d}.jpg"
