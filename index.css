@@ -267,7 +267,6 @@ body {
   padding: 0.85rem 0.95rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   opacity: 0;
   transition: opacity 0.24s ease;
   z-index: 5;
@@ -281,6 +280,7 @@ body {
 }
 
 .overlay-species {
+  margin-top: auto;
   font-family: var(--font-serif);
   font-size: 1.16rem;
   font-weight: 600;
