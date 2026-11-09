@@ -24,6 +24,8 @@
   const lbMetaRegion = document.getElementById('lb-meta-region');
   const lbGoogleLink = document.getElementById('lb-google-link');
   const lbCloseBtn = document.getElementById('lb-close-btn');
+  const lbStageCloseBtn = document.getElementById('lb-stage-close-btn');
+  const lbStage = document.getElementById('lb-stage');
   const lbPrevBtn = document.getElementById('lb-prev-btn');
   const lbNextBtn = document.getElementById('lb-next-btn');
 
@@ -61,14 +63,20 @@
     { threshold: 0.35 }
   );
 
-  function createTileElement(item) {
+  function createTileElement(item, opts = {}) {
+    const isMobile = Boolean(opts.isMobile);
     const flatIdx = flatIndexByItemIndex[item.index];
     const tile = document.createElement('article');
-    tile.className = 'cloud-tile';
-    tile.style.width = `${item.tileWidth}px`;
-    tile.style.height = `${item.tileHeight}px`;
+    tile.className = isMobile ? 'cloud-tile mobile-cloud-tile' : 'cloud-tile';
+    if (isMobile) {
+      tile.style.width = `${opts.widthPct || 100}%`;
+      tile.style.aspectRatio = `${item.tileWidth} / ${item.tileHeight}`;
+    } else {
+      tile.style.width = `${item.tileWidth}px`;
+      tile.style.height = `${item.tileHeight}px`;
+      tile.id = `tile-${item.index}`;
+    }
     tile.tabIndex = 0;
-    tile.id = `tile-${item.index}`;
     tile.setAttribute('aria-label', `${item.species} — ${getCaption(item)}`);
 
     // Always render the fast custom-cropped JPEG immediately so no tile is ever blank
@@ -119,6 +127,13 @@
       tile.appendChild(vIndicator);
     }
 
+    if (isMobile && item.index !== 426) {
+      const mobileBar = document.createElement('div');
+      mobileBar.className = 'mobile-tile-bar';
+      mobileBar.innerHTML = `<span class="mobile-tile-species">${item.species}</span>`;
+      tile.appendChild(mobileBar);
+    }
+
     const variantBadgeHtml = hasVariants
       ? `<div class="overlay-variant-badge">⇄ ${item.variants.map((v) => v.label).join(' · ')}</div>`
       : '';
@@ -141,6 +156,94 @@
     });
 
     return tile;
+  }
+
+  function buildMobileCloud(group) {
+    const mobileCloud = document.createElement('div');
+    mobileCloud.className = 'photo-cloud-mobile';
+
+    if (group.items.length === 1) {
+      const singleWrap = document.createElement('div');
+      singleWrap.className = 'mobile-single-tile-wrap';
+      singleWrap.appendChild(createTileElement(group.items[0], { isMobile: true, widthPct: 100 }));
+      mobileCloud.appendChild(singleWrap);
+      return mobileCloud;
+    }
+
+    // Distribute items into 2 balanced columns while preserving visual priority
+    const leftItems = [];
+    const rightItems = [];
+    let leftHeightRatio = 0;
+    let rightHeightRatio = 0;
+
+    group.items.forEach((item) => {
+      const ratio = item.tileHeight / item.tileWidth;
+      if (leftHeightRatio <= rightHeightRatio) {
+        leftItems.push(item);
+        leftHeightRatio += ratio;
+      } else {
+        rightItems.push(item);
+        rightHeightRatio += ratio;
+      }
+    });
+
+    const cols = [
+      { align: 'end', offsetY: -6, items: leftItems, isLeft: true },
+      { align: 'start', offsetY: 6, items: rightItems, isLeft: false }
+    ];
+
+    cols.forEach((colSpec) => {
+      const colEl = document.createElement('div');
+      colEl.className = `mobile-cloud-col align-${colSpec.align}`;
+      if (colSpec.offsetY) {
+        colEl.style.transform = `translateY(${colSpec.offsetY}px)`;
+      }
+
+      const len = colSpec.items.length;
+      colSpec.items.forEach((item, idx) => {
+        let widthPct = 100;
+        if (len >= 3) {
+          if (idx === 0) widthPct = colSpec.isLeft ? 90 : 92;
+          else if (idx === len - 1) widthPct = colSpec.isLeft ? 92 : 89;
+        } else if (len === 2) {
+          if (idx === 0 && colSpec.isLeft) widthPct = 92;
+          if (idx === 1 && !colSpec.isLeft) widthPct = 92;
+        }
+        colEl.appendChild(createTileElement(item, { isMobile: true, widthPct }));
+      });
+
+      mobileCloud.appendChild(colEl);
+    });
+
+    return mobileCloud;
+  }
+
+  function updateDesktopCloudScale() {
+    const viewports = document.querySelectorAll('.photo-cloud-viewport');
+    const vw = window.innerWidth;
+    if (vw <= 680) {
+      viewports.forEach((vp) => {
+        vp.style.height = '';
+      });
+      return;
+    }
+
+    const availableWidth = Math.max(320, vw - 32);
+    viewports.forEach((vp) => {
+      const cloud = vp.querySelector('.photo-cloud-desktop');
+      if (!cloud) return;
+      cloud.style.transform = 'none';
+      const naturalW = cloud.scrollWidth || cloud.offsetWidth;
+      const naturalH = cloud.offsetHeight;
+      if (naturalW > availableWidth && naturalW > 0) {
+        const scale = availableWidth / naturalW;
+        cloud.style.transform = `scale(${scale.toFixed(4)})`;
+        vp.style.height = `${Math.ceil(naturalH * scale)}px`;
+      } else {
+        cloud.style.transform = '';
+        vp.style.height = '';
+      }
+    });
   }
 
   function renderAll() {
@@ -173,8 +276,12 @@
       heading.textContent = group.title;
       section.appendChild(heading);
 
+      // Desktop/Tablet 3-4 column cloud inside proportional scaling viewport
+      const cloudViewport = document.createElement('div');
+      cloudViewport.className = 'photo-cloud-viewport';
+
       const cloud = document.createElement('div');
-      cloud.className = 'photo-cloud';
+      cloud.className = 'photo-cloud photo-cloud-desktop';
 
       group.cloud.forEach((colSpec) => {
         const colEl = document.createElement('div');
@@ -200,12 +307,20 @@
         cloud.appendChild(colEl);
       });
 
-      section.appendChild(cloud);
+      cloudViewport.appendChild(cloud);
+      section.appendChild(cloudViewport);
+
+      // Mobile 2-column staggered cloud
+      section.appendChild(buildMobileCloud(group));
+
       collagesContainer.appendChild(section);
     });
 
     setupScrollSpy();
+    requestAnimationFrame(updateDesktopCloudScale);
   }
+
+  window.addEventListener('resize', updateDesktopCloudScale);
 
   function getActiveVariantObject(item) {
     if (Array.isArray(item.variants) && item.variants.length > 1) {
@@ -297,6 +412,12 @@
   }
 
   lbCloseBtn.addEventListener('click', closeLightbox);
+  if (lbStageCloseBtn) {
+    lbStageCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeLightbox();
+    });
+  }
   lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) closeLightbox();
   });
@@ -312,6 +433,38 @@
     const next = (currentLightboxIndex + 1) % flatItems.length;
     openLightbox(next, 0);
   });
+
+  // Touch swipe left/right on the media stage for mobile navigation
+  let touchStartX = 0;
+  let touchStartY = 0;
+  if (lbStage) {
+    lbStage.addEventListener(
+      'touchstart',
+      (e) => {
+        if (!e.touches || e.touches.length !== 1) return;
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      },
+      { passive: true }
+    );
+
+    lbStage.addEventListener(
+      'touchend',
+      (e) => {
+        if (!e.changedTouches || e.changedTouches.length !== 1) return;
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        const dy = e.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(dx) > 44 && Math.abs(dx) > Math.abs(dy) * 1.35) {
+          if (dx < 0) {
+            lbNextBtn.click();
+          } else {
+            lbPrevBtn.click();
+          }
+        }
+      },
+      { passive: true }
+    );
+  }
 
   document.addEventListener('keydown', (e) => {
     if (!lightbox.classList.contains('open')) return;
@@ -349,8 +502,9 @@
       customCaptions[activeObj.index] = newText;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(customCaptions));
       lbCaptionText.textContent = newText;
-      const tileCaption = document.querySelector(`[data-caption-index="${activeObj.index}"]`);
-      if (tileCaption) tileCaption.textContent = newText;
+      document.querySelectorAll(`[data-caption-index="${activeObj.index}"]`).forEach((el) => {
+        el.textContent = newText;
+      });
     }
     lbEditContainer.classList.remove('open');
   });
@@ -366,16 +520,27 @@
           if (entry.isIntersecting) {
             const id = entry.target.id.replace('group-', '');
             navLinks.forEach((link) => {
-              link.classList.toggle('active', link.dataset.groupId === id);
+              const isActive = link.dataset.groupId === id;
+              link.classList.toggle('active', isActive);
+              if (isActive && chapterNav.scrollWidth > chapterNav.clientWidth) {
+                const targetScroll = link.offsetLeft - chapterNav.clientWidth / 2 + link.offsetWidth / 2;
+                chapterNav.scrollTo({ left: Math.max(0, targetScroll), behavior: 'smooth' });
+              }
             });
           }
         });
       },
-      { rootMargin: '-30% 0px -60% 0px' }
+      { rootMargin: '-25% 0px -60% 0px' }
     );
 
     sections.forEach((s) => spy.observe(s));
   }
 
   renderAll();
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const photoParam = urlParams.get('photo');
+  if (photoParam !== null && flatIndexByItemIndex[photoParam] !== undefined) {
+    openLightbox(flatIndexByItemIndex[photoParam], 0);
+  }
 })();

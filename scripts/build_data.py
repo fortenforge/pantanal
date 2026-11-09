@@ -1583,7 +1583,8 @@ import hashlib, re
 
 payload = {"groups": output_groups}
 json_str = json.dumps(payload, indent=2, ensure_ascii=False)
-version_hash = hashlib.sha256(json_str.encode("utf-8")).hexdigest()[:8]
+with open("/home/antigravity/fortenforge/pantanal/index.css", "rb") as _cf, open("/home/antigravity/fortenforge/pantanal/app.js", "rb") as _jf:
+    version_hash = hashlib.sha256(json_str.encode("utf-8") + _cf.read() + _jf.read()).hexdigest()[:8]
 
 # Append cache-busting query param to cropUrls and photoUrls so updated images never serve stale from browser cache
 for g in output_groups:
